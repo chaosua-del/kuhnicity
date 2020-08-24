@@ -1,13 +1,13 @@
 /* Main Colors */
-$color-base      : #171717;
-$color-red       : #E20210;
+$color-base      : #323232;
+$color-red       : #FF3D00;
 $color-blue      : #0E3DB8;
-$color-blue-light: #CEE0EC;
-$color-white     : #f8f8f8;
+$color-light: #E3E3E3;
+$color-white     : #FFFFFF;
 
 $color-bg              : $color-white;
 $color-text            : $color-base;
-$color-link            : $color-blue;
+$color-link            : $color-red;
 $color-link-hover      : $color-blue;
 $color-error           : $color-red;
 $color-popup-background: #fff;
@@ -24,14 +24,14 @@ $header-z-index: 1000;
 
 /* Fonts */
 $font-family         : sans-serif;
-$font-family-alt     : sans-serif;
+$font-family-alt     : 'Cormorant Garamond', serif;
 $font-family-fontello: "fontello";
-$font-size           : 15px;
+$font-size           : 14px;
 $font-size-lg        : 16px;
 $font-weight         : normal;
-$letter-spacing      : normal;
-$line-height         : normal;
-$line-height-lg      : normal;
+$letter-spacing      : 0.035em;
+$line-height         : 140%;
+$line-height-lg      : 140%;
 
 /* Screen sizes */
 $grid-breakpoints: (xs: 0,
@@ -44,7 +44,7 @@ $container-max-widths: (xs: 100%,
     sm: 100%,
     md: 100%,
     lg: 1170px,
-    xl: 1170px);
+    xl: 1600px);
 $container-paddings: (xs: 25px,
     sm: 25px,
     md: 50px,

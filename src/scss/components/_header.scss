@@ -1,0 +1,130 @@
+.header {
+    font-size: 14px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__location {
+        // line-height: 157%;
+        /* identical to box height, or 22px */
+        letter-spacing: -0.02em;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+
+        &::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: $color-red;
+            margin-right: 6px;
+            display: block;
+        }
+
+        &::after {
+            content: url('../img/expand-arrow.svg');
+            margin-left: 6px;
+        }
+    }
+
+    &__block {
+        padding: 20px 0;
+
+        &-open {
+            text-transform: uppercase;
+            line-height: 17px;
+            letter-spacing: 0.07em;
+            color: #2B2B2B;
+
+            &::before {
+                content: url('../img/header/header-burger.svg');
+                margin-right: 10px;
+            }
+        }
+
+        &-button {
+            display: none;
+        }
+    }
+
+    &__logo {
+        background: url('../img/header/header-logo-md.svg') no-repeat center / contain;
+        width: 128px;
+        height: 29px;
+    }
+
+    &__navigation {
+        padding: 12px 0;
+    }
+
+    &__contacts {
+        display: none;
+
+        &-button {
+            line-height: 157%;
+            /* identical to box height, or 22px */
+            letter-spacing: -0.02em;
+            color: #333333;
+            border-bottom: 1px solid #DADADA;
+            display: none;
+        }
+
+        &-mail {
+            margin-right: 36px;
+        }
+
+        a {
+            color: #333333;
+
+        }
+    }
+
+    &__about {
+        align-self: flex-start;
+        margin-right: auto;
+        margin-left: 32px;
+        font-size: 16px;
+        line-height: 157%;
+        /* or 25px */
+        letter-spacing: -0.02em;
+        color: #333333;
+        display: none;
+
+        &::after {
+            content: url('../img/expand-arrow.svg');
+            margin-left: 6px;
+        }
+    }
+
+    &__menu {
+        display: none;
+        margin-right: 57px;
+
+        &-item {
+            margin-right: 36px;
+
+            a {
+                color: #333333;
+                line-height: 157%;
+                /* identical to box height, or 22px */
+                letter-spacing: -0.02em;
+            }
+        }
+    }
+}
+
+.navigation {
+    background-color: rgba(240, 240, 240, 0.88);
+}
+
+.header-button {
+    color: #1B1B1B;
+    letter-spacing: 0.07em;
+    line-height: 120.3%;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.22);
+}
