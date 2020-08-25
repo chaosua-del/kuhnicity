@@ -1,5 +1,20 @@
 @media(min-width: 768px) {
 
+    // base-768
+    .mainForm {
+        &__input {
+            width: 329px;
+        }
+    }
+
+    .title {
+        font-size: 55px;
+    }
+
+    .button {
+        font-size: 20px;
+    }
+
     // header-768
     .header {
         &__contacts {
@@ -9,6 +24,17 @@
         &__block {
             &-button {
                 display: block;
+                font-size: 16px;
+            }
+
+            &-open {
+                font-size: 16px;
+                line-height: 20px;
+
+                &::before {
+                    content: url('../img/header/header-burger-md.svg');
+                    margin-right: 10px;
+                }
             }
         }
 
@@ -28,9 +54,47 @@
             display: none;
         }
     }
+
+    // hero-768 
+    .hero {
+        height: 782px;
+        background: url(../img/hero/hero-bg-lg.webp) no-repeat center / cover;
+
+        &__container {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 120px;
+            padding-bottom: 0;
+        }
+
+        &__title {
+            width: 513px;
+        }
+
+        &__description {
+            width: 493px;
+        }
+
+        &__info {
+            max-width: 320px;
+
+            &-text {
+                width: 150px;
+            }
+
+            &-number {
+                font-size: 40px;
+            }
+        }
+    }
 }
 
 @media (min-width: 1280px) {
+
+    // base-1280
+    .title {
+        font-size: 64px;
+    }
 
     // header-1280 
     .header {
@@ -51,10 +115,78 @@
                 display: inline-block;
             }
         }
+
+        &__block {
+            &-button {
+                font-size: 18px;
+            }
+
+            &-open {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    // hero-1280 
+    .hero {
+        background: url(../img/hero/hero-bg-lg.webp) no-repeat center / cover;
+        height: 721px;
+
+        &__mainForm {
+            width: 475px;
+        }
+
+        &__input {
+            width: 231px;
+        }
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            width: 55%;
+            max-width: 1064px;
+            left: 0;
+            transform: translateX(0);
+            padding-left: 60px;
+            height: 100%;
+
+            &::before {
+                filter: blur(0);
+                height: 100%;
+                top: 0;
+                width: 100%;
+                left: 0;
+            }
+        }
+
+        &__info {
+            margin-left: 0;
+        }
+
+        &__title {
+            width: 597px;
+        }
+
+        &__description {
+            width: 480px;
+        }
     }
 }
 
 @media(min-width: 1920px) {
+
+    // base-1920
+    .title {
+        font-size: 72px;
+    }
+
+    .mainForm {
+        &__input {
+            font-size: 18px;
+        }
+    }
 
     // header-1920
     .header {
@@ -75,6 +207,33 @@
         &__contacts {
             &-mail {
                 margin-right: 94px;
+            }
+        }
+
+        &__block {
+            &-open {
+                &::before {
+                    content: url('../img/header/header-burger-xl.svg');
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    // hero-1920
+    .hero {
+        &__title {
+            width: 911px;
+        }
+
+        &__description {
+            width: 616px;
+        }
+
+        &__info {
+            &-number {
+                font-size: 45px;
+                line-height: 56px;
             }
         }
     }

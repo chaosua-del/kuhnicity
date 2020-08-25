@@ -2,3 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap');
 // font-family: 'Cormorant Garamond', serif;
+
+@font-face {
+    font-family: 'Averta';
+    src: local('Averta Regular'), local('Averta-Regular'),
+        url('fonts/Averta/AvertaDemoPE-Regular.woff2') format('woff2'),
+        url('fonts/Averta/AvertaDemoPE-Regular.woff') format('woff'),
+        url('fonts/Averta/AvertaDemoPE-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

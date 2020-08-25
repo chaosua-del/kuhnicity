@@ -1,0 +1,71 @@
+.hero {
+    background: url('../img/hero/hero-bg-lg.webp') 59% 31%/ cover;
+    height: 910px;
+    position: relative;
+
+    &__container {
+        // background: url('../img/hero/hero-blur.png') no-repeat 3% 16%;
+        // background: linear-gradient(180.03deg, rgba(255, 255, 255, 0.73) 0.02%, #FFFFFF 113.09%);
+        // filter: blur(200px);
+        position: absolute;
+        max-width: 671px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 79px;
+        padding-bottom: 53px;
+        bottom: 0;
+        // left: 0;
+        height: 642px;
+
+        // filter: blur(200px);
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1920px;
+            right: -50%;
+            height: 88%;
+            background: linear-gradient(180.03deg, rgba(255, 255, 255, 0.73) 0.02%, #FFFFFF 113.09%);
+            filter: blur(50px);
+        }
+    }
+
+    &__title {
+        color: #181818;
+        width: 226px;
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        color: #494949;
+        width: 230px;
+        margin-bottom: 43px;
+    }
+
+    &__input {
+        margin-bottom: 18px;
+    }
+
+    &__info {
+        margin-top: 29px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+
+        &-text {
+            color: #000000;
+            width: 131px;
+        }
+
+        &-number {
+            font-size: 30px;
+            line-height: 37px;
+            /* identical to box height */
+            letter-spacing: 0.06em;
+            color: #373737;
+            // width: 92px;
+        }
+    }
+}

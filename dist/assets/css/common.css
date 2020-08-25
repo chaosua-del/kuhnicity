@@ -326,7 +326,7 @@ svg {
 .body {
   background: #FFFFFF;
   color: #323232;
-  font-family: sans-serif;
+  font-family: "Averta", sans-serif;
   font-size: 14px;
   letter-spacing: 0.035em;
   line-height: 140%; }
@@ -453,6 +453,45 @@ strong {
   margin-bottom: 1em;
   page-break-inside: avoid; }
 
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  line-height: 117.3%;
+  /* or 42px */
+  letter-spacing: -0.025em; }
+
+.mainForm__input {
+  border-bottom: 1px solid #9D9D9D;
+  padding-bottom: 27px;
+  padding-left: 20px;
+  width: 100%; }
+  .mainForm__input::placeholder {
+    color: #585858; }
+  .mainForm__input-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+
+.button {
+  width: 100%;
+  padding: 17px 0;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 120.3%;
+  /* identical to box height, or 17px */
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-family: 'Averta', sans-serif; }
+  .button--primary {
+    background-color: #FF3D00; }
+
+@font-face {
+  font-family: 'Averta';
+  src: local("Averta Regular"), local("Averta-Regular"), url("fonts/Averta/AvertaDemoPE-Regular.woff2") format("woff2"), url("fonts/Averta/AvertaDemoPE-Regular.woff") format("woff"), url("fonts/Averta/AvertaDemoPE-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
 /*
 Основной контейнер
 */
@@ -546,20 +585,102 @@ strong {
   text-transform: uppercase;
   border-bottom: 1px solid rgba(21, 21, 21, 0.22); }
 
+.hero {
+  background: url("../img/hero/hero-bg-lg.webp") 59% 31%/cover;
+  height: 910px;
+  position: relative; }
+  .hero__container {
+    position: absolute;
+    max-width: 671px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 79px;
+    padding-bottom: 53px;
+    bottom: 0;
+    height: 642px; }
+    .hero__container::before {
+      content: '';
+      position: absolute;
+      width: 1920px;
+      right: -50%;
+      height: 88%;
+      background: linear-gradient(180.03deg, rgba(255, 255, 255, 0.73) 0.02%, #FFFFFF 113.09%);
+      filter: blur(50px); }
+  .hero__title {
+    color: #181818;
+    width: 226px;
+    margin-bottom: 16px; }
+  .hero__description {
+    color: #494949;
+    width: 230px;
+    margin-bottom: 43px; }
+  .hero__input {
+    margin-bottom: 18px; }
+  .hero__info {
+    margin-top: 29px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center; }
+    .hero__info-text {
+      color: #000000;
+      width: 131px; }
+    .hero__info-number {
+      font-size: 30px;
+      line-height: 37px;
+      /* identical to box height */
+      letter-spacing: 0.06em;
+      color: #373737; }
+
 @media (min-width: 768px) {
+  .mainForm__input {
+    width: 329px; }
+  .title {
+    font-size: 55px; }
+  .button {
+    font-size: 20px; }
   .header__contacts {
     display: block; }
   .header__block-button {
-    display: block; }
+    display: block;
+    font-size: 16px; }
+  .header__block-open {
+    font-size: 16px;
+    line-height: 20px; }
+    .header__block-open::before {
+      content: url("../img/header/header-burger-md.svg");
+      margin-right: 10px; }
   .header__about {
     display: block; }
   .header__logo {
     width: 156px;
     height: 35px; }
   .navigation__button {
-    display: none; } }
+    display: none; }
+  .hero {
+    height: 782px;
+    background: url(../img/hero/hero-bg-lg.webp) no-repeat center/cover; }
+    .hero__container {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 120px;
+      padding-bottom: 0; }
+    .hero__title {
+      width: 513px; }
+    .hero__description {
+      width: 493px; }
+    .hero__info {
+      max-width: 320px; }
+      .hero__info-text {
+        width: 150px; }
+      .hero__info-number {
+        font-size: 40px; } }
 
 @media (min-width: 1280px) {
+  .title {
+    font-size: 64px; }
   .header__menu {
     display: flex;
     margin-right: 0; }
@@ -568,9 +689,46 @@ strong {
     height: 43px; }
   .header__contacts-button {
     margin-right: 37px;
-    display: inline-block; } }
+    display: inline-block; }
+  .header__block-button {
+    font-size: 18px; }
+  .header__block-open {
+    font-size: 18px;
+    line-height: 22px; }
+  .hero {
+    background: url(../img/hero/hero-bg-lg.webp) no-repeat center/cover;
+    height: 721px; }
+    .hero__mainForm {
+      width: 475px; }
+    .hero__input {
+      width: 231px; }
+    .hero__container {
+      display: flex;
+      justify-content: center;
+      width: 55%;
+      max-width: 1064px;
+      left: 0;
+      transform: translateX(0);
+      padding-left: 60px;
+      height: 100%; }
+      .hero__container::before {
+        filter: blur(0);
+        height: 100%;
+        top: 0;
+        width: 100%;
+        left: 0; }
+    .hero__info {
+      margin-left: 0; }
+    .hero__title {
+      width: 597px; }
+    .hero__description {
+      width: 480px; } }
 
 @media (min-width: 1920px) {
+  .title {
+    font-size: 72px; }
+  .mainForm__input {
+    font-size: 18px; }
   .header__logo {
     width: 206px;
     height: 47px; }
@@ -579,6 +737,16 @@ strong {
   .header__menu {
     margin-right: auto; }
   .header__contacts-mail {
-    margin-right: 94px; } }
+    margin-right: 94px; }
+  .header__block-open::before {
+    content: url("../img/header/header-burger-xl.svg");
+    margin-right: 10px; }
+  .hero__title {
+    width: 911px; }
+  .hero__description {
+    width: 616px; }
+  .hero__info-number {
+    font-size: 45px;
+    line-height: 56px; } }
 
 /*# sourceMappingURL=maps/common.css.map */
