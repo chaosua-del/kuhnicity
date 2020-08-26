@@ -1,0 +1,55 @@
+.benefits {
+    background-color: #F2F2F2;
+    // padding-bottom: 300px;
+
+    &__container {
+        padding-top: 26px;
+        padding-right: 0;
+    }
+
+    &__swiper-slide {
+        display: flex;
+        width: 1210px !important;
+    }
+
+    &__card {
+        background-color: #FFFFFF;
+        width: 270px;
+        height: 141px;
+        padding-top: 27px;
+        padding-left: 36px;
+        margin-right: 10px;
+        padding-right: 37px;
+
+        &-title {
+            font-size: 18px;
+            line-height: 120.3%;
+            /* identical to box height, or 22px */
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+            color: #131313;
+            margin-bottom: 6px;
+        }
+
+        &-description {
+            line-height: 17px;
+            color: #868686;
+            // width: 197px;
+            letter-spacing: 0;
+        }
+
+        &:nth-child(1) {
+            .benefits__card-description {
+                width: 197px;
+            }
+        }
+
+        &:nth-child(3) {
+            width: 300px;
+        }
+
+        &:nth-child(4) {
+            width: 300px;
+        }
+    }
+}

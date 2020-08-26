@@ -134,6 +134,7 @@ strong {
     line-height: 117.3%;
     /* or 42px */
     letter-spacing: -0.025em;
+    font-weight: 500;
 
 }
 
@@ -175,5 +176,10 @@ strong {
 
     &--primary {
         background-color: $color-red;
+    }
+
+    &--light {
+        color: #333333;
+        background-color: #F1F1F1;
     }
 }

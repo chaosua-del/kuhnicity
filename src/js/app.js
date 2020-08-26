@@ -1,9 +1,12 @@
 import $ from 'jquery';
 import 'lazysizes';
-// import Swiper from 'swiper/js/swiper.js';
+import Swiper from 'swiper/js/swiper.js';
 
 import page from 'page';
 import forms from 'forms';
+import sliders from 'sliders';
+import filters from 'filters';
+
 
 let app = {
 
@@ -49,14 +52,17 @@ let app = {
         window.app = app;
 
         app.document.ready(() => {
-            this.initScrollTo();
+            sliders();
+            filters();
         });
 
         // app.window.on('load', () => {
         // });
 
-        // this.document.on(app.resizeEventName, () => {
-        // });
+        this.document.on(app.resizeEventName, () => {
+            sliders();
+            // console.log('rezising');
+        });
 
     },
 
@@ -103,13 +109,13 @@ let app = {
             j = 0;
         }
 
-        km = j
-                ? i.substr(0, j) + thousands_sep
-                : '';
+        km = j ?
+            i.substr(0, j) + thousands_sep :
+            '';
         kw = i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + thousands_sep);
-        kd = (decimals
-                ? dec_point + Math.abs(number - i).toFixed(decimals).replace(/-/, '0').slice(2)
-                : '');
+        kd = (decimals ?
+            dec_point + Math.abs(number - i).toFixed(decimals).replace(/-/, '0').slice(2) :
+            '');
 
         return km + kw + kd;
     },
@@ -124,10 +130,12 @@ let app = {
             if (app.window.outerWidth() >= app.breakpoints[key]) {
                 app.media = app.breakpoints[key];
             }
-//            console.log(app.media);
+            //            console.log(app.media);
         }
         if (app.media != current) {
-            app.document.trigger(app.resizeEventName, {media: app.media});
+            app.document.trigger(app.resizeEventName, {
+                media: app.media
+            });
         }
     },
 
@@ -151,8 +159,7 @@ let app = {
             sEnding = aEndings[2];
         } else {
             i = iNumber % 10;
-            switch (i)
-            {
+            switch (i) {
                 case (1):
                     sEnding = aEndings[0];
                     break;
