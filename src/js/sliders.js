@@ -21,6 +21,16 @@ export default function sliders() {
 
         discounts.translateTo(269);
 
+        const social = new Swiper('.social__swiper-container', {
+            slidesPerView: 'auto',
+            // spaceBetween: 10,
+            updateOnWindowResize: false,
+            // freeMode: true,
+            // loop: false,
+            slidesOffsetAfter: 110,
+        });
+
+        social.translateTo(270);
 
 
     }
@@ -62,5 +72,13 @@ export default function sliders() {
 
     feedback.translateTo(270);
 
+
+    const banner = new Swiper('.banner__swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        freeMode: true,
+        loop: false,
+        slidesOffsetAfter: 2,
+    });
 
 }

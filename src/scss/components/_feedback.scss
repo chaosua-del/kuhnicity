@@ -1,6 +1,10 @@
 .feedback {
     padding-top: 55px;
 
+    &__container {
+        padding-right: 0;
+    }
+
     &__swiper-wrapper {
         width: 270px !important;
         padding-bottom: 120px;
@@ -16,6 +20,10 @@
             &-prev,
             &-next {
                 top: 640px;
+            }
+
+            &-next {
+                right: 25px;
             }
         }
     }
@@ -126,4 +134,72 @@
         }
     }
 
+}
+
+.banner {
+    &__swiper-slide {
+        width: 800px !important;
+        display: flex;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 25px;
+        color: #323232;
+        width: 262px;
+        margin-bottom: 18px;
+        margin-top: 100px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 50px;
+
+        &-info {
+            display: flex;
+            align-items: center;
+            height: 55px;
+        }
+
+        &-rate {
+            font-size: 20px;
+            // line-height: 56px;
+            /* identical to box height */
+            color: #323232;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+
+            &::after {
+                content: '';
+                margin-left: 10px;
+                width: 18.15px;
+                height: 17.45px;
+                background: url('../img/feedback/banner-star.svg') no-repeat center / cover;
+                display: inline-block;
+            }
+        }
+
+        &-logo {
+            width: 121px;
+            // height: 55px;
+            display: flex;
+            align-items: center;
+        }
+
+        &-quantity {
+            font-size: 12px;
+            line-height: 118.49%;
+            /* or 14px */
+            margin-top: 23px;
+            text-align: right;
+            letter-spacing: 0.035em;
+            color: #171717;
+            opacity: 0.5;
+        }
+
+    }
 }

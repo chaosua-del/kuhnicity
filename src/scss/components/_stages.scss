@@ -79,16 +79,18 @@
         }
 
         &-number {
-            width: 164px;
-            height: 246px;
+            width: 163px;
+            height: 245px;
             position: absolute;
             bottom: 0;
             left: 0;
+
 
             path {
                 fill: rgba(255, 61, 0, 0.2);
                 fill-opacity: 1;
                 transition: fill 0.2s ease-in-out;
+                margin-right: auto;
             }
         }
 

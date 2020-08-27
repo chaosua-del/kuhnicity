@@ -323,6 +323,9 @@ svg {
 
 /* common */
 /*https://stackoverflow.com/questions/18907131/detecting-ie11-using-css-capability-feature-detection*/
+img {
+  max-width: 100%; }
+
 .body {
   background: #FFFFFF;
   color: #323232;
@@ -947,15 +950,16 @@ strong {
       /* or 22px */
       letter-spacing: 0.035em; }
     .stages__card-number {
-      width: 164px;
-      height: 246px;
+      width: 163px;
+      height: 245px;
       position: absolute;
       bottom: 0;
       left: 0; }
       .stages__card-number path {
         fill: rgba(255, 61, 0, 0.2);
         fill-opacity: 1;
-        transition: fill 0.2s ease-in-out; }
+        transition: fill 0.2s ease-in-out;
+        margin-right: auto; }
 
 .stages__swiper-slide.swiper-slide-active .stages__card {
   color: #FFFFFF; }
@@ -966,6 +970,8 @@ strong {
 
 .feedback {
   padding-top: 55px; }
+  .feedback__container {
+    padding-right: 0; }
   .feedback__swiper-wrapper {
     width: 270px !important;
     padding-bottom: 120px; }
@@ -973,6 +979,8 @@ strong {
     margin-right: 12px; }
   .feedback__swiper-button-prev, .feedback__swiper-button-next {
     top: 640px; }
+  .feedback__swiper-button-next {
+    right: 25px; }
   .feedback__title {
     width: 269px;
     margin-bottom: 30px; }
@@ -1046,6 +1054,217 @@ strong {
       width: 20px;
       height: 20px;
       margin-right: 10px; }
+
+.banner__swiper-slide {
+  width: 800px !important;
+  display: flex; }
+
+.banner__title {
+  font-size: 20px;
+  line-height: 25px;
+  color: #323232;
+  width: 262px;
+  margin-bottom: 18px;
+  margin-top: 100px; }
+
+.banner__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 50px; }
+  .banner__card-info {
+    display: flex;
+    align-items: center;
+    height: 55px; }
+  .banner__card-rate {
+    font-size: 20px;
+    /* identical to box height */
+    color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; }
+    .banner__card-rate::after {
+      content: '';
+      margin-left: 10px;
+      width: 18.15px;
+      height: 17.45px;
+      background: url("../img/feedback/banner-star.svg") no-repeat center/cover;
+      display: inline-block; }
+  .banner__card-logo {
+    width: 121px;
+    display: flex;
+    align-items: center; }
+  .banner__card-quantity {
+    font-size: 12px;
+    line-height: 118.49%;
+    /* or 14px */
+    margin-top: 23px;
+    text-align: right;
+    letter-spacing: 0.035em;
+    color: #171717;
+    opacity: 0.5; }
+
+.social {
+  padding-top: 50px;
+  background-color: #F2F2F2; }
+  .social__swiper-container {
+    padding-left: 25px; }
+  .social__swiper-wrapper {
+    width: 270px !important; }
+  .social__swiper-slide {
+    margin-right: 12px; }
+  .social__container {
+    padding-right: 0; }
+  .social__title {
+    width: 174px;
+    margin-bottom: 22px; }
+  .social__description {
+    color: #666666;
+    margin-bottom: 22px;
+    width: 270px; }
+  .social__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.135em;
+    text-transform: uppercase;
+    color: #424242;
+    width: 233px;
+    margin-bottom: 34px; }
+  .social__block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 76px; }
+    .social__block-link {
+      width: 53px;
+      height: 53px;
+      border: 1px solid #C6C6C6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 14px;
+      margin-bottom: 9px; }
+  .social__card {
+    width: 270px;
+    height: 270px;
+    position: relative;
+    display: block; }
+    .social__card::after {
+      content: url(../img/social/card-instagram.svg);
+      position: absolute;
+      top: 14px;
+      right: 14px; }
+    .social__card-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .social__card-icon {
+      margin-left: auto;
+      margin-right: 14px;
+      margin-top: 14px; }
+
+.articles {
+  padding-top: 50px;
+  background: #F2F2F2; }
+  .articles__container {
+    padding-right: 0; }
+  .articles__link {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 117.3%;
+    /* or 29px */
+    letter-spacing: -0.025em;
+    color: #141414;
+    margin-left: 13px;
+    width: 242px; }
+    .articles__link--red {
+      text-align: center;
+      background-color: #FF3D00;
+      display: flex;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      width: 238px;
+      margin-left: 0; }
+    .articles__link-arrow {
+      position: absolute;
+      right: -22px;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 22px !important;
+      background-color: #FF3D00;
+      height: 50%; }
+  .articles__card {
+    position: relative;
+    width: 270px;
+    height: 180px;
+    display: block; }
+    .articles__card::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 2; }
+    .articles__card--full {
+      height: 372px; }
+      .articles__card--full .articles__card-description {
+        width: 204px; }
+    .articles__card-date {
+      z-index: 10;
+      font-size: 12px;
+      line-height: 120.3%;
+      /* identical to box height, or 14px */
+      letter-spacing: 0.105em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 68px;
+      right: -15px;
+      display: block; }
+    .articles__card-description {
+      z-index: 10;
+      font-size: 16px;
+      line-height: 137.8%;
+      /* or 22px */
+      letter-spacing: -0.025em;
+      color: #FFFFFF;
+      position: absolute;
+      left: 17px;
+      bottom: 14px;
+      width: 240px; }
+    .articles__card-label {
+      z-index: 10;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #323232;
+      background-color: #F5EEE4;
+      padding: 7px 14px;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .articles__card-button {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: 10; }
 
 @media (min-width: 321px) {
   .production__wrap {
