@@ -1,0 +1,114 @@
+.stages {
+    padding-top: 54px;
+    background-color: #F2F2F2;
+
+    &__title {
+        margin-bottom: 44px;
+    }
+
+    &__container {
+        padding-right: 0;
+    }
+
+    &__swiper {
+
+        &-wrapper {
+            width: 270px !important;
+            padding-bottom: 200px !important;
+        }
+
+        &-slide {
+            margin-right: 3px;
+        }
+
+        &-button {
+
+            &-next,
+            &-prev {
+                top: 500px;
+            }
+
+            &-next {
+                right: 25px;
+            }
+        }
+    }
+
+    &__card {
+        background-color: #fff;
+        color: #000000;
+        text-align: center;
+        display: flex;
+        // justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 270px;
+        height: 448px;
+        // border: 1px solid black;
+        // background-color: green;
+        padding-top: 50px;
+        position: relative;
+        transition: color 0.2s ease-in-out;
+
+        &-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        &-title {
+            font-size: 14px;
+            line-height: 120.3%;
+            /* or 18px */
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        &-description {
+            font-size: 14px;
+            line-height: 140%;
+            max-width: 211px;
+            /* or 22px */
+            letter-spacing: 0.035em;
+
+        }
+
+        &-number {
+            width: 164px;
+            height: 246px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            path {
+                fill: rgba(255, 61, 0, 0.2);
+                fill-opacity: 1;
+                transition: fill 0.2s ease-in-out;
+            }
+        }
+
+    }
+
+}
+
+.stages__swiper-slide.swiper-slide-active {
+
+    .stages__card {
+        color: #FFFFFF;
+
+        &-img {
+            opacity: 1;
+        }
+
+        &-number {
+            path {
+                fill: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+}

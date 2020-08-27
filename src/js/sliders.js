@@ -17,7 +17,6 @@ export default function sliders() {
             // freeMode: true,
             // loop: false,
             slidesOffsetAfter: 110,
-            parallax: true,
         });
 
         discounts.translateTo(269);
@@ -33,6 +32,35 @@ export default function sliders() {
         loop: false,
         slidesOffsetAfter: 0,
     });
+
+    const stages = new Swiper('.stages__swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        slidesOffsetAfter: 400,
+        updateOnWindowResize: false,
+        loop: false,
+        navigation: {
+            nextEl: '.stages__swiper-button-next',
+            prevEl: '.stages__swiper-button-prev',
+        },
+    });
+
+    stages.translateTo(270);
+
+    const feedback = new Swiper('.feedback__swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        slidesOffsetAfter: 400,
+        updateOnWindowResize: false,
+        loop: false,
+        parallax: true,
+        navigation: {
+            nextEl: '.feedback__swiper-button-next',
+            prevEl: '.feedback__swiper-button-prev',
+        },
+    });
+
+    feedback.translateTo(270);
 
 
 }

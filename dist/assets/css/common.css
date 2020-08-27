@@ -459,7 +459,7 @@ strong {
   line-height: 117.3%;
   /* or 42px */
   letter-spacing: -0.025em;
-  font-weight: 500; }
+  font-weight: 300; }
 
 .mainForm__input {
   border-bottom: 1px solid #9D9D9D;
@@ -489,6 +489,36 @@ strong {
   .button--light {
     color: #333333;
     background-color: #F1F1F1; }
+  .button--red {
+    background-color: #FF3D00; }
+
+.swiper-button-next {
+  width: 54px !important;
+  height: 54px !important;
+  border-radius: 50%;
+  background-color: #FF3D00; }
+  .swiper-button-next::after {
+    content: '' !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-top: 3px solid #FFFFFF;
+    border-right: 3px solid #FFFFFF;
+    transform: rotate(45deg);
+    margin-right: 5px; }
+
+.swiper-button-prev {
+  width: 54px !important;
+  height: 54px !important;
+  border-radius: 50%;
+  background-color: #FF3D00; }
+  .swiper-button-prev::after {
+    content: '' !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-top: 3px solid #FFFFFF;
+    border-right: 3px solid #FFFFFF;
+    transform: rotate(-135deg);
+    margin-left: 5px; }
 
 @font-face {
   font-family: 'Averta';
@@ -616,7 +646,8 @@ strong {
   .hero__title {
     color: #181818;
     width: 226px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    font-weight: 500; }
   .hero__description {
     color: #494949;
     width: 230px;
@@ -797,6 +828,16 @@ strong {
         font-size: 20px; } }
     .models__filter--active {
       border-bottom: 2px solid #656565; }
+  .models__button {
+    font-size: 14px;
+    line-height: 120.3%;
+    /* identical to box height, or 17px */
+    letter-spacing: 0.105em;
+    text-transform: uppercase; }
+    .models__button::after {
+      content: url("../img/button-arrow.svg");
+      margin-left: 12px;
+      display: inline-block; }
 
 .card {
   position: relative;
@@ -855,6 +896,156 @@ strong {
         width: 26px;
         height: 7px;
         background: url("../img/models/new.svg") no-repeat center/cover; }
+
+.stages {
+  padding-top: 54px;
+  background-color: #F2F2F2; }
+  .stages__title {
+    margin-bottom: 44px; }
+  .stages__container {
+    padding-right: 0; }
+  .stages__swiper-wrapper {
+    width: 270px !important;
+    padding-bottom: 200px !important; }
+  .stages__swiper-slide {
+    margin-right: 3px; }
+  .stages__swiper-button-next, .stages__swiper-button-prev {
+    top: 500px; }
+  .stages__swiper-button-next {
+    right: 25px; }
+  .stages__card {
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: 448px;
+    padding-top: 50px;
+    position: relative;
+    transition: color 0.2s ease-in-out; }
+    .stages__card-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out; }
+    .stages__card-title {
+      font-size: 14px;
+      line-height: 120.3%;
+      /* or 18px */
+      letter-spacing: 0.105em;
+      text-transform: uppercase;
+      margin-bottom: 18px; }
+    .stages__card-description {
+      font-size: 14px;
+      line-height: 140%;
+      max-width: 211px;
+      /* or 22px */
+      letter-spacing: 0.035em; }
+    .stages__card-number {
+      width: 164px;
+      height: 246px;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+      .stages__card-number path {
+        fill: rgba(255, 61, 0, 0.2);
+        fill-opacity: 1;
+        transition: fill 0.2s ease-in-out; }
+
+.stages__swiper-slide.swiper-slide-active .stages__card {
+  color: #FFFFFF; }
+  .stages__swiper-slide.swiper-slide-active .stages__card-img {
+    opacity: 1; }
+  .stages__swiper-slide.swiper-slide-active .stages__card-number path {
+    fill: rgba(255, 255, 255, 0.6); }
+
+.feedback {
+  padding-top: 55px; }
+  .feedback__swiper-wrapper {
+    width: 270px !important;
+    padding-bottom: 120px; }
+  .feedback__swiper-slide {
+    margin-right: 12px; }
+  .feedback__swiper-button-prev, .feedback__swiper-button-next {
+    top: 640px; }
+  .feedback__title {
+    width: 269px;
+    margin-bottom: 30px; }
+  .feedback__card {
+    width: 270px;
+    height: 583px;
+    border: 1px solid #CFCFCF;
+    display: flex;
+    flex-direction: column;
+    padding-top: 21px;
+    padding-left: 20px;
+    padding-right: 19px; }
+    .feedback__card-img {
+      width: 231px;
+      height: 231px;
+      position: relative;
+      margin-bottom: 20px; }
+      .feedback__card-img img {
+        max-width: 100%; }
+    .feedback__card-link {
+      width: 38px;
+      height: 38px;
+      border: 1px solid #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      position: absolute;
+      right: 9px;
+      bottom: 19px; }
+    .feedback__card-arrow {
+      width: 21px;
+      height: 21px; }
+    .feedback__card-date {
+      font-size: 12px;
+      line-height: 118.49%;
+      /* or 14px */
+      margin-top: 16px;
+      margin-bottom: 31px;
+      letter-spacing: 0.035em;
+      color: #171717;
+      opacity: 0.5; }
+    .feedback__card-button {
+      font-size: 14px;
+      line-height: 120.3%;
+      /* identical to box height, or 17px */
+      letter-spacing: 0.105em;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(255, 61, 0, 0.21);
+      position: relative;
+      width: 161px;
+      padding-bottom: 4px; }
+      .feedback__card-button::after {
+        content: url("../img/feedback/feedback-button-arrow.svg");
+        position: absolute;
+        top: 0;
+        right: -20px; }
+  .feedback__user {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 16px; }
+    .feedback__user-name {
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+      letter-spacing: 0.135em;
+      text-transform: uppercase;
+      color: #292929; }
+    .feedback__user-social {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px; }
 
 @media (min-width: 321px) {
   .production__wrap {

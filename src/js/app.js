@@ -6,6 +6,7 @@ import page from 'page';
 import forms from 'forms';
 import sliders from 'sliders';
 import filters from 'filters';
+import svgReplace from 'svgReplace';
 
 
 let app = {
@@ -54,6 +55,7 @@ let app = {
         app.document.ready(() => {
             sliders();
             filters();
+            svgReplace();
         });
 
         // app.window.on('load', () => {
