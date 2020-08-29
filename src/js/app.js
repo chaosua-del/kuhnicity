@@ -1,12 +1,21 @@
-import $ from 'jquery';
+import {
+    $,
+    jQuery
+} from 'jquery';
+// export for others scripts to use
+// window.$ = $;
+// window.jQuery = jQuery;
+// import jQuery from 'jquery';
 import 'lazysizes';
 import Swiper from 'swiper/js/swiper.js';
+// import fancybox from '@fancyapps/fancybox/dist/jquery.fancybox.min';
 
 import page from 'page';
 import forms from 'forms';
 import sliders from 'sliders';
 import filters from 'filters';
 import svgReplace from 'svgReplace';
+import expand from 'expand';
 
 
 let app = {
@@ -56,6 +65,7 @@ let app = {
             sliders();
             filters();
             svgReplace();
+            expand();
         });
 
         // app.window.on('load', () => {

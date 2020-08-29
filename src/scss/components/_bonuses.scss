@@ -1,0 +1,98 @@
+.bonuses {
+    background: #F2F2F2;
+
+    &__container {
+        padding-right: 0;
+    }
+
+    &__swiper-wrapper {
+        padding-bottom: 100px;
+        width: 270px !important;
+    }
+
+    &__swiper {
+        &-button {
+
+            &-next,
+            &-prev {
+                top: 450px;
+            }
+        }
+    }
+
+    &__swiper-slide {
+        margin-right: 10px;
+    }
+
+    &__card {
+        width: 270px;
+        height: 387px;
+        padding-top: 65px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(28, 28, 28, 0.4);
+        }
+
+        &-title {
+            font-family: 'Cormorant Garamond';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 117.3%;
+            /* or 35px */
+            text-align: center;
+            letter-spacing: -0.025em;
+            color: #FFFFFF;
+            z-index: 10;
+            margin-bottom: 139px;
+            width: 162px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-subtitle {
+            color: $color-red;
+        }
+
+        &-text {
+            z-index: 10;
+            font-size: 14px;
+            line-height: 120.3%;
+            /* identical to box height, or 17px */
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+
+            &::before {
+                content: '';
+                width: 77px;
+                height: 1px;
+                background-color: #FFFFFF;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 25px;
+            }
+        }
+
+        &--light {
+            * {
+                color: #141414 !important;
+            }
+
+            .bonuses__card-text {
+                &::before {
+                    background-color: #141414;
+                }
+            }
+        }
+    }
+}

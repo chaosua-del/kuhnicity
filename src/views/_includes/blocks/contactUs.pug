@@ -1,0 +1,16 @@
+section.contactUs
+  picture.contactUs__img
+    source(srcset="assets/img/contactUs/bg-md.jpg" media="(min-width: 321px)")
+    img(src="assets/img/contactUs/bg.jpg")
+
+  .container.contactUs__container
+    h3.title.contactUs__title Приходите к нам, поговорим о вашем проекте
+    p.contactUs__description Новые модели, выгодные акции и неожиданные дизайнерские решения ежедневно в удобном для вас формате. Подписывайтесь!
+
+    form(action="#").mainForm.contactUs__mainForm
+      .mainForm__input-group
+        input(type="text", placeholder="Ваше имя").mainForm__input.contactUs__input
+        input(type="phone", placeholder="Ваш телефон").mainForm__input.contactUs__input
+      button.mainForm__button.button.button--dark.contactUs__button Отправить
+  p.policy.contactUs__policy Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+    

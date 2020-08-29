@@ -60,7 +60,7 @@ export default function sliders() {
     const feedback = new Swiper('.feedback__swiper-container', {
         slidesPerView: 'auto',
         spaceBetween: 0,
-        slidesOffsetAfter: 400,
+        slidesOffsetAfter: 20,
         updateOnWindowResize: false,
         loop: false,
         parallax: true,
@@ -80,5 +80,35 @@ export default function sliders() {
         loop: false,
         slidesOffsetAfter: 2,
     });
+
+    const articles = new Swiper('.articles__swiper-container', {
+        slidesPerView: 'auto',
+        // spaceBetween: 10,
+        updateOnWindowResize: false,
+        // freeMode: true,
+        // loop: false,
+        slidesOffsetAfter: 0,
+        navigation: {
+            nextEl: '.articles__swiper-button-next',
+            prevEl: '.articles__swiper-button-prev',
+        }
+    });
+
+    articles.translateTo(270);
+
+    const bonuses = new Swiper('.bonuses__swiper-container', {
+        slidesPerView: 'auto',
+        // spaceBetween: 10,
+        updateOnWindowResize: false,
+        // freeMode: true,
+        // loop: false,
+        slidesOffsetAfter: 0,
+        navigation: {
+            nextEl: '.bonuses__swiper-button-next',
+            prevEl: '.bonuses__swiper-button-prev',
+        }
+    });
+
+    bonuses.translateTo(270);
 
 }

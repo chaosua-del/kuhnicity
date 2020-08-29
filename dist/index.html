@@ -16,6 +16,7 @@
     meta(name="msapplication-config" content="assets/browserconfig.xml")
     meta(name="theme-color" content="#ffffff")
     --><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
     <meta name="description" content="Description">
     <meta property="og:url" content="https://">
     <meta property="og:type" content="website">
@@ -292,19 +293,114 @@
       </div>
       <div class="articles">
         <div class="container articles__container"> <a class="articles__link articles__link--red" href="#">Как выбрать мойку из искусственного камня
-            <div class="articles__link-arrow"><img src="assets/img/articles/link-arrow.svg" alt="arrow"></div></a><a class="articles__link" href="#">и другие полезные статьи
-            <div class="swiper-container articles__swiper-container">
-              <div class="swiper-wrapper articles__swiper-wrapper">
-                <div class="swiper-slide articles__swiper-slide"><a class="articles__card" href="#"><img class="articles__card-img" src="assets/img/articles/photo2.jpg" alt="photo">
-                    <div class="articles__card-label">экономия</div>
-                    <p class="articles__card-description">Мастер-класс по выбору кухни</p>
-                    <button class="articles__card-button"> </button></a></div>
+            <div class="articles__link-arrow"><img src="assets/img/articles/link-arrow.svg" alt="arrow"></div></a><a class="articles__link" href="#">и другие полезные статьи</a>
+          <div class="swiper-container articles__swiper-container">
+            <div class="swiper-wrapper articles__swiper-wrapper">
+              <div class="swiper-slide articles__swiper-slide"><a class="articles__card articles__card--full" href="#"><img class="articles__card-img" src="assets/img/articles/photo1.png" alt="photo">
+                  <div class="articles__card-label">кухни</div><span class="articles__card-date">10 марта 2020</span>
+                  <p class="articles__card-description">8 марта от КухниСити в салоне  ART DE VIDRE</p></a></div>
+              <div class="swiper-slide articles__swiper-slide">
+                <div class="articles__card"><img class="articles__card-img" src="assets/img/articles/photo2.jpg" alt="photo">
+                  <div class="articles__card-label">экономия</div>
+                  <p class="articles__card-description">Мастер-класс по выбору кухни</p><a class="articles__card-button" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"></a>
+                </div>
+                <div class="articles__card"><img class="articles__card-img" src="assets/img/articles/photo2.jpg" alt="photo">
+                  <div class="articles__card-label">экономия</div>
+                  <p class="articles__card-description">Мастер-класс по выбору кухни</p><a class="articles__card-button" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"></a>
+                </div>
               </div>
-            </div></a></div>
+            </div>
+            <div class="swiper-button-prev articles__swiper-button-prev"></div>
+            <div class="swiper-button-next articles__swiper-button-next"></div>
+          </div>
+        </div>
       </div>
+      <section class="leader">
+        <div class="leader__container container">
+          <div class="leader__info">
+            <h2 class="title leader__info-title">Кухни на заказ в&nbsp;салонах Кухнисити</h2>
+            <div class="leader__info-img"><img src="assets/img/leader/leader-photo.jpg" alt="leader-photo"></div><strong class="leader__info-name">Андрей Селиванов</strong><span class="leader__info-job">руководитель производства</span>
+            <div class="leader__info-sign"></div>
+          </div>
+          <div class="leader__block">
+            <div class="leader__title"></div>
+            <div class="leader__text">Кухня – одно из самых важных помещений в доме. Здесь готовят еду, устраивают семейные обеды, дружеские посиделки, а порой и званые вечера. Отсюда вытекают главные критерии выбора мебели – материалы и фурнитура (от покрытия столешницы и заканчивая ручками на фасадах) должны быть готовы к интенсивным нагрузкам,  а продуманная планировка должна помогать выполнять бытовые дела с легкостью, комфортом и удовольствием. А еще хочется, чтобы было красиво!</div>
+            <div class="leader__text leader__text-expand"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, obcaecati pariatur. Unde quas aspernatur sit, placeat repellendus iusto vitae excepturi.                    </div>
+            <div class="leader__button">раскрыть</div>
+          </div>
+        </div>
+      </section>
+      <section class="bonuses">
+        <div class="container bonuses__container">
+          <div class="title bonuses__title"></div>
+          <div class="swiper-container bonuses__swiper-container">
+            <div class="swiper-wrapper bonuses__swiper-wrapper">
+              <div class="swiper-slide bonuses__swiper-slide">
+                <div class="bonuses__card bonuses__card"><img class="bonuses__card-img bg-image" src="assets/img/bonuses/ascona.jpg" alt="bg">
+                  <h3 class="bonuses__card-title">Купите кухню <span class="bonuses__card-subtitle">Ascona</span></h3>
+                  <p class="bonuses__card-text">Столешница в подарок</p>
+                </div>
+              </div>
+              <div class="swiper-slide bonuses__swiper-slide">
+                <div class="bonuses__card bonuses__card"><img class="bonuses__card-img bg-image" src="assets/img/bonuses/ascona.jpg" alt="bg">
+                  <h3 class="bonuses__card-title">Купите кухню <span class="bonuses__card-subtitle">Ascona</span></h3>
+                  <p class="bonuses__card-text">Столешница в подарок</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev bonuses__swiper-button-prev"></div>
+            <div class="swiper-button-next bonuses__swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="contactUs">
+        <picture class="contactUs__img">
+          <source srcset="assets/img/contactUs/bg-md.jpg" media="(min-width: 321px)"><img src="assets/img/contactUs/bg.jpg">
+        </picture>
+        <div class="container contactUs__container">
+          <h3 class="title contactUs__title">Приходите к нам, поговорим о вашем проекте</h3>
+          <p class="contactUs__description">Новые модели, выгодные акции и неожиданные дизайнерские решения ежедневно в удобном для вас формате. Подписывайтесь!</p>
+          <form class="mainForm contactUs__mainForm" action="#">
+            <div class="mainForm__input-group">
+              <input class="mainForm__input contactUs__input" type="text" placeholder="Ваше имя">
+              <input class="mainForm__input contactUs__input" type="phone" placeholder="Ваш телефон">
+            </div>
+            <button class="mainForm__button button button--dark contactUs__button">Отправить</button>
+          </form>
+        </div>
+        <p class="policy contactUs__policy">Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+      </section>
     </div>
-    <footer class="footer">
-      <div class="container">footer</div>
+    <section class="list">
+      <div class="container list__container">
+        <div class="list__card">
+          <h4 class="list__card-title">Кухни</h4><a class="list__card-item" href="#">Каталог Стиль</a><a class="list__card-item" href="#">Фасад</a><a class="list__card-item" href="#">Покрытие</a><a class="list__card-item" href="#">Планировка</a><a class="list__card-item" href="#">Цвет</a><a class="list__card-item" href="#">Размер</a>
+        </div>
+        <div class="list__card">
+          <h4 class="list__card-title">Сопутствующие товары</h4><a class="list__card-item" href="#">Столешницы</a><a class="list__card-item" href="#">Бытовая техника</a><a class="list__card-item" href="#">Шкафы-купе</a><a class="list__card-item" href="#">Столовые группы</a><a class="list__card-item" href="#">Барны опоры</a><a class="list__card-item" href="#"> Аксессуары</a>
+        </div>
+        <div class="list__card">
+          <h4 class="list__card-title">Покупателям</h4><a class="list__card-item" href="#">Портфолио</a><a class="list__card-item" href="#">Доставка</a><a class="list__card-item" href="#">Рассрочка</a><a class="list__card-item" href="#">Вызов дизайнера</a><a class="list__card-item" href="#">Сборка</a><a class="list__card-item" href="#"> Замер </a>
+        </div>
+        <div class="list__card">
+          <h4 class="list__card-title">Компания</h4><a class="list__card-item" href="#">О компании</a><a class="list__card-item" href="#">Производство</a><a class="list__card-item" href="#">Новости</a><a class="list__card-item" href="#">Пресса</a><a class="list__card-item" href="#">Видео</a><a class="list__card-item" href="#"> Сотрудничество</a><a class="list__card-item" href="#"> Вакансии</a><a class="list__card-item" href="#"> Благотворительность</a>
+        </div>
+        <div class="list__card">
+          <h4 class="list__card-title">Контакты</h4><a class="list__card-item" href="#">Адреса салонов</a><a class="list__card-item" href="#">Офисы салонов</a>
+        </div>
+        <div class="list__card"><a class="list__card-title list__card-title2" href="#">Калькулятор кухни</a><a class="list__card-title list__card-title2" href="#">Бесплатный дизайн</a><a class="list__card-title list__card-title2" href="#">Акции</a><a class="list__card-title list__card-title2" href="#">Распродажа</a></div>
+        <div class="contacts list__card-contacts"><a class="contacts__phone" href="tel:+74991354378">+7 (499) 135-43-78</a><span class="contacts__info">Ежедневно с 10.00 до 22.00</span>
+          <div class="contacts__social">
+            <div class="social__block contacts__social"><a class="social__block-link" href="#"><img class="social__block-img" src="assets/img/social/facebook.svg" alt="facebook"></a><a class="social__block-link" href="#"><img class="social__block-img" src="assets/img/social/vk.svg" alt="vk"></a><a class="social__block-link" href="#"><img class="social__block-img" src="assets/img/social/instagram.svg" alt="instagram"></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"> 
+      <div class="container footer__container">
+        <div class="footer__policy"><span class="footer__policy-text">© 2019 КухниСити и Kuchenberg. Все права защищены</span><a class="footer__policy-link" href="#">Политика конфиденциальности</a></div>
+        <div class="footer__visa"></div>
+      </div>
     </footer>
     <div class="hidden">
       <!-- include popups here-->

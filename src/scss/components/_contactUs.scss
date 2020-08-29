@@ -1,0 +1,30 @@
+.contactUs {
+    background: #F2F2F2;
+    padding-bottom: 96px;
+
+    &__title {
+        margin-top: 52px;
+        margin-bottom: 35px;
+    }
+
+    &__description {
+        color: #666666;
+        margin-bottom: 28px;
+    }
+
+    &__input {
+        margin-bottom: 28px;
+    }
+
+    &__button {
+        margin-top: 44px;
+        margin-bottom: 29px;
+    }
+
+    &__policy {
+        width: 279px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
