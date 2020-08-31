@@ -1,5 +1,5 @@
 .production {
-    .production__wrap {
+    &__wrap {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -7,11 +7,12 @@
         flex-direction: column;
     }
 
-    .production__card {
+    &__card {
         width: 320px;
         height: 250px;
         position: relative;
         margin-bottom: 10px;
+        overflow: hidden;
 
         &::after {
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
