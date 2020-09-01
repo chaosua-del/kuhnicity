@@ -10,24 +10,54 @@
     .swiper-wrapper.articles__swiper-wrapper
       .swiper-slide.articles__swiper-slide
         a(href="#").articles__card.articles__card--full
-          img.articles__card-img(src="assets/img/articles/photo1.png", alt="photo")
+          picture.articles__card-img
+            source(media="(min-width: 320px)", srcset="assets/img/articles/photo1.webp", type="image/webp")
+            source(media="(min-width: 320px)", srcset="assets/img/articles/photo1.png", type="image/png")
+            img(src="assets/img/articles/photo1.png", alt="photo")
           .articles__card-label кухни
           span.articles__card-date 10 марта 2020
           p.articles__card-description 8 марта от КухниСити в салоне  ART DE VIDRE
 
       .swiper-slide.articles__swiper-slide
         .articles__card
-          img.articles__card-img(src="assets/img/articles/photo2.jpg", alt="photo")
+          picture.articles__card-img
+            source(media="(min-width: 320px)", srcset="assets/img/articles/photo2.webp", type="image/webp")
+            source(media="(min-width: 320px)", srcset="assets/img/articles/photo2.png", type="image/png")
+            img(src="assets/img/articles/photo2.png", alt="photo")
           .articles__card-label экономия
           p.articles__card-description Мастер-класс по выбору кухни
           a(data-fancybox, href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").articles__card-button
         
         .articles__card
-          img.articles__card-img(src="assets/img/articles/photo2.jpg", alt="photo")
+          picture.articles__card-img
+            source(media="(min-width: 320px)", srcset="assets/img/articles/photo3.webp", type="image/webp")
+            source(media="(min-width: 320px)", srcset="assets/img/articles/photo3.png", type="image/png")
+            img(src="assets/img/articles/photo3.png", alt="photo")
+          .articles__card-label экономия
+          p.articles__card-description Мастер-класс по выбору кухни
+          a(data-fancybox, href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").articles__card-button
+
+      .swiper-slide.articles__swiper-slide
+        .articles__card
+          picture.articles__card-img
+            source(media="(min-width: 320px)", srcset="assets/img/articles/photo2.webp", type="image/webp")
+            source(media="(min-width: 320px)", srcset="assets/img/articles/photo2.png", type="image/png")
+            img(src="assets/img/articles/photo2.png", alt="photo")
+          .articles__card-label экономия
+          p.articles__card-description Мастер-класс по выбору кухни
+          a(data-fancybox, href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").articles__card-button
+        
+        .articles__card
+          picture.articles__card-img
+            source(media="(min-width: 320px)", srcset="assets/img/articles/photo3.webp", type="image/webp")
+            source(media="(min-width: 320px)", srcset="assets/img/articles/photo3.png", type="image/png")
+            img(src="assets/img/articles/photo3.png", alt="photo")
           .articles__card-label экономия
           p.articles__card-description Мастер-класс по выбору кухни
           a(data-fancybox, href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").articles__card-button
     
     .swiper-button-prev.articles__swiper-button-prev
     .swiper-button-next.articles__swiper-button-next
+
+  .button.articles__button.button--light Посмотреть все
 

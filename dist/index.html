@@ -16,7 +16,7 @@
     meta(name="msapplication-config" content="assets/browserconfig.xml")
     meta(name="theme-color" content="#ffffff")
     --><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <meta name="description" content="Description">
     <meta property="og:url" content="https://">
     <meta property="og:type" content="website">
@@ -217,7 +217,23 @@
             <div class="card__info"><span class="card__info-name">Bristel PRO</span><span class="card__info-price">от 40 215 ₽/м²</span></div>
             <p class="card__description">Роскошная дворцовая классика</p>
           </div>
-          <button class="button button--red models__button">Посмотреть все</button>
+          <div class="card">
+            <div class="card__img"><img src="assets/img/models/1.jpg">
+              <div class="card__label card__label--sale"> </div>
+            </div>
+            <div class="card__info"><span class="card__info-name">Bristel PRO</span><span class="card__info-price">от 40 215 ₽/м²</span></div>
+            <p class="card__description">Роскошная дворцовая классика</p>
+          </div>
+          <div class="card">
+            <div class="card__img"><img src="assets/img/models/1.jpg">
+              <div class="card__label card__label--sale"> </div>
+            </div>
+            <div class="card__info"><span class="card__info-name">Bristel PRO</span><span class="card__info-price">от 40 215 ₽/м²</span></div>
+            <p class="card__description">Роскошная дворцовая классика</p>
+          </div>
+          <button class="button button--primary models__button">
+            <h3 class="title models__button-title">127 моделей</h3><span class="models__button-subtitle">со скидкой</span><span class="models__button-text">Посмотреть все</span>
+          </button>
         </div>
       </section>
       <section class="stages">
@@ -233,20 +249,20 @@
               </div>
               <div class="swiper-slide stages__swiper-slide">
                 <div class="stages__card"> <img class="stages__card-img" src="assets/img/stages/1.jpg" alt="1">
-                  <h3 class="stages__card-title">Создание проекта </h3>
-                  <p class="stages__card-description">Онлайн-заявка или&nbsp;визит&nbsp;в&nbsp;салон</p><img class="stages__card-number" src="assets/img/stages/2.svg" alt="2">
+                  <h3 class="stages__card-title">ЗАмер помещения </h3>
+                  <p class="stages__card-description"> Дистанционные замер или выезд замерщика</p><img class="stages__card-number" src="assets/img/stages/2.svg" alt="2">
                 </div>
               </div>
               <div class="swiper-slide stages__swiper-slide">
                 <div class="stages__card"> <img class="stages__card-img" src="assets/img/stages/1.jpg" alt="1">
-                  <h3 class="stages__card-title">Создание проекта </h3>
-                  <p class="stages__card-description">Онлайн-заявка или&nbsp;визит&nbsp;в&nbsp;салон</p><img class="stages__card-number" src="assets/img/stages/3.svg" alt="3">
+                  <h3 class="stages__card-title">Заключение договора</h3>
+                  <p class="stages__card-description">Онлайн-оплата или визит в салон </p><img class="stages__card-number" src="assets/img/stages/3.svg" alt="3">
                 </div>
               </div>
               <div class="swiper-slide stages__swiper-slide">
                 <div class="stages__card"> <img class="stages__card-img" src="assets/img/stages/1.jpg" alt="1">
-                  <h3 class="stages__card-title">Создание проекта </h3>
-                  <p class="stages__card-description">Онлайн-заявка или&nbsp;визит&nbsp;в&nbsp;салон</p><img class="stages__card-number" src="assets/img/stages/4.svg" alt="4">
+                  <h3 class="stages__card-title">Доставка мебели</h3>
+                  <p class="stages__card-description">Сборка и установка происходит безопасно</p><img class="stages__card-number" src="assets/img/stages/4.svg" alt="4">
                 </div>
               </div>
             </div>
@@ -262,32 +278,32 @@
             <div class="swiper-wrapper feedback__swiper-wrapper">
               <div class="swiper-slide feedback__swiper-slide">
                 <div class="feedback__card">
-                  <div class="feedback__card-img"><img src="assets/img/feedback/kitchen1.jpg" alt="kitchen">
-                    <div class="feedback__card-link"><img class="feedback__card-arrow" src="assets/img/feedback/card-link.svg" alt="arrow"></div>
+                  <div class="feedback__card-img"><img src="assets/img/feedback/kitchen1.jpg" alt="kitchen"><a class="feedback__card-link" href="#"><img class="feedback__card-arrow" src="assets/img/feedback/card-link.svg" alt="arrow"></a></div>
+                  <div class="feedback__info">
+                    <div class="feedback__user"><img class="feedback__user-social" src="assets/img/feedback/vk.svg" alt="vk"><span class="feedback__user-name">Андрей Иванов</span></div>
+                    <p class="feedback__card-text">Спасибо огромное, работа вашей команды бесценный вклад в счастье многих людей, а теперь и частичка моей радости😊 Все оказалось совсем не сложно и главное быстро!!! Вы огромные молодцы🙏 </p>
+                    <div class="span feedback__card-date">06.05.2019 в 15:20</div><a class="feedback__card-button" href="#">Перейти к отзыву</a>
                   </div>
-                  <div class="feedback__user"><img class="feedback__user-social" src="assets/img/feedback/vk.svg" alt="vk"><span class="feedback__user-name">Андрей Иванов</span></div>
-                  <p class="feedback__card-text">Спасибо огромное, работа вашей команды бесценный вклад в счастье многих людей, а теперь и частичка моей радости😊 Все оказалось совсем не сложно и главное быстро!!! Вы огромные молодцы🙏 </p>
-                  <div class="span feedback__card-date">06.05.2019 в 15:20</div><a class="feedback__card-button" href="#">Перейти к отзыву</a>
                 </div>
               </div>
               <div class="swiper-slide feedback__swiper-slide">
                 <div class="feedback__card">
-                  <div class="feedback__card-img"><img src="assets/img/feedback/kitchen1.jpg" alt="kitchen">
-                    <div class="feedback__card-link"><img class="feedback__card-arrow" src="assets/img/feedback/card-link.svg" alt="arrow"></div>
+                  <div class="feedback__card-img"><img src="assets/img/feedback/kitchen1.jpg" alt="kitchen"><a class="feedback__card-link" href="#"><img class="feedback__card-arrow" src="assets/img/feedback/card-link.svg" alt="arrow"></a></div>
+                  <div class="feedback__info">
+                    <div class="feedback__user"><img class="feedback__user-social" src="assets/img/feedback/vk.svg" alt="vk"><span class="feedback__user-name">Андрей Иванов</span></div>
+                    <p class="feedback__card-text">Спасибо огромное, работа вашей команды бесценный вклад в счастье многих людей, а теперь и частичка моей радости😊 Все оказалось совсем не сложно и главное быстро!!! Вы огромные молодцы🙏 </p>
+                    <div class="span feedback__card-date">06.05.2019 в 15:20</div><a class="feedback__card-button" href="#">Перейти к отзыву</a>
                   </div>
-                  <div class="feedback__user"><img class="feedback__user-social" src="assets/img/feedback/vk.svg" alt="vk"><span class="feedback__user-name">Андрей Иванов</span></div>
-                  <p class="feedback__card-text">Спасибо огромное, работа вашей команды бесценный вклад в счастье многих людей, а теперь и частичка моей радости😊 Все оказалось совсем не сложно и главное быстро!!! Вы огромные молодцы🙏 </p>
-                  <div class="span feedback__card-date">06.05.2019 в 15:20</div><a class="feedback__card-button" href="#">Перейти к отзыву</a>
                 </div>
               </div>
               <div class="swiper-slide feedback__swiper-slide">
                 <div class="feedback__card">
-                  <div class="feedback__card-img"><img src="assets/img/feedback/kitchen1.jpg" alt="kitchen">
-                    <div class="feedback__card-link"><img class="feedback__card-arrow" src="assets/img/feedback/card-link.svg" alt="arrow"></div>
+                  <div class="feedback__card-img"><img src="assets/img/feedback/kitchen1.jpg" alt="kitchen"><a class="feedback__card-link" href="#"><img class="feedback__card-arrow" src="assets/img/feedback/card-link.svg" alt="arrow"></a></div>
+                  <div class="feedback__info">
+                    <div class="feedback__user"><img class="feedback__user-social" src="assets/img/feedback/vk.svg" alt="vk"><span class="feedback__user-name">Андрей Иванов</span></div>
+                    <p class="feedback__card-text">Спасибо огромное, работа вашей команды бесценный вклад в счастье многих людей, а теперь и частичка моей радости😊 Все оказалось совсем не сложно и главное быстро!!! Вы огромные молодцы🙏 </p>
+                    <div class="span feedback__card-date">06.05.2019 в 15:20</div><a class="feedback__card-button" href="#">Перейти к отзыву</a>
                   </div>
-                  <div class="feedback__user"><img class="feedback__user-social" src="assets/img/feedback/vk.svg" alt="vk"><span class="feedback__user-name">Андрей Иванов</span></div>
-                  <p class="feedback__card-text">Спасибо огромное, работа вашей команды бесценный вклад в счастье многих людей, а теперь и частичка моей радости😊 Все оказалось совсем не сложно и главное быстро!!! Вы огромные молодцы🙏 </p>
-                  <div class="span feedback__card-date">06.05.2019 в 15:20</div><a class="feedback__card-button" href="#">Перейти к отзыву</a>
                 </div>
               </div>
             </div>
@@ -299,15 +315,27 @@
             <div class="swiper-wrapper banner__swiper-wrapper"> 
               <div class="swiper-slide banner__swiper-slide">
                 <div class="banner__card">
-                  <div class="banner__card-info"><span class="banner__card-rate">4.9</span><a class="banner__card-logo" href="#"><img src="assets/img/feedback/otzovik.svg" alt="Otzovik"></a></div>
+                  <div class="banner__card-info"><span class="banner__card-rate">4.9</span><a class="banner__card-logo" href="#">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="assets/img/feedback/otzovik-md.svg" type="image/svg+xml">
+                        <source media="(min-width: 320px)" srcset="assets/img/feedback/otzovik.svg" type="image/svg+xml"><img src="assets/img/feedback/otzovik-md.svg" alt="Otzovik">
+                      </picture></a></div>
                   <p class="banner__card-quantity">На основе 32 отзывов</p>
                 </div>
                 <div class="banner__card">
-                  <div class="banner__card-info"><span class="banner__card-rate">4.9</span><a class="banner__card-logo" href="#"><img src="assets/img/feedback/otzovik.svg" alt="Otzovik"></a></div>
+                  <div class="banner__card-info"><span class="banner__card-rate">4.9</span><a class="banner__card-logo" href="#">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="assets/img/feedback/zoon-md.svg" type="image/svg+xml">
+                        <source media="(min-width: 320px)" srcset="assets/img/feedback/zoon.svg" type="image/svg+xml"><img src="assets/img/feedback/otzovik.svg" alt="Otzovik">
+                      </picture></a></div>
                   <p class="banner__card-quantity">На основе 32 отзывов</p>
                 </div>
                 <div class="banner__card">
-                  <div class="banner__card-info"><span class="banner__card-rate">4.9</span><a class="banner__card-logo" href="#"><img src="assets/img/feedback/otzovik.svg" alt="Otzovik"></a></div>
+                  <div class="banner__card-info"><span class="banner__card-rate">4.9</span><a class="banner__card-logo" href="#">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="assets/img/feedback/recommend-md.svg" type="image/svg+xml">
+                        <source media="(min-width: 320px)" srcset="assets/img/feedback/recommend.svg" type="image/svg+xml"><img src="assets/img/feedback/otzovik.svg" alt="Otzovik">
+                      </picture></a></div>
                   <p class="banner__card-quantity">На основе 32 отзывов</p>
                 </div>
               </div>
@@ -335,21 +363,88 @@
             <div class="swiper-slide social__swiper-slide"><a class="social__card" href="#"><img class="social__card-img" src="assets/img/social/card1.png" alt="bg"></a></div>
           </div>
         </div>
+        <div class="social__cards"><a class="social__card" href="#">
+            <picture class="social__card-img">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card1.webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card1.png" type="image/png"><img src="assets/img/social/card1.png" alt="bg">
+            </picture></a><a class="social__card" href="#">
+            <picture class="social__card-img">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card2.webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card2.png" type="image/png"><img src="assets/img/social/card2.png" alt="bg">
+            </picture></a><a class="social__card" href="#">
+            <picture class="social__card-img">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card3.webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card3.png" type="image/png"><img src="assets/img/social/card3.png" alt="bg">
+            </picture></a><a class="social__card" href="#">
+            <picture class="social__card-img">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card4.webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card4.png" type="image/png"><img src="assets/img/social/card4.png" alt="bg">
+            </picture></a><a class="social__card" href="#">
+            <picture class="social__card-img">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card5.webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card5.png" type="image/png"><img src="assets/img/social/card5.png" alt="bg">
+            </picture></a><a class="social__card" href="#">
+            <picture class="social__card-img">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card6.webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card6.png" type="image/png"><img src="assets/img/social/card6.png" alt="bg">
+            </picture></a><a class="social__card" href="#">
+            <picture class="social__card-img">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card7.webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card7.png" type="image/png"><img src="assets/img/social/card7.png" alt="bg">
+            </picture></a><a class="social__card" href="#">
+            <picture class="social__card-img">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card8.webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card8.png" type="image/png"><img src="assets/img/social/card8.png" alt="bg">
+            </picture></a><a class="social__card" href="#">
+            <picture class="social__card-img">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card9.webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/img/social/card9.png" type="image/png"><img src="assets/img/social/card9.png" alt="bg">
+            </picture></a></div>
       </div>
       <div class="articles">
         <div class="container articles__container"> <a class="articles__link articles__link--red" href="#">Как выбрать мойку из искусственного камня
             <div class="articles__link-arrow"><img src="assets/img/articles/link-arrow.svg" alt="arrow"></div></a><a class="articles__link" href="#">и другие полезные статьи</a>
           <div class="swiper-container articles__swiper-container">
             <div class="swiper-wrapper articles__swiper-wrapper">
-              <div class="swiper-slide articles__swiper-slide"><a class="articles__card articles__card--full" href="#"><img class="articles__card-img" src="assets/img/articles/photo1.png" alt="photo">
+              <div class="swiper-slide articles__swiper-slide"><a class="articles__card articles__card--full" href="#">
+                  <picture class="articles__card-img">
+                    <source media="(min-width: 320px)" srcset="assets/img/articles/photo1.webp" type="image/webp">
+                    <source media="(min-width: 320px)" srcset="assets/img/articles/photo1.png" type="image/png"><img src="assets/img/articles/photo1.png" alt="photo">
+                  </picture>
                   <div class="articles__card-label">кухни</div><span class="articles__card-date">10 марта 2020</span>
                   <p class="articles__card-description">8 марта от КухниСити в салоне  ART DE VIDRE</p></a></div>
               <div class="swiper-slide articles__swiper-slide">
-                <div class="articles__card"><img class="articles__card-img" src="assets/img/articles/photo2.jpg" alt="photo">
+                <div class="articles__card">
+                  <picture class="articles__card-img">
+                    <source media="(min-width: 320px)" srcset="assets/img/articles/photo2.webp" type="image/webp">
+                    <source media="(min-width: 320px)" srcset="assets/img/articles/photo2.png" type="image/png"><img src="assets/img/articles/photo2.png" alt="photo">
+                  </picture>
                   <div class="articles__card-label">экономия</div>
                   <p class="articles__card-description">Мастер-класс по выбору кухни</p><a class="articles__card-button" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"></a>
                 </div>
-                <div class="articles__card"><img class="articles__card-img" src="assets/img/articles/photo2.jpg" alt="photo">
+                <div class="articles__card">
+                  <picture class="articles__card-img">
+                    <source media="(min-width: 320px)" srcset="assets/img/articles/photo3.webp" type="image/webp">
+                    <source media="(min-width: 320px)" srcset="assets/img/articles/photo3.png" type="image/png"><img src="assets/img/articles/photo3.png" alt="photo">
+                  </picture>
+                  <div class="articles__card-label">экономия</div>
+                  <p class="articles__card-description">Мастер-класс по выбору кухни</p><a class="articles__card-button" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"></a>
+                </div>
+              </div>
+              <div class="swiper-slide articles__swiper-slide">
+                <div class="articles__card">
+                  <picture class="articles__card-img">
+                    <source media="(min-width: 320px)" srcset="assets/img/articles/photo2.webp" type="image/webp">
+                    <source media="(min-width: 320px)" srcset="assets/img/articles/photo2.png" type="image/png"><img src="assets/img/articles/photo2.png" alt="photo">
+                  </picture>
+                  <div class="articles__card-label">экономия</div>
+                  <p class="articles__card-description">Мастер-класс по выбору кухни</p><a class="articles__card-button" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"></a>
+                </div>
+                <div class="articles__card">
+                  <picture class="articles__card-img">
+                    <source media="(min-width: 320px)" srcset="assets/img/articles/photo3.webp" type="image/webp">
+                    <source media="(min-width: 320px)" srcset="assets/img/articles/photo3.png" type="image/png"><img src="assets/img/articles/photo3.png" alt="photo">
+                  </picture>
                   <div class="articles__card-label">экономия</div>
                   <p class="articles__card-description">Мастер-класс по выбору кухни</p><a class="articles__card-button" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"></a>
                 </div>
@@ -358,6 +453,7 @@
             <div class="swiper-button-prev articles__swiper-button-prev"></div>
             <div class="swiper-button-next articles__swiper-button-next"></div>
           </div>
+          <div class="button articles__button button--light">Посмотреть все</div>
         </div>
       </div>
       <section class="leader">
@@ -368,7 +464,7 @@
             <div class="leader__info-sign"></div>
           </div>
           <div class="leader__block">
-            <div class="leader__title"></div>
+            <div class="title leader__title">Кухни на заказ в&nbsp;салонах Кухнисити</div>
             <div class="leader__text">Кухня – одно из самых важных помещений в доме. Здесь готовят еду, устраивают семейные обеды, дружеские посиделки, а порой и званые вечера. Отсюда вытекают главные критерии выбора мебели – материалы и фурнитура (от покрытия столешницы и заканчивая ручками на фасадах) должны быть готовы к интенсивным нагрузкам,  а продуманная планировка должна помогать выполнять бытовые дела с легкостью, комфортом и удовольствием. А еще хочется, чтобы было красиво!</div>
             <div class="leader__text leader__text-expand"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, obcaecati pariatur. Unde quas aspernatur sit, placeat repellendus iusto vitae excepturi.                    </div>
             <div class="leader__button">раскрыть</div>
@@ -377,19 +473,31 @@
       </section>
       <section class="bonuses">
         <div class="container bonuses__container">
-          <div class="title bonuses__title"></div>
+          <div class="title bonuses__title">Спецпредложения и бонусы</div>
           <div class="swiper-container bonuses__swiper-container">
             <div class="swiper-wrapper bonuses__swiper-wrapper">
               <div class="swiper-slide bonuses__swiper-slide">
-                <div class="bonuses__card bonuses__card"><img class="bonuses__card-img bg-image" src="assets/img/bonuses/ascona.jpg" alt="bg">
+                <div class="bonuses__card bonuses__card">
+                  <picture class="bonuses__card-img bg-image">
+                    <source media="(min-width: 768px)" srcset="assets/img/bonuses/ascona-md.webp" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="assets/img/bonuses/ascona-md.jpg" type="image/jpg">
+                    <source media="(min-width: 320px)" srcset="assets/img/bonuses/ascona.webp" type="image/webp">
+                    <source media="(min-width: 320px)" srcset="assets/img/bonuses/ascona.jpg" type="image/jpg"><img class="lazyload" src="assets/img/bonuses/ascona.jpg" alt="bg">
+                  </picture>
                   <h3 class="bonuses__card-title">Купите кухню <span class="bonuses__card-subtitle">Ascona</span></h3>
                   <p class="bonuses__card-text">Столешница в подарок</p>
                 </div>
               </div>
               <div class="swiper-slide bonuses__swiper-slide">
-                <div class="bonuses__card bonuses__card"><img class="bonuses__card-img bg-image" src="assets/img/bonuses/ascona.jpg" alt="bg">
-                  <h3 class="bonuses__card-title">Купите кухню <span class="bonuses__card-subtitle">Ascona</span></h3>
-                  <p class="bonuses__card-text">Столешница в подарок</p>
+                <div class="bonuses__card bonuses__card--light">
+                  <picture class="bonuses__card-img bg-image">
+                    <source media="(min-width: 768px)" srcset="assets/img/bonuses/certificate-md.webp" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="assets/img/bonuses/certificate-md.jpg" type="image/jpg">
+                    <source media="(min-width: 320px)" srcset="assets/img/bonuses/certificate.webp" type="image/webp">
+                    <source media="(min-width: 320px)" srcset="assets/img/bonuses/certificate.jpg" type="image/jpg"><img class="lazyload" src="assets/img/bonuses/certificate.jpg" alt="bg">
+                  </picture>
+                  <h3 class="bonuses__card-title">Получи сертификат на 100 000 ₽ </h3>
+                  <p class="bonuses__card-text">До конца августа</p><img class="bonuses__card-label" src="assets/img/bonuses/certificate-label.png" alt="certificate-label">
                 </div>
               </div>
             </div>
@@ -400,7 +508,10 @@
       </section>
       <section class="contactUs">
         <picture class="contactUs__img">
-          <source srcset="assets/img/contactUs/bg-md.jpg" media="(min-width: 321px)"><img src="assets/img/contactUs/bg.jpg">
+          <source srcset="assets/img/contactUs/bg-lg.webp" media="(min-width: 1280px)" type="image/webp">
+          <source srcset="assets/img/contactUs/bg-lg.jpg" media="(min-width: 1280px)" type="image/jpg">
+          <source srcset="assets/img/contactUs/bg-md.webp" media="(min-width: 321px)" type="image/webp">
+          <source srcset="assets/img/contactUs/bg-md.jpg" media="(min-width: 321px)" type="image/jpg"><img src="assets/img/contactUs/bg.jpg">
         </picture>
         <div class="container contactUs__container">
           <h3 class="title contactUs__title">Приходите к нам, поговорим о вашем проекте</h3>
@@ -461,6 +572,7 @@
       }
     </script>
     <script src="assets/js/vendors~main.bundle.js"></script>
-    <script src="assets/js/main.bundle.js?v=1.1.1"></script>
+    <script src="assets/js/main.bundle.js?v=1.1.1"></script><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   </body>
 </html>

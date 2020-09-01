@@ -1,9 +1,7 @@
-// import $ from 'jquery';
-// import fancybox from '@fancyapps/fancybox';
+import $ from 'jquery';
+require('@fancyapps/fancybox');
 
-// export default function videoOpen {
-//     $('.articles__card-button').fancybox.open({
+export default function videoOpen() {
 
-//     });
 
-// }
+}

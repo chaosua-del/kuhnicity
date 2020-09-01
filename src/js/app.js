@@ -2,13 +2,12 @@ import {
     $,
     jQuery
 } from 'jquery';
-// export for others scripts to use
-// window.$ = $;
-// window.jQuery = jQuery;
-// import jQuery from 'jquery';
+
 import 'lazysizes';
 import Swiper from 'swiper/js/swiper.js';
-// import fancybox from '@fancyapps/fancybox/dist/jquery.fancybox.min';
+
+// import videoOpen from 'fancybox';
+
 
 import page from 'page';
 import forms from 'forms';
@@ -16,6 +15,10 @@ import sliders from 'sliders';
 import filters from 'filters';
 import svgReplace from 'svgReplace';
 import expand from 'expand';
+import hovers from 'hovers';
+
+// import fancybox from '@fancyapps/fancybox';
+
 
 
 let app = {
@@ -61,11 +64,18 @@ let app = {
         window.jQuery = $;
         window.app = app;
 
+
         app.document.ready(() => {
             sliders();
             filters();
             svgReplace();
             expand();
+            hovers();
+            // videoOpen();
+
+
+
+
         });
 
         // app.window.on('load', () => {
@@ -73,10 +83,12 @@ let app = {
 
         this.document.on(app.resizeEventName, () => {
             sliders();
+            hovers();
             // console.log('rezising');
         });
 
     },
+
 
     initScrollTo: function () {
         app.document.on('click', '.js-scrollto', function () {
@@ -193,3 +205,7 @@ let app = {
 
 };
 app.init();
+
+// import $ from 'jquery';
+
+// window.jQuery = $;

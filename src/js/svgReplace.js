@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 export default function svgReplace() {
     $('img.stages__card-number').each(function () {
-        console.log('hello');
+        // console.log('hello');
         var $img = $(this);
         var imgClass = $img.attr('class');
         var imgURL = $img.attr('src');
@@ -20,7 +20,7 @@ export default function svgReplace() {
     });
 
     $('img.feedback__card-arrow').each(function () {
-        console.log('hello');
+        // console.log('hello');
         var $img = $(this);
         var imgClass = $img.attr('class');
         var imgURL = $img.attr('src');
@@ -39,7 +39,7 @@ export default function svgReplace() {
     });
 
     $('.social__block-img').each(function () {
-        console.log('hello');
+        // console.log('hello');
         var $img = $(this);
         var imgClass = $img.attr('class');
         var imgURL = $img.attr('src');

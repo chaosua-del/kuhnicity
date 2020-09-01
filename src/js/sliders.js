@@ -32,6 +32,57 @@ export default function sliders() {
 
         social.translateTo(270);
 
+        const stages = new Swiper('.stages__swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            slidesOffsetAfter: 500,
+            updateOnWindowResize: false,
+            loop: false,
+            navigation: {
+                nextEl: '.stages__swiper-button-next',
+                prevEl: '.stages__swiper-button-prev',
+            },
+        });
+
+        stages.translateTo(270);
+
+        const banner = new Swiper('.banner__swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            freeMode: true,
+            loop: false,
+            slidesOffsetAfter: 2,
+        });
+
+    }
+
+    if (window.innerWidth >= 768 && window.innerWidth < 1280) {
+
+
+        const stages = new Swiper('.stages__swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            slidesOffsetAfter: 400,
+            updateOnWindowResize: false,
+            loop: false,
+            navigation: {
+                nextEl: '.stages__swiper-button-next',
+                prevEl: '.stages__swiper-button-prev',
+            },
+        });
+
+        stages.translateTo(318);
+
+        console.log('asdsad');
+
+        const banner = new Swiper('.banner__swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            freeMode: true,
+            loop: false,
+            slidesOffsetAfter: 2,
+        });
+
 
     }
 
@@ -43,19 +94,6 @@ export default function sliders() {
         slidesOffsetAfter: 0,
     });
 
-    const stages = new Swiper('.stages__swiper-container', {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        slidesOffsetAfter: 400,
-        updateOnWindowResize: false,
-        loop: false,
-        navigation: {
-            nextEl: '.stages__swiper-button-next',
-            prevEl: '.stages__swiper-button-prev',
-        },
-    });
-
-    stages.translateTo(270);
 
     const feedback = new Swiper('.feedback__swiper-container', {
         slidesPerView: 'auto',
@@ -73,13 +111,7 @@ export default function sliders() {
     feedback.translateTo(270);
 
 
-    const banner = new Swiper('.banner__swiper-container', {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        freeMode: true,
-        loop: false,
-        slidesOffsetAfter: 2,
-    });
+
 
     const articles = new Swiper('.articles__swiper-container', {
         slidesPerView: 'auto',

@@ -7,38 +7,41 @@ section.feedback
           .feedback__card
             .feedback__card-img
               img(src="assets/img/feedback/kitchen1.jpg", alt="kitchen")
-              .feedback__card-link
+              a(href="#").feedback__card-link
                 img(src="assets/img/feedback/card-link.svg", alt="arrow").feedback__card-arrow
-            .feedback__user
-              img.feedback__user-social(src="assets/img/feedback/vk.svg", alt="vk")
-              span.feedback__user-name Андрей Иванов
-            p.feedback__card-text Спасибо огромное, работа вашей команды бесценный вклад в счастье многих людей, а теперь и частичка моей радости😊 Все оказалось совсем не сложно и главное быстро!!! Вы огромные молодцы🙏 
-            .span.feedback__card-date 06.05.2019 в 15:20
-            a(href="#").feedback__card-button Перейти к отзыву
+            .feedback__info
+              .feedback__user
+                img.feedback__user-social(src="assets/img/feedback/vk.svg", alt="vk")
+                span.feedback__user-name Андрей Иванов
+              p.feedback__card-text Спасибо огромное, работа вашей команды бесценный вклад в счастье многих людей, а теперь и частичка моей радости😊 Все оказалось совсем не сложно и главное быстро!!! Вы огромные молодцы🙏 
+              .span.feedback__card-date 06.05.2019 в 15:20
+              a(href="#").feedback__card-button Перейти к отзыву
         .swiper-slide.feedback__swiper-slide
           .feedback__card
             .feedback__card-img
               img(src="assets/img/feedback/kitchen1.jpg", alt="kitchen")
-              .feedback__card-link
+              a(href="#").feedback__card-link
                 img(src="assets/img/feedback/card-link.svg", alt="arrow").feedback__card-arrow
-            .feedback__user
-              img.feedback__user-social(src="assets/img/feedback/vk.svg", alt="vk")
-              span.feedback__user-name Андрей Иванов
-            p.feedback__card-text Спасибо огромное, работа вашей команды бесценный вклад в счастье многих людей, а теперь и частичка моей радости😊 Все оказалось совсем не сложно и главное быстро!!! Вы огромные молодцы🙏 
-            .span.feedback__card-date 06.05.2019 в 15:20
-            a(href="#").feedback__card-button Перейти к отзыву
+            .feedback__info
+              .feedback__user
+                img.feedback__user-social(src="assets/img/feedback/vk.svg", alt="vk")
+                span.feedback__user-name Андрей Иванов
+              p.feedback__card-text Спасибо огромное, работа вашей команды бесценный вклад в счастье многих людей, а теперь и частичка моей радости😊 Все оказалось совсем не сложно и главное быстро!!! Вы огромные молодцы🙏 
+              .span.feedback__card-date 06.05.2019 в 15:20
+              a(href="#").feedback__card-button Перейти к отзыву
         .swiper-slide.feedback__swiper-slide
-          .feedback__card
+           .feedback__card
             .feedback__card-img
               img(src="assets/img/feedback/kitchen1.jpg", alt="kitchen")
-              .feedback__card-link
+              a(href="#").feedback__card-link
                 img(src="assets/img/feedback/card-link.svg", alt="arrow").feedback__card-arrow
-            .feedback__user
-              img.feedback__user-social(src="assets/img/feedback/vk.svg", alt="vk")
-              span.feedback__user-name Андрей Иванов
-            p.feedback__card-text Спасибо огромное, работа вашей команды бесценный вклад в счастье многих людей, а теперь и частичка моей радости😊 Все оказалось совсем не сложно и главное быстро!!! Вы огромные молодцы🙏 
-            .span.feedback__card-date 06.05.2019 в 15:20
-            a(href="#").feedback__card-button Перейти к отзыву
+            .feedback__info
+              .feedback__user
+                img.feedback__user-social(src="assets/img/feedback/vk.svg", alt="vk")
+                span.feedback__user-name Андрей Иванов
+              p.feedback__card-text Спасибо огромное, работа вашей команды бесценный вклад в счастье многих людей, а теперь и частичка моей радости😊 Все оказалось совсем не сложно и главное быстро!!! Вы огромные молодцы🙏 
+              .span.feedback__card-date 06.05.2019 в 15:20
+              a(href="#").feedback__card-button Перейти к отзыву
 
 
       .swiper-button-prev.feedback__swiper-button-prev
@@ -53,17 +56,26 @@ section.feedback
               .banner__card-info
                 span.banner__card-rate 4.9
                 a(href="#").banner__card-logo
-                  img(src="assets/img/feedback/otzovik.svg", alt="Otzovik")
+                  picture
+                    source(media="(min-width: 768px)", srcset="assets/img/feedback/otzovik-md.svg", type="image/svg+xml")
+                    source(media="(min-width: 320px)", srcset="assets/img/feedback/otzovik.svg", type="image/svg+xml")
+                    img(src="assets/img/feedback/otzovik-md.svg", alt="Otzovik")
               p.banner__card-quantity На основе 32 отзывов
             .banner__card
               .banner__card-info
                 span.banner__card-rate 4.9
                 a(href="#").banner__card-logo
-                  img(src="assets/img/feedback/otzovik.svg", alt="Otzovik")
+                  picture
+                    source(media="(min-width: 768px)", srcset="assets/img/feedback/zoon-md.svg", type="image/svg+xml")
+                    source(media="(min-width: 320px)", srcset="assets/img/feedback/zoon.svg", type="image/svg+xml")
+                    img(src="assets/img/feedback/otzovik.svg", alt="Otzovik")
               p.banner__card-quantity На основе 32 отзывов
             .banner__card
               .banner__card-info
                 span.banner__card-rate 4.9
                 a(href="#").banner__card-logo
-                  img(src="assets/img/feedback/otzovik.svg", alt="Otzovik")
+                  picture
+                    source(media="(min-width: 768px)", srcset="assets/img/feedback/recommend-md.svg", type="image/svg+xml")
+                    source(media="(min-width: 320px)", srcset="assets/img/feedback/recommend.svg", type="image/svg+xml")
+                    img(src="assets/img/feedback/otzovik.svg", alt="Otzovik")
               p.banner__card-quantity На основе 32 отзывов
