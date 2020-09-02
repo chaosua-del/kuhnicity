@@ -1513,7 +1513,8 @@ strong {
       color: #323232;
       margin-bottom: 17px; }
     .list__card-title2 {
-      margin-bottom: 49px; }
+      margin-bottom: 49px;
+      display: block; }
     .list__card-item {
       color: #6A6A6A;
       margin-bottom: 15px; }
@@ -1592,7 +1593,13 @@ strong {
     min-width: 798px;
     min-height: 216px;
     left: 50%;
-    transform: translateX(-50%); } }
+    transform: translateX(-50%); }
+  .list {
+    text-align: center; }
+    .list .contacts__social {
+      justify-content: center; }
+      .list .contacts__social .social__block-link:nth-child(3) {
+        margin-right: 0; } }
 
 @media (min-width: 768px) {
   .swiper-button-prev {
@@ -2049,24 +2056,56 @@ strong {
   .contactUs__description {
     width: 400px; }
   .list {
-    border-top: 3px solid #ECECEC; }
+    border-top: 3px solid #ECECEC;
+    text-align-last: left; }
     .list__container {
       border: none;
       display: flex;
       flex-wrap: wrap;
       padding-top: 68px;
-      padding-left: 46px; }
+      padding-left: 46px;
+      max-width: 768px;
+      margin-left: auto;
+      margin-right: auto; }
     .list__card {
-      margin-right: 129px;
       width: 242px; }
       .list__card:nth-child(2) .list__card-title {
-        min-width: 296px; }
+        min-width: 329px; }
+      .list__card:nth-child(odd) {
+        margin-right: 17px; }
+      .list__card:nth-child(5) {
+        flex-basis: 100%; }
+      .list__card:nth-child(6) {
+        flex-basis: 100%;
+        flex-direction: row;
+        flex-wrap: wrap; }
       .list__card-title {
-        line-height: 20px;
-        font-size: 16px; }
+        line-height: 25px;
+        font-size: 20px; }
       .list__card-item {
-        font-size: 16px;
-        line-height: 42px; } }
+        font-size: 20px;
+        line-height: 42px; }
+      .list__card-block {
+        width: 100%;
+        display: flex; }
+        .list__card-block:nth-child(1) .list__card-title {
+          margin-right: 33px; }
+        .list__card-block:nth-child(2) .list__card-title {
+          margin-right: 209px; }
+    .list .contacts__social {
+      justify-content: start; }
+  .contacts__phone {
+    font-size: 25px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.135em; }
+  .contacts__info {
+    font-size: 20px;
+    line-height: 118.49%;
+    /* identical to box height, or 24px */
+    letter-spacing: 0.035em; }
+  .footer__policy-text {
+    width: 444px; } }
 
 @media (min-width: 1280px) {
   .title {
@@ -2313,7 +2352,50 @@ strong {
         margin-right: 14px; }
         .contactUs .mainForm__input-group {
           display: inline-block;
-          width: auto; } }
+          width: auto; }
+  .list {
+    padding-left: 0;
+    padding-right: 0; }
+    .list__container {
+      max-width: 1280px;
+      padding-left: 0;
+      position: relative; }
+    .list__card:nth-child(1) {
+      width: 169px; }
+    .list__card:nth-child(5) {
+      flex-basis: auto; }
+    .list__card-contacts {
+      position: absolute;
+      right: 0;
+      top: 254px;
+      right: 50px; }
+    .list__card-title {
+      font-size: 16px; }
+    .list__card-item {
+      font-size: 16px; }
+    .list__card-block {
+      width: auto; }
+      .list__card-block:nth-child(1) {
+        order: 2; }
+  .footer__container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between; }
+  .footer__policy {
+    flex-direction: row;
+    align-items: baseline; }
+    .footer__policy-text {
+      font-size: 12px;
+      width: 333px;
+      line-height: 42px;
+      /* identical to box height, or 350% */
+      letter-spacing: 0.035em;
+      margin-right: 48px; }
+    .footer__policy-link {
+      font-size: 12px;
+      line-height: 42px;
+      /* identical to box height, or 350% */
+      letter-spacing: 0.035em; } }
 
 @media (min-width: 1920px) {
   .title {
@@ -2537,6 +2619,18 @@ strong {
       font-size: 14px;
       width: 279px; }
       .contactUs__policy a {
-        color: #FF3D00; } }
+        color: #FF3D00; }
+  .list__container {
+    max-width: 1920px; }
+  .list__card-title {
+    font-size: 20px;
+    line-height: 25px; }
+  .footer__policy-text {
+    line-height: 42px;
+    font-size: 16px;
+    width: 444px; }
+  .footer__policy-link {
+    font-size: 16px;
+    line-height: 42px; } }
 
 /*# sourceMappingURL=maps/common.css.map */

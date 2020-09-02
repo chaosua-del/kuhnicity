@@ -28,6 +28,20 @@
 
         }
     }
+
+    .list {
+        text-align: center;
+
+        .contacts__social {
+            justify-content: center;
+
+            .social__block-link {
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }
 
 @media(min-width: 768px) {
@@ -854,6 +868,7 @@
     // footer-768
     .list {
         border-top: 3px solid #ECECEC;
+        text-align-last: left;
 
         &__container {
             border: none;
@@ -861,28 +876,94 @@
             flex-wrap: wrap;
             padding-top: 68px;
             padding-left: 46px;
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         &__card {
-            margin-right: 129px;
+            // margin-right: 129px;
             width: 242px;
 
 
             &:nth-child(2) {
                 .list__card-title {
-                    min-width: 296px;
+                    min-width: 329px;
                 }
             }
 
+            &:nth-child(odd) {
+                margin-right: 17px;
+            }
+
+            &:nth-child(5) {
+                flex-basis: 100%;
+            }
+
+            &:nth-child(6) {
+                flex-basis: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+
+
+            }
+
             &-title {
-                line-height: 20px;
-                font-size: 16px;
+                line-height: 25px;
+                font-size: 20px;
             }
 
             &-item {
-                font-size: 16px;
+                font-size: 20px;
                 line-height: 42px;
 
+            }
+
+            &-block {
+                width: 100%;
+                display: flex;
+
+                &:nth-child(1) {
+                    .list__card-title {
+                        margin-right: 33px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    .list__card-title {
+                        margin-right: 209px;
+                    }
+                }
+            }
+        }
+
+        .contacts__social {
+            justify-content: start;
+
+        }
+    }
+
+    .contacts {
+        &__phone {
+            font-size: 25px;
+            line-height: 31px;
+            /* identical to box height */
+            letter-spacing: 0.135em;
+        }
+
+        &__info {
+            font-size: 20px;
+            line-height: 118.49%;
+            /* identical to box height, or 24px */
+            letter-spacing: 0.035em;
+        }
+    }
+
+    .footer {
+        &__policy {
+            &-text {
+                width: 444px;
             }
         }
     }
@@ -1341,6 +1422,83 @@
         }
     }
 
+    // footer-1280
+    .list {
+        padding-left: 0;
+        padding-right: 0;
+
+        &__container {
+            max-width: 1280px;
+            padding-left: 0;
+            position: relative;
+        }
+
+        &__card {
+            &:nth-child(1) {
+                width: 169px;
+            }
+
+            &:nth-child(5) {
+                flex-basis: auto;
+            }
+
+            &-contacts {
+                position: absolute;
+                right: 0;
+                top: 254px;
+                right: 50px;
+            }
+
+            &-title {
+                font-size: 16px;
+            }
+
+            &-item {
+                font-size: 16px;
+            }
+
+            &-block {
+                width: auto;
+
+                &:nth-child(1) {
+                    order: 2;
+                }
+            }
+        }
+
+
+    }
+
+    .footer {
+        &__container {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        &__policy {
+            flex-direction: row;
+            align-items: baseline;
+
+            &-text {
+                font-size: 12px;
+                width: 333px;
+                line-height: 42px;
+                /* identical to box height, or 350% */
+                letter-spacing: 0.035em;
+                margin-right: 48px;
+
+            }
+
+            &-link {
+                font-size: 12px;
+                line-height: 42px;
+                /* identical to box height, or 350% */
+                letter-spacing: 0.035em;
+            }
+        }
+    }
+
     // end-1280
 }
 
@@ -1786,6 +1944,35 @@
 
             a {
                 color: $color-red;
+            }
+        }
+    }
+
+    // footer-1920
+    .list {
+        &__container {
+            max-width: 1920px;
+        }
+
+        &__card {
+            &-title {
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .footer {
+        &__policy {
+            &-text {
+                line-height: 42px;
+                font-size: 16px;
+                width: 444px;
+            }
+
+            &-link {
+                font-size: 16px;
+                line-height: 42px;
             }
         }
     }
