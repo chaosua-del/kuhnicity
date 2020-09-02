@@ -1,12 +1,16 @@
 .bonuses {
     background: #F2F2F2;
 
+    &__button {
+        display: none;
+    }
+
     &__container {
         padding-right: 0;
     }
 
     &__swiper-wrapper {
-        padding-bottom: 100px;
+        padding-bottom: 165px;
         width: 270px !important;
     }
 
@@ -20,7 +24,11 @@
 
             &-next,
             &-prev {
-                top: 450px;
+                top: 441px;
+            }
+
+            &-next {
+                right: 24px;
             }
         }
     }

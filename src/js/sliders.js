@@ -62,7 +62,7 @@ export default function sliders() {
         const stages = new Swiper('.stages__swiper-container', {
             slidesPerView: 'auto',
             spaceBetween: 0,
-            slidesOffsetAfter: 400,
+            slidesOffsetAfter: 500,
             updateOnWindowResize: false,
             loop: false,
             navigation: {

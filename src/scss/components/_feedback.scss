@@ -8,7 +8,7 @@
 
     &__swiper-wrapper {
         width: 270px !important;
-        padding-bottom: 120px;
+        padding-bottom: 102px;
     }
 
     &__swiper-slide {
@@ -48,7 +48,9 @@
         // flex-direction: row;
 
         &-text {
-            margin-bottom: 24px;
+            // margin-bottom: 24px;
+            line-height: 143%;
+            width: 211px;
         }
 
         &-img {
@@ -108,6 +110,7 @@
             // text-decoration: underline;
             // text-decoration-color: rgba(255, 61, 0, 0.21);
             // text-underline-position: under;
+            display: block;
 
             &::after {
                 content: url('../img/feedback/feedback-button-arrow.svg');
@@ -173,7 +176,7 @@
         }
 
         &-rate {
-            font-size: 20px;
+            font-size: 25px;
             // line-height: 56px;
             /* identical to box height */
             color: #323232;

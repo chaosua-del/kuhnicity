@@ -14,11 +14,46 @@
 
         &-wrapper {
             width: 270px !important;
-            padding-bottom: 200px !important;
+            padding-bottom: 152px !important;
         }
 
         &-slide {
             margin-right: 3px;
+
+            &:nth-child(1) {
+                .stages__card-number {
+                    bottom: -20px;
+                    left: -33px;
+
+                }
+            }
+
+            &:nth-child(2) {
+                .stages__card-number {
+                    width: 207px;
+                    bottom: -18px;
+                    left: -27px;
+
+                }
+            }
+
+            &:nth-child(3) {
+                .stages__card-number {
+                    width: 207px;
+                    bottom: -22px;
+                    left: -44px;
+
+                }
+            }
+
+            &:nth-child(4) {
+                .stages__card-number {
+                    width: 172px;
+                    bottom: -17px;
+                    left: -8px;
+
+                }
+            }
         }
 
         &-button {
@@ -46,9 +81,10 @@
         height: 448px;
         // border: 1px solid black;
         // background-color: green;
-        padding-top: 50px;
+        padding-top: 45px;
         position: relative;
         transition: color 0.2s ease-in-out;
+        overflow: hidden;
 
         &-img {
             position: absolute;
@@ -62,11 +98,13 @@
 
         &-title {
             font-size: 14px;
-            line-height: 120.3%;
+            line-height: 30px;
             /* or 18px */
             letter-spacing: 0.105em;
             text-transform: uppercase;
-            margin-bottom: 18px;
+            margin-bottom: 13px;
+            width: 161px;
+            font-weight: normal;
         }
 
         &-description {
@@ -93,6 +131,8 @@
                 margin-right: auto;
             }
         }
+
+
 
     }
 

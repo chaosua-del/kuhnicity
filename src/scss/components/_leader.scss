@@ -1,10 +1,23 @@
 .leader {
     background-color: #F2F2F2;
-    padding-top: 32px;
-    padding-bottom: 116px;
+    padding-top: 66px;
+    padding-bottom: 103px;
+
 
     &__container {
         padding-right: 0;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__title {
+        display: none;
+    }
+
+    &__text {
+        width: 270px;
+        line-height: 144%;
     }
 
     &__info {
@@ -24,9 +37,11 @@
             overflow: hidden;
             margin-bottom: 24px;
 
-            img {
-                bottom: 27px;
-            }
+            // img {
+            //     bottom: 26px;
+            //     left: -23px;
+            //     width: 95%;
+            // }
         }
 
         &-name {
@@ -49,6 +64,8 @@
             height: 49px;
             background: #F2F2F2 url('../img/leader/leader-sign.svg') no-repeat center / cover;
         }
+
+
     }
 
     &__text {
@@ -71,7 +88,7 @@
         display: flex;
         // justify-content: center;
         // align-items: center;
-        margin-top: 46px;
+        margin-top: 34px;
         cursor: pointer;
 
         &::after {

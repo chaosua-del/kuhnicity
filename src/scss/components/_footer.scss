@@ -8,12 +8,23 @@
         padding-left: 0;
         padding-right: 0;
         padding-top: 44px;
+        display: flex;
+        flex-direction: column;
     }
 
     &__card {
         display: flex;
         flex-direction: column;
-        margin-bottom: 53px;
+        margin-bottom: 47px;
+        order: 2;
+
+        &:nth-child(5) {
+            order: 1;
+        }
+
+        &:nth-last-child(n+6) {
+            order: 0;
+        }
 
         &-title {
             font-size: 16px;
@@ -32,7 +43,7 @@
 
         &-item {
             color: #6A6A6A;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         &-subtitle {
@@ -42,6 +53,11 @@
             letter-spacing: 0.135em;
             text-transform: uppercase;
             color: #323232;
+        }
+
+        &-contacts {
+            order: 2;
+            margin-top: -7px;
         }
 
 
@@ -73,6 +89,8 @@
     }
 
     &__social {
+        margin-bottom: 23px;
+
         .social__block-link {
             width: 46px;
             height: 46px;

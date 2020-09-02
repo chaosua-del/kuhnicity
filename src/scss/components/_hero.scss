@@ -14,7 +14,7 @@
         max-width: 671px;
         left: 50%;
         transform: translateX(-50%);
-        padding-top: 79px;
+        padding-top: 37px;
         padding-bottom: 53px;
         bottom: 0;
         // left: 0;
@@ -43,10 +43,12 @@
         color: #494949;
         width: 230px;
         margin-bottom: 43px;
+        line-height: 144%;
     }
 
     &__input {
-        margin-bottom: 18px;
+        margin-bottom: 16px;
+        font-size: 16px;
     }
 
     &__info {
@@ -61,6 +63,7 @@
         &-text {
             color: #000000;
             width: 131px;
+            line-height: 143%;
         }
 
         &-number {
