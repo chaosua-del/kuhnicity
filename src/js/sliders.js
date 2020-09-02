@@ -134,7 +134,7 @@ export default function sliders() {
         updateOnWindowResize: false,
         // freeMode: true,
         // loop: false,
-        slidesOffsetAfter: 0,
+        slidesOffsetAfter: 20,
         navigation: {
             nextEl: '.bonuses__swiper-button-next',
             prevEl: '.bonuses__swiper-button-prev',

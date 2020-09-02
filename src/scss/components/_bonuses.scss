@@ -43,6 +43,10 @@
         padding-top: 65px;
         position: relative;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
 
         &::after {
             content: '';
@@ -69,7 +73,7 @@
             letter-spacing: -0.025em;
             color: #FFFFFF;
             z-index: 10;
-            margin-bottom: 139px;
+            // margin-bottom: 139px;
             width: 162px;
             margin-left: auto;
             margin-right: auto;
@@ -80,6 +84,7 @@
         }
 
         &-text {
+            margin-bottom: 72px;
             z-index: 10;
             font-size: 14px;
             line-height: 120.3%;
