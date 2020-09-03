@@ -28,6 +28,17 @@ section.bonuses
             p.bonuses__card-text До конца августа
             img(src="assets/img/bonuses/certificate-label.png", alt="certificate-label").bonuses__card-label
 
+        .swiper-slide.bonuses__swiper-slide
+          .bonuses__card.bonuses__card--light
+            picture.bonuses__card-img.bg-image
+              source(media="(min-width: 768px)", srcset="assets/img/bonuses/discount-md.webp", type="image/webp")
+              source(media="(min-width: 768px)", srcset="assets/img/bonuses/discount-md.jpg", type="image/jpg")
+              source(media="(min-width: 320px)", srcset="assets/img/bonuses/discount.webp", type="image/webp")
+              source(media="(min-width: 320px)", srcset="assets/img/bonuses/discount.jpg", type="image/jpg")
+              img(src="assets/img/bonuses/discount-md.jpg", alt="bg").lazyload
+            h3.bonuses__card-title Скидка 40% на все модели месяца
+            p.bonuses__card-text Бесплатный дизайн-проект в подарок
+
 
       .swiper-button-prev.bonuses__swiper-button-prev
       .swiper-button-next.bonuses__swiper-button-next

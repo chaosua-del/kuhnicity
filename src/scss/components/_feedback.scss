@@ -51,6 +51,8 @@
             // margin-bottom: 24px;
             line-height: 143%;
             width: 211px;
+            height: 160px;
+            overflow: hidden;
         }
 
         &-img {
@@ -76,6 +78,16 @@
             position: absolute;
             right: 9px;
             bottom: 19px;
+
+            &--light {
+                border: 1px solid #ffffff;
+
+                .feedback__card-arrow {
+                    path {
+                        stroke: rgb(255, 255, 255);
+                    }
+                }
+            }
         }
 
         &-arrow {
@@ -121,6 +133,8 @@
                 right: -20px;
             }
         }
+
+
     }
 
     &__user {
