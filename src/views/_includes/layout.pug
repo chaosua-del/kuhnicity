@@ -18,8 +18,9 @@ html(lang="ru", class="no-js")
         block footer
             include blocks/footer
         
-        .hidden
-            // include popups here
+        // include popups here
+        block modal
+            include blocks/modal
         
         block styles
             link(rel='stylesheet', href='assets/css/common.css?v=' + PACKAGE.version)

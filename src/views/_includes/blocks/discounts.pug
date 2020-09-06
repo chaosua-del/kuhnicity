@@ -1,7 +1,11 @@
 section.discounts 
   .container.discounts__container 
-    //- .discounts__marquee
-    //-   marquee(behavior="scroll", direction="left") Акции Акции Акции Акции Акции Акции Акции Акции
+    .discounts__marquee(data-duration='5000', data-gap='10', data-duplicated='true') 
+      span Акции
+      span Акции
+      span Акции
+
+    
     .swiper-container.discounts__swiper-container
       .swiper-wrapper.discounts__swiper-wrapper
         .swiper-slide.discounts__swiper-slide

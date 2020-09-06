@@ -1,0 +1,14 @@
+.modal
+  .modal__wrap
+    button.modal__close +
+
+    .title.modal__title Оставить заявку 
+    .modal__description Оставьте свои контактные данные, менеджер свяжется с Вами в течение 15 минут.
+
+    form(action="#").mainForm
+      .mainForm__input-group
+        input(type="text", placeholder="Ваше имя").mainForm__input.contactUs__input
+        input(type="phone", placeholder="Ваш телефон").mainForm__input.contactUs__input
+      button.mainForm__button.button.button--primary.contactUs__button Оставить заявку
+    p.policy.contactUs__policy Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+    

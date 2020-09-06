@@ -125,7 +125,7 @@
         }
 
         &__about {
-            display: block;
+            display: flex;
         }
 
         &__logo {
@@ -1235,6 +1235,42 @@
 
     }
 
+    // modal-768
+    .modal {
+        &__wrap {
+            padding-left: 120px;
+            padding-right: 120px;
+            padding-bottom: 101px;
+            padding-top: 66px;
+            width: 672px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__title {
+            margin-bottom: 25px;
+        }
+
+        &__description {
+            width: 428px;
+            margin-bottom: 46px;
+        }
+
+        .mainForm__input {
+            width: 100%;
+            padding-bottom: 13px;
+        }
+
+        .mainForm {
+            width: 509px;
+        }
+
+        .policy {
+            width: 313px;
+            margin-top: 26px;
+        }
+    }
+
     // end-768
 }
 
@@ -2171,6 +2207,31 @@
         &__visa {
             top: 8px;
         }
+    }
+
+    // modal-1280
+    .modal {
+        &__wrap {
+            width: 895px;
+            padding-left: 193px;
+            padding-right: 193px;
+            padding-bottom: 84px;
+            padding-top: 64px;
+        }
+
+        .button {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .policy {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 22px;
+            font-size: 14px;
+        }
+
+
     }
 
     // end-1280
@@ -3182,6 +3243,37 @@
 
         &__visa {
             margin-right: 8px;
+        }
+    }
+
+    // modal-1920
+    .modal {
+        &__wrap {
+            width: 1305px;
+            padding-top: 97px;
+            padding-bottom: 81px;
+        }
+
+        .mainForm {
+            width: 597px;
+
+            &__input {
+                padding-bottom: 21px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 33px;
+        }
+
+        &__description {
+            margin-bottom: 78px;
+            width: 566px;
+        }
+
+        .policy {
+            margin-top: 42px;
+            width: 463px;
         }
     }
 

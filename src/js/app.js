@@ -6,7 +6,9 @@ import {
 import 'lazysizes';
 import Swiper from 'swiper/js/swiper.js';
 
-// import videoOpen from 'fancybox';
+// import marquee from 'libs/jquery.marquee.min.js';
+
+
 
 
 import page from 'page';
@@ -16,6 +18,7 @@ import filters from 'filters';
 import svgReplace from 'svgReplace';
 import expand from 'expand';
 import hovers from 'hovers';
+import modals from 'modals';
 
 // import fancybox from '@fancyapps/fancybox';
 
@@ -71,9 +74,8 @@ let app = {
             svgReplace();
             expand();
             hovers();
-            // videoOpen();
-
-
+            modals();
+            window.$mq = window.$('.discounts__marquee').marquee();
 
 
         });

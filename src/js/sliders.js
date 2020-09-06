@@ -143,4 +143,6 @@ export default function sliders() {
 
     bonuses.translateTo(270);
 
+
+
 }

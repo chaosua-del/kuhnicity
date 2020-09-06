@@ -88,21 +88,78 @@
     }
 
     &__about {
-        align-self: flex-start;
+        // align-self: flex-start;
         margin-right: auto;
-        margin-left: 32px;
+        margin-left: 12px;
+        padding-left: 19px;
+        padding-right: 19px;
         font-size: 16px;
         line-height: 157%;
         /* or 25px */
         letter-spacing: -0.02em;
         color: #333333;
         display: none;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        // display: flex;
+        align-items: center;
 
-        &::after {
-            content: url('../img/expand-arrow.svg');
-            margin-left: 6px;
+        // transform: translateZ(100);
+        // transition: background-color 0.2s ease-in-out;
+
+
+
+        &-menu {
+            position: absolute;
+            top: -12px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            z-index: 100;
+            background-color: #fff;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+            flex-shrink: 0;
+
+
+        }
+
+        &-item {
+            // background-color: #fff;
+            font-size: 12px;
+            line-height: 246.5%;
+            /* or 30px */
+            letter-spacing: 0.035em;
+            color: #A0A0A0;
+            // flex-shrink: 0;
+
+            &:nth-child(1) {
+                margin-top: 44px;
+            }
+        }
+
+        span {
+            z-index: 10000;
+
+
+            &::after {
+                content: '';
+                width: 8px;
+                height: 4px;
+                background: url('../img/expand-arrow.svg') no-repeat center / cover;
+                margin-left: 6px;
+                display: inline-block;
+                margin-bottom: 2px;
+                transition: transform 0.2s ease-in-out;
+            }
         }
     }
+
 
     &__menu {
         display: none;
@@ -131,4 +188,24 @@
     line-height: 120.3%;
     text-transform: uppercase;
     border-bottom: 1px solid rgba(21, 21, 21, 0.22);
+}
+
+.header__about--active {
+    background-color: #fff;
+
+    .header__about {
+        &-menu {
+            // max-height: 210px;
+            min-height: 210px;
+            opacity: 1;
+        }
+
+    }
+
+    span {
+        &::after {
+            transform: rotate(180deg) !important;
+            // display: none !important;
+        }
+    }
 }

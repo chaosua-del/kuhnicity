@@ -1,3 +1,5 @@
+// import $ from 'jquery';
+
 export default function expand() {
     // making collapsible text in section leader
     const coll = document.querySelector('.leader__button')
@@ -10,5 +12,12 @@ export default function expand() {
         } else {
             content.style.maxHeight = content.scrollHeight + 'px';
         }
-    })
+    });
+
+    const headerButton = document.querySelector('.header__about');
+
+    headerButton.addEventListener('click', event => {
+        headerButton.classList.toggle('header__about--active');
+
+    });
 }
