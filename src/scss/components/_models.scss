@@ -1,5 +1,7 @@
 .models {
     padding-top: 71px;
+    background-color: #f4f4f4;
+    padding-bottom: 151px;
 
     &__swiper-slide {
         // margin-right: 33px;
@@ -46,6 +48,7 @@
         /* identical to box height, or 17px */
         letter-spacing: 0.105em;
         text-transform: uppercase;
+        margin-right: auto;
 
         &::after {
             content: url('../img/button-arrow.svg');

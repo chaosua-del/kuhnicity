@@ -86,7 +86,7 @@
                     <h3 class="expand__item-header">Стиль</h3><a class="expand__listItem" href="#">Классические</a><a class="expand__listItem" href="#">Лофт</a><a class="expand__listItem" href="#">Модерн</a><a class="expand__listItem" href="#">Скандинавский</a><a class="expand__listItem" href="#">Прованс</a><a class="expand__listItem" href="#">Хай-тек</a><a class="expand__listItem" href="#">Английский</a><a class="expand__listItem" href="#">Итальянский</a><a class="expand__listItem" href="#">Неоклассика</a><a class="expand__listItem" href="#">Ар-деко</a><a class="expand__listItem" href="#">Кантри</a><a class="expand__listItem" href="#">Минимализм</a><a class="expand__listItem" href="#">Современные</a>
                   </div>
                   <div class="swiper-slide expand__swiper-slide">
-                    <h3 class="expand__item-header">Фасад</h3><a class="expand__listItem" href="#">Массив</a><a class="expand__listItem" href="#">"Эко-шпон"</a><a class="expand__listItem" href="#">ЛДСП</a><a class="expand__listItem" href="#">МДФ</a><a class="expand__listItem" href="#">Пластик</a><a class="expand__listItem" href="#">Акрил</a><a class="expand__listItem" href="#">Эмаль</a><a class="expand__listItem" href="#">Пленка</a><a class="expand__listItem" href="#">ПВХ </a><a class="expand__listItem" href="#">TSS-плита</a>
+                    <h3 class="expand__item-header">Стиль</h3><a class="expand__listItem" href="#">Классические</a><a class="expand__listItem" href="#">Лофт</a><a class="expand__listItem" href="#">Модерн</a><a class="expand__listItem" href="#">Скандинавский</a><a class="expand__listItem" href="#">Прованс</a><a class="expand__listItem" href="#">Хай-тек</a><a class="expand__listItem" href="#">Английский</a><a class="expand__listItem" href="#">Итальянский</a><a class="expand__listItem" href="#">Неоклассика</a><a class="expand__listItem" href="#">Ар-деко</a><a class="expand__listItem" href="#">Кантри</a><a class="expand__listItem" href="#">Минимализм</a><a class="expand__listItem" href="#">Современные</a>
                   </div>
                   <div class="swiper-slide expand__swiper-slide">
                     <h3 class="expand__item-header">Покрытие</h3><a class="expand__listItem" href="#"> Глянец обычный</a><a class="expand__listItem" href="#">Ультра глянец</a><a class="expand__listItem" href="#">Матовый</a><a class="expand__listItem" href="#">Soft tuch</a><a class="expand__listItem" href="#">С патиной</a><a class="expand__listItem" href="#">Поталь</a><a class="expand__listItem" href="#">Синхро</a>
@@ -131,7 +131,7 @@
               </div>
             </div>
             <div class="expand__item">
-              <button class="expand__collapsible" data-bg="assets/img/header/wardrobes.jpg">Шкафы-купе</button>
+              <button class="expand__collapsible" data-bg="assets/img/header/wardrobes.jpg" data-isopen="true">Шкафы-купе</button>
               <div class="swiper-container expand__swiper-container">
                 <div class="swiper-wrapper expand__swiper-wrapper">
                   <div class="swiper-slide expand__swiper-slide">
@@ -270,8 +270,7 @@
           </div>
         </div>
         <div class="container header__container">
-          <button class="header__block-open">каталог</button>
-          <div class="header__logo"> </div>
+          <button class="header__block-open">каталог</button><a class="header__logo" href="index.html"> </a>
           <button class="header-button header__block-button">РАссчитать кухню</button>
         </div>
       </div>
@@ -332,17 +331,14 @@
                 </div>
               </div>
               <div class="swiper-slide discounts__swiper-slide">
-                <div class="discounts__card"><img class="discounts__card-bg" src="assets/img/discounts/1.webp">
-                  <h3 class="title discounts__card-title" data-swiper-parallax="-50">Скидка 40% на все модели месяца</h3>
-                  <p class="discounts__card-description" data-swiper-parallax="-50">Акции и спецпредложения для ещё более выгодной покупки кухни вашей мечты. А ещё мы бесплатно предлагаем дизайн-проект.</p>
-                  <button class="button button--light discounts__card-button" data-swiper-parallax="-50">Получить скидку</button>
+                <div class="discounts__card"><img class="discounts__card-bg" src="assets/img/discounts/2.webp">
+                  <p class="discounts__card-subtitle" data-swiper-parallax="-50">Заголовок акции</p>
                 </div>
               </div>
               <div class="swiper-slide discounts__swiper-slide">
                 <div class="discounts__card"><img class="discounts__card-bg" src="assets/img/discounts/1.webp">
-                  <h3 class="title discounts__card-title" data-swiper-parallax="-50">Скидка 40% на все модели месяца</h3>
+                  <h3 class="title discounts__card-title" data-swiper-parallax="-50">Дарим 150 000 ₽  на новую кухню</h3>
                   <p class="discounts__card-description" data-swiper-parallax="-50">Акции и спецпредложения для ещё более выгодной покупки кухни вашей мечты. А ещё мы бесплатно предлагаем дизайн-проект.</p>
-                  <button class="button button--light discounts__card-button" data-swiper-parallax="-50">Получить скидку</button>
                 </div>
               </div>
             </div>
@@ -485,6 +481,23 @@
           <button class="button button--primary models__button">
             <h3 class="title models__button-title">127 моделей</h3><span class="models__button-subtitle">со скидкой</span><span class="models__button-text">Посмотреть все</span>
           </button>
+        </div>
+      </section>
+      <section class="designers">
+        <div class="container designers__container">
+          <h1 class="designers__title">150 дизайнеров</h1>
+          <div class="designers__img"> 
+            <picture>
+              <source media="(min-width: 1920px)" srcset="assets/img/designers/designers-xl.webp" type="image/webp">
+              <source media="(min-width: 1920px)" srcset="assets/img/designers/designers-xl.png" type="image/png">
+              <source media="(min-width: 1280px)" srcset="assets/img/designers/designers-md.webp" type="image/webp">
+              <source media="(min-width: 1280px)" srcset="assets/img/designers/designers-md.png" type="image/png">
+              <source media="(min-width: 320px)" srcset="assets/img/designers/designers.webp" type="image/webp">
+              <source media="(min-width: 320px)" srcset="assets/img/designers/designers.png" type="image/png"><img src="assets/img/designers/designers-xl.png" alt="designers-img">
+            </picture>
+          </div>
+          <p class="designers__description">150 дизайнеров-архитекторов ежедневно создают пространства индивидуально под каждого клиента. Получите бесплатный дизайн-проект под ваши предпочтения.  </p>
+          <button class="button button--dark designers__button">Бесплатный дизайн-проект</button>
         </div>
       </section>
       <section class="stages">
