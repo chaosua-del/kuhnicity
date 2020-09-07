@@ -1,0 +1,11 @@
+@media (min-width: 1280px) {
+    .expand {
+        &__listItem {
+            transition: color 0.2s ease-in-out;
+
+            &:hover {
+                color: $color-red;
+            }
+        }
+    }
+}
