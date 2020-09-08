@@ -1,0 +1,19 @@
+block config
+  - var pagetitle = 'Каталог'
+
+block styles
+  link(rel='stylesheet', href='assets/css/common.css?v=' + PACKAGE.version)
+
+block header
+  include _includes/blocks/header
+
+block footer
+  include _includes/blocks/footer
+        
+// include popups here
+block modal
+  include _includes/blocks/modal
+
+script(src='assets/js/vendors~main.bundle.js')
+script(src='assets/js/main.bundle.js?v=' + PACKAGE.version)
+
