@@ -19,6 +19,7 @@ import svgReplace from 'svgReplace';
 import expand from 'expand';
 import hovers from 'hovers';
 import modals from 'modals';
+import customCursor from 'customCursor';
 
 // import fancybox from '@fancyapps/fancybox';
 
@@ -72,6 +73,7 @@ let app = {
             sliders();
             filters();
             svgReplace();
+            customCursor();
             expand();
             hovers();
             modals();

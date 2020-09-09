@@ -1018,6 +1018,29 @@ strong {
   .discounts__marquee span {
     display: inline-block;
     margin-right: 31px; }
+  .discounts__hover-block {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 2000; }
+    .discounts__hover-block:hover {
+      cursor: none; }
+  .discounts__hover-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+  .discounts__hover-cursor {
+    z-index: 2000;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease-in-out;
+    width: 182px;
+    height: 182px;
+    cursor: none; }
 
 .production__wrap {
   display: flex;
@@ -1951,7 +1974,15 @@ strong {
   .expand__listItem {
     transition: color 0.2s ease-in-out; }
     .expand__listItem:hover {
-      color: #FF3D00; } }
+      color: #FF3D00; }
+  .header__menu-item a {
+    transition: 0.2s ease-in-out; }
+    .header__menu-item a:hover {
+      color: #FF3D00; }
+  .button {
+    transition: background-color 0.2s ease-in-out; }
+  .button--primary:hover {
+    background-color: #232323; } }
 
 @media (min-width: 321px) {
   .production__wrap {
@@ -3503,6 +3534,8 @@ strong {
     margin-right: 94px; }
   .header__contacts-phone {
     margin-right: 16px; }
+  .header__contacts-button {
+    border-bottom-color: transparent; }
   .header__block-open::before {
     content: url("../img/header/header-burger-xl.svg");
     margin-right: 10px; }

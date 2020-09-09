@@ -8,4 +8,32 @@
             }
         }
     }
+
+    .header__menu-item{
+        a {
+
+            transition: 0.2s ease-in-out;
+            &:hover {
+                color: $color-red;
+            }
+        }
+    }
+
+    .button {
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    .button--primary {
+        &:hover {
+            background-color: #232323;
+        }
+    }
+
+    // .discounts__swiper-slide {
+    //     cursor: url('../img/discounts/cursor.png') 25 15, crosshair;
+    //     // &:nth-child(3) {
+    //     //     .discounts__card {
+    //     //     }
+    //     // }
+    // }
 }

@@ -19,7 +19,13 @@ section.discounts
             img(src="assets/img/discounts/2.webp").discounts__card-bg 
             p.discounts__card-subtitle(data-swiper-parallax="-50") Заголовок акции
         .swiper-slide.discounts__swiper-slide
-          .discounts__card
+          .discounts__card#customcursor
+            //- .discounts__hover-block
+            //-     .discounts__hover-wrap
+            picture.discounts__hover-cursor
+              source(media="(min-width: 1920px)", srcset="assets/img/discounts/cursor-lg.png", type="image/png")
+              source(media="(min-width: 1280px)", srcset="assets/img/discounts/cursor.png", type="image/png")
+              img(src="assets/img/discounts/cursor-lg.png", alt="cursor")
             img(src="assets/img/discounts/1.webp").discounts__card-bg 
             h3.title.discounts__card-title(data-swiper-parallax="-50") Дарим 150 000 ₽  на новую кухню
             p.discounts__card-description(data-swiper-parallax="-50") Акции и спецпредложения для ещё более выгодной покупки кухни вашей мечты. А ещё мы бесплатно предлагаем дизайн-проект.

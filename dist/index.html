@@ -336,7 +336,11 @@
                 </div>
               </div>
               <div class="swiper-slide discounts__swiper-slide">
-                <div class="discounts__card"><img class="discounts__card-bg" src="assets/img/discounts/1.webp">
+                <div class="discounts__card" id="customcursor">
+                  <picture class="discounts__hover-cursor">
+                    <source media="(min-width: 1920px)" srcset="assets/img/discounts/cursor-lg.png" type="image/png">
+                    <source media="(min-width: 1280px)" srcset="assets/img/discounts/cursor.png" type="image/png"><img src="assets/img/discounts/cursor-lg.png" alt="cursor">
+                  </picture><img class="discounts__card-bg" src="assets/img/discounts/1.webp">
                   <h3 class="title discounts__card-title" data-swiper-parallax="-50">Дарим 150 000 ₽  на новую кухню</h3>
                   <p class="discounts__card-description" data-swiper-parallax="-50">Акции и спецпредложения для ещё более выгодной покупки кухни вашей мечты. А ещё мы бесплатно предлагаем дизайн-проект.</p>
                 </div>
