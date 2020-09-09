@@ -126,6 +126,7 @@
         top: -10%;
         background-color: rgba(#fff, 0);
         z-index: 2000;
+
         &:hover {
             cursor: none;
         }
@@ -139,7 +140,7 @@
 
     &__hover-cursor {
         z-index: 2000;
-        // opacity: 0;
+        // opacity: 0;  
         display: none;
         position: absolute;
         top: 0;

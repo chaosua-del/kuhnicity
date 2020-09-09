@@ -9,13 +9,22 @@
         }
     }
 
-    .header__menu-item{
+    .header__menu-item {
         a {
 
             transition: 0.2s ease-in-out;
+
             &:hover {
                 color: $color-red;
             }
+        }
+    }
+
+    .header__block-button {
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            color: $color-red;
         }
     }
 
@@ -29,6 +38,12 @@
         }
     }
 
+    .button--dark {
+        &:hover {
+            background-color: $color-red;
+        }
+    }
+
     // .discounts__swiper-slide {
     //     cursor: url('../img/discounts/cursor.png') 25 15, crosshair;
     //     // &:nth-child(3) {
@@ -36,4 +51,88 @@
     //     //     }
     //     // }
     // }
+
+    .production__card {
+        &-list {
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        &-name {
+            transition: bottom 0.4s ease-in-out;
+        }
+
+        &:nth-child(5) {
+
+            cursor: default;
+
+            &:hover {
+                .production__card-list {
+                    opacity: 1;
+                }
+
+                .production__card-name {
+                    bottom: 260px;
+                }
+            }
+        }
+    }
+
+    .card {
+        &__hover {
+            &-calculator {
+                &:hover {
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        &__img {
+            &:hover {
+                .card__hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .articles__link--red {
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: #232323;
+
+        }
+    }
+
+    .articles__link-arrow {
+        background-color: transparent;
+    }
+
+    .list__card-item {
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            color: $color-red;
+        }
+    }
+
+    .list__card-title2 {
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            color: $color-red;
+        }
+    }
+
+
+}
+
+@media(min-width:1920px) {
+    .contactUs__button {
+        &:hover {
+            background-color: #232323;
+        }
+    }
 }

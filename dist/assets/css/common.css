@@ -1080,6 +1080,8 @@ strong {
     height: 100%;
     top: 0;
     left: 0; }
+  .production__card__list {
+    display: block; }
 
 .models {
   padding-top: 71px;
@@ -1139,7 +1141,8 @@ strong {
   width: 270px;
   margin-right: 12px; }
   .card__img {
-    height: 323px; }
+    height: 323px;
+    position: relative; }
     .card__img img {
       max-width: 100%;
       height: 100%; }
@@ -1164,7 +1167,8 @@ strong {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    z-index: 1000; }
     .card__label--sale {
       background-color: #FF9900; }
       .card__label--sale::after {
@@ -1189,6 +1193,73 @@ strong {
         width: 26px;
         height: 7px;
         background: url("../img/models/new.svg") no-repeat center/cover; }
+  .card__hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; }
+    .card__hover::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(250, 250, 250, 0.5);
+      z-index: -1; }
+    .card__hover-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      height: 100%; }
+    .card__hover-group {
+      margin-bottom: 25px !important;
+      margin-left: 36px; }
+    .card__hover-title {
+      font-size: 14px;
+      line-height: 120.3%;
+      /* identical to box height, or 22px */
+      letter-spacing: 0.105em;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      color: #323232; }
+    .card__hover-description {
+      font-size: 12px;
+      line-height: 140%;
+      /* or 20px */
+      flex-shrink: 0;
+      letter-spacing: 0.035em;
+      max-width: 174px;
+      color: #585858; }
+    .card__hover-calculator {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 39px;
+      height: 39px;
+      z-index: 1500;
+      background: url("../img/models/calculator.svg") no-repeat center/cover; }
+      .card__hover-calculator::after {
+        content: 'Калькулятор модели';
+        position: absolute;
+        right: -150px;
+        top: -50px;
+        z-index: 1000;
+        font-size: 12px;
+        line-height: 140%;
+        /* identical to box height, or 17px */
+        letter-spacing: 0.035em;
+        color: #323232;
+        padding: 7px 18px;
+        background-color: #fff;
+        width: 163px;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out; }
 
 .designers {
   background-color: #f4f4f4; }
@@ -1979,9 +2050,47 @@ strong {
     transition: 0.2s ease-in-out; }
     .header__menu-item a:hover {
       color: #FF3D00; }
+  .header__block-button {
+    transition: 0.2s ease-in-out; }
+    .header__block-button:hover {
+      color: #FF3D00; }
   .button {
     transition: background-color 0.2s ease-in-out; }
   .button--primary:hover {
+    background-color: #232323; }
+  .button--dark:hover {
+    background-color: #FF3D00; }
+  .production__card-list {
+    transition: opacity 0.5s ease-in-out; }
+  .production__card-name {
+    transition: bottom 0.4s ease-in-out; }
+  .production__card:nth-child(5) {
+    cursor: default; }
+    .production__card:nth-child(5):hover .production__card-list {
+      opacity: 1; }
+    .production__card:nth-child(5):hover .production__card-name {
+      bottom: 260px; }
+  .card__hover-calculator:hover::after {
+    opacity: 1; }
+  .card__img:hover .card__hover {
+    opacity: 1; }
+  .articles__link--red {
+    transition: background-color 0.2s ease-in-out; }
+    .articles__link--red:hover {
+      background-color: #232323; }
+  .articles__link-arrow {
+    background-color: transparent; }
+  .list__card-item {
+    transition: color 0.2s ease-in-out; }
+    .list__card-item:hover {
+      color: #FF3D00; }
+  .list__card-title2 {
+    transition: color 0.2s ease-in-out; }
+    .list__card-title2:hover {
+      color: #FF3D00; } }
+
+@media (min-width: 1920px) {
+  .contactUs__button:hover {
     background-color: #232323; } }
 
 @media (min-width: 321px) {
@@ -3114,6 +3223,21 @@ strong {
     height: 230px;
     order: 3;
     top: -6px; }
+  .production__card-list {
+    display: flex;
+    flex-direction: column;
+    left: 54px;
+    bottom: 41px;
+    position: absolute;
+    z-index: 20;
+    opacity: 0; }
+    .production__card-list a {
+      font-size: 16px;
+      line-height: 252%;
+      /* or 40px */
+      letter-spacing: 0.035em;
+      color: #FFFFFF;
+      text-transform: none; }
   .models {
     padding-top: 59px; }
     .models__swiper-wrapper {
@@ -3743,6 +3867,12 @@ strong {
       .card__label--hit::after {
         width: 31.55px;
         height: 11.44px; }
+    .card__hover-title {
+      font-size: 18px !important; }
+    .card__hover-description {
+      font-size: 14px !important; }
+    .card__hover-group {
+      margin-bottom: 46px !important; }
   .designers__container {
     max-width: 1920px;
     padding-left: 166px;

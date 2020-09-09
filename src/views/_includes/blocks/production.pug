@@ -1,6 +1,6 @@
 section.production
   .production__wrap
-    .production__card
+    a(href="#").production__card
       picture.production__card-img
         source(srcset="assets/img/production/kitchens-xl.webp", media="(min-width: 1920px)" type="image/webp")
         source(srcset="assets/img/production/kitchens-xl.jpg", media="(min-width: 1920px)" type="image/jpg")
@@ -20,7 +20,7 @@ section.production
     //-   <img class="lazyload" data-src="image.png" alt="alt text">
     //- </picture>
 
-    .production__card
+    a(href="#").production__card
       picture.production__card-img
         source(srcset="assets/img/production/tables-xl.webp", media="(min-width: 1920px)" type="image/webp")
         source(srcset="assets/img/production/tables-xl.jpg", media="(min-width: 1920px)" type="image/jpg")
@@ -32,7 +32,7 @@ section.production
         source(srcset="assets/img/production/tables.jpg", media="(min-width: 320px)" type="image/webp")
         img(src="assets/img/production/tables.jpg", alt="photo" class="lazyload")
       span.production__card-name СТОЛЕШНИЦы
-    .production__card
+    a(href="#").production__card
       picture.production__card-img
         source(srcset="assets/img/production/wardrobes-xl.webp", media="(min-width: 1920px)" type="image/webp")
         source(srcset="assets/img/production/wardrobes-xl.jpg", media="(min-width: 1920px)" type="image/jpg")
@@ -44,7 +44,7 @@ section.production
         img(src="assets/img/production/wardrobes.jpg", alt="photo" class="lazyload")
       span.production__card-name Шкафы-купе
 
-    .production__card
+    a(href="#").production__card
       picture.production__card-img
         source(srcset="assets/img/production/technics-xl.webp", media="(min-width: 1920px)" type="image/webp")
         source(srcset="assets/img/production/technics-xl.jpg", media="(min-width: 1920px)" type="image/jpg")
@@ -67,4 +67,10 @@ section.production
         //- source(srcset="assets/img/production/kitchens-md.jpg", media="(max-width: 767px)")
         source(srcset="assets/img/production/sales.jpg", media="(min-width: 320px)" type="image/webp")
         img(src="assets/img/production/sales.jpg", alt="photo" class="lazyload")
-      span.production__card-name РАСПРОДАЖА
+      .production__card-name РАСПРОДАЖА
+      p.production__card-list 
+        a(href="#") Кухни
+        a(href="#") Столешницы
+        a(href="#") Бытовая техника
+        a(href="#") Шафы-купе
+        a(href="#") Столовые группы
