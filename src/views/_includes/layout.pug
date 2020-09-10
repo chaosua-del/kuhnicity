@@ -5,13 +5,13 @@ html(lang="ru", class="no-js")
     head
         block head
             include head
-    body.body(class=bodyClass)
+    body.body
         include mixins/svgsprite
         
         block header
             include blocks/header
         
-        .content
+        .content#main
             block content
                
         

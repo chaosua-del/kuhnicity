@@ -73,7 +73,7 @@ export default function sliders() {
 
         stages.translateTo(318);
 
-        console.log('asdsad');
+
 
         const banner = new Swiper('.banner__swiper-container', {
             slidesPerView: 'auto',

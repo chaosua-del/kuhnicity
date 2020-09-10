@@ -21,6 +21,8 @@ import hovers from 'hovers';
 import modals from 'modals';
 import customCursor from 'customCursor';
 
+import catalog from 'catalog';
+
 // import fancybox from '@fancyapps/fancybox';
 
 
@@ -70,14 +72,19 @@ let app = {
 
 
         app.document.ready(() => {
-            sliders();
-            filters();
-            svgReplace();
-            customCursor();
-            expand();
-            hovers();
-            modals();
-            window.$mq = window.$('.discounts__marquee').marquee();
+            if (document.querySelector('.content').id == 'main') {
+                console.log('main');
+                sliders();
+                filters();
+                svgReplace();
+                customCursor();
+                expand();
+                hovers();
+                modals();
+                window.$mq = window.$('.discounts__marquee').marquee();
+            } else if (document.querySelector('.content').id == 'catalog') {
+                catalog();
+            }
 
 
         });
