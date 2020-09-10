@@ -1,0 +1,53 @@
+.catalogLeader {
+    .leader {
+        &__info-img {
+            height: 225px;
+            width: 320px;
+            margin-left: auto;
+            margin-left: -24px;
+        }
+
+        &__text {
+            position: relative;
+            width: 263px;
+            margin-left: 15px;
+
+            &::after {
+                content: '';
+                height: 62px;
+                width: 54px;
+                position: absolute;
+                left: -20px;
+                top: -27px;
+                background: url('../img/catalogLeader/text-decoration.svg') no-repeat center / cover;
+            }
+
+            &::before {
+                content: '';
+                height: 62px;
+                width: 54px;
+                position: absolute;
+                right: 0px;
+                bottom: -27px;
+                transform: rotate(180deg);
+                background: url('../img/catalogLeader/text-decoration.svg') no-repeat center / cover;
+            }
+        }
+
+        &__button2 {
+            display: block;
+            margin-top: 48px;
+        }
+    }
+}
+
+// #catalog {
+//     .leader {
+//         // margin-top: 50px;
+//     }
+
+// }
+
+.catalogModels {
+    background-color: #F4F4F4;
+}

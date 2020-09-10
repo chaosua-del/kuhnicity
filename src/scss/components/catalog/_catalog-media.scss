@@ -1,0 +1,169 @@
+@media(min-width: 768px) {
+
+    // leader-768
+    .catalogLeader {
+        background-color: #fff;
+        margin-top: 100px;
+
+        .leader {
+
+            &__info {
+                margin-bottom: 87px;
+            }
+
+            &__info-img {
+                width: 334px;
+                height: 350px;
+                // margin-left: auto;
+                margin-left: -24px;
+            }
+
+            &__button2 {
+                position: absolute;
+                width: 669px;
+                bottom: 0px;
+            }
+
+            &__text {
+                width: 300px;
+
+                &::after,
+                &::before {
+                    width: 73px;
+                    height: 84px;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media(min-width: 1280px) {
+
+    // models-1280
+    .catalogModels {
+        .card__hover-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card__hover-button {
+            color: #323232;
+            border: 1px solid #323232;
+            background: transparent;
+            width: auto;
+            padding: 22px 57px;
+        }
+    }
+
+    // leader-1280
+    .catalogLeader {
+        background-color: #fff;
+        margin-top: 100px;
+
+        .leader {
+
+            &__info {
+                margin-bottom: 87px;
+            }
+
+            &__info-img {
+                min-width: 465px !important;
+                height: 487px !important;
+
+                right: 47px;
+
+                // img {
+                //     min-width: 465px !important;
+                //     height: 487px !important;
+                // }
+            }
+
+            &__button2 {
+                position: absolute;
+                width: 669px;
+                bottom: 0px;
+            }
+
+            &__text {
+                width: 518px;
+
+                &::after,
+                &::before {
+                    width: 94px;
+                    height: 108px;
+                }
+            }
+
+            &__button2 {
+                font-size: 20px;
+                line-height: 120.3%;
+                padding-left: 0;
+                padding-right: 0;
+                bottom: 263px;
+            }
+        }
+    }
+
+
+}
+
+@media(min-width: 1920px) {
+
+    // models-1920
+    .catalogModels {
+        .card--wide {
+            width: 1045.42px;
+
+            .card__img {
+                width: 1045.42px !important;
+
+                img {
+                    width: 1045.42px !important;
+                }
+            }
+        }
+    }
+
+    // leader-1920
+    .catalogLeader {
+
+
+        .leader {
+
+            &__info {
+                margin-bottom: 87px;
+            }
+
+            &__info-img {
+                min-width: 715px !important;
+                height: 654px !important;
+
+                right: 194px;
+
+                // img {
+                //     min-width: 465px !important;
+                //     height: 487px !important;
+                // }
+            }
+
+            &__button2 {
+                position: absolute;
+                width: 669px;
+                bottom: 0px;
+            }
+
+            &__text {
+                width: 518px;
+                margin-top: 46px;
+            }
+
+            &__button2 {
+                bottom: 185px;
+                width: 438px;
+            }
+        }
+    }
+}

@@ -1,8 +1,86 @@
 section.filter 
     .container.filter__container
         .filter__status.status
-            span.status-item Главная 
-            span >
-            span.status-item  Каталог 
+            a(href="index.html").status-item Главная 
+            span > 
+            span.status-item.status-item--active Каталог 
 
         .title.filter__title Кухни KÜCHENBERG
+
+        .filter__block
+            button.filter__button Фильтр
+            .filter__menu 
+                button.filter__expand-button Стиль
+                .filter__expand-list
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                button.filter__expand-button Планировка 
+                .filter__expand-list
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                button.filter__expand-button Фасад
+                .filter__expand-list
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                button.filter__expand-button Покрытие
+                .filter__expand-list
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                button.filter__expand-button Цвет
+                .filter__expand-list
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                button.filter__expand-button Размер
+                .filter__expand-list
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                    span.filter__expand-item Из дерева
+                .filter__expand-block
+                    .filter__input-group
+                        input(type="checkbox" id="discount" name="discount" checked).filter__checkbox.checkbox
+                        span.filter__customCheckbox
+                        label(for="discount").filter__checkbox-label Только со скидкой
+                    
+                    .filter__expand-type.type
+                        span.filter__expand-label Сначала
+                        .type__item.type__item--active 
+                            span.active-text Новинки
+                            .type-list
+                                span.type__item Пункт 2
+                                span.type__item Пункт 3
+
+
+
+                .filter__expand-block
+                    button.filter__expand-price Фильтровать по цене
+                    .filter__expand-range
+                        input.js-range-slider(type="text", value="", name="my_range")
+                    button.filter__expand-confirm Применить
+            .tabs.filter__tabs
+                button.tabs__button Большие
+                button.tabs__button Маленькие
+            .tabs__expand
+                button.tabs__button 2 метра
+                button.tabs__button 3 метра
+                button.tabs__button 4 метра
+                button.tabs__button 5 м
+                    sup 2
+            button.tabs__more Еще 
+            button.tabs__cancel Сбросить

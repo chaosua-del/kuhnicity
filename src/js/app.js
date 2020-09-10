@@ -5,6 +5,7 @@ import {
 
 import 'lazysizes';
 import Swiper from 'swiper/js/swiper.js';
+import ionRangeSlider from 'ion-rangeSlider/js/ion.rangeSlider.min.js'
 
 // import marquee from 'libs/jquery.marquee.min.js';
 
@@ -84,6 +85,7 @@ let app = {
                 window.$mq = window.$('.discounts__marquee').marquee();
             } else if (document.querySelector('.content').id == 'catalog') {
                 catalog();
+                svgReplace();
             }
 
 
@@ -93,8 +95,14 @@ let app = {
         // });
 
         this.document.on(app.resizeEventName, () => {
-            sliders();
-            hovers();
+
+            if (document.querySelector('.content').id == 'main') {
+                sliders();
+                hovers();
+
+            } else if (document.querySelector('.content').id == 'catalog') {
+                catalog();
+            }
             // console.log('rezising');
         });
 
