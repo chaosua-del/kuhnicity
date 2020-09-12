@@ -283,22 +283,34 @@
           <div class="filter__block">
             <button class="filter__button">Фильтр</button>
             <div class="filter__menu"> 
-              <button class="filter__expand-button">Стиль</button>
-              <div class="filter__expand-list"><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span></div>
-              <button class="filter__expand-button">Планировка </button>
-              <div class="filter__expand-list"><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span></div>
-              <button class="filter__expand-button">Фасад</button>
-              <div class="filter__expand-list"><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span></div>
-              <button class="filter__expand-button">Покрытие</button>
-              <div class="filter__expand-list"><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span></div>
-              <button class="filter__expand-button">Цвет</button>
-              <div class="filter__expand-list"><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span></div>
-              <button class="filter__expand-button">Размер</button>
-              <div class="filter__expand-list"><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span></div>
+              <button class="filter__expand-button">Стиль
+                <div class="filter__expand-list"><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span></div>
+              </button>
+              <button class="filter__expand-button">Планировка 
+                <div class="filter__expand-list"><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span></div>
+              </button>
+              <button class="filter__expand-button">Фасад
+                <div class="filter__expand-list"><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span></div>
+              </button>
+              <button class="filter__expand-button">Покрытие
+                <div class="filter__expand-list"><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span></div>
+              </button>
+              <button class="filter__expand-button">Цвет
+                <div class="filter__expand-list"><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span></div>
+              </button>
+              <button class="filter__expand-button">Размер
+                <div class="filter__expand-list"><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span><span class="filter__expand-item">Из дерева</span></div>
+              </button>
               <div class="filter__expand-block">
                 <div class="filter__input-group">
                   <input class="filter__checkbox checkbox" type="checkbox" id="discount" name="discount" checked><span class="filter__customCheckbox"></span>
                   <label class="filter__checkbox-label" for="discount">Только со скидкой</label>
+                </div>
+                <div class="visible-768 filter__range">
+                  <button class="filter__expand-price">Фильтровать по цене</button>
+                  <div class="filter__expand-range">
+                    <input class="js-range-slider" type="text" value="" name="my_range">
+                  </div>
                 </div>
                 <div class="filter__expand-type type"><span class="filter__expand-label">Сначала</span>
                   <div class="type__item type__item--active"> <span class="active-text">Новинки</span>
@@ -306,7 +318,7 @@
                   </div>
                 </div>
               </div>
-              <div class="filter__expand-block">
+              <div class="filter__expand-block hidden-768">
                 <button class="filter__expand-price">Фильтровать по цене</button>
                 <div class="filter__expand-range">
                   <input class="js-range-slider" type="text" value="" name="my_range">
@@ -317,15 +329,30 @@
             <div class="tabs filter__tabs">
               <button class="tabs__button">Большие</button>
               <button class="tabs__button">Маленькие</button>
-            </div>
-            <div class="tabs__expand">
-              <button class="tabs__button">2 метра</button>
+              <button class="tabs__button visible-768">2 метра</button>
+              <button class="tabs__more visible-768 hidden-1280">Еще</button>
+              <button class="tabs__cancel visible-768 hidden-1280">Сбросить</button>
+              <button class="tabs__cancel2 tabs__cancel">Сбросить Фильтры</button>
               <button class="tabs__button">3 метра</button>
               <button class="tabs__button">4 метра</button>
               <button class="tabs__button">5 м<sup>2</sup></button>
+              <button class="tabs__button">6 м<sup>2</sup></button>
+              <button class="tabs__button">7 м<sup>2</sup></button>
+              <button class="tabs__button">8 м<sup>2</sup></button>
+              <button class="tabs__button">9 м<sup>2</sup></button>
+              <button class="tabs__button">10 м<sup>2</sup></button>
+              <button class="tabs__button">12 м<sup>2</sup></button>
+              <button class="tabs__button">18 м<sup>2</sup></button>
+              <button class="tabs__button">20 м<sup>2</sup></button>
             </div>
-            <button class="tabs__more">Еще </button>
-            <button class="tabs__cancel">Сбросить</button>
+            <div class="tabs__expand">
+              <button class="tabs__button hidden-768">2 метра</button>
+              <button class="tabs__button hidden-768">3 метра</button>
+              <button class="tabs__button hidden-768">4 метра</button>
+              <button class="tabs__button hidden-768">5 метров</button>
+            </div>
+            <button class="tabs__more hidden-768">Еще </button>
+            <button class="tabs__cancel hidden-768">Сбросить</button>
           </div>
         </div>
       </section>

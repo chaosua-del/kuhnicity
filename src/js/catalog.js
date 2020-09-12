@@ -229,34 +229,45 @@ export default function catalog() {
         $('.filter__menu').fadeToggle('fast');
     });
 
+    $('.filter__expand-confirm').on('click', () => {
+
+        $('.filter__menu').fadeOut('slow');
+    });
+
 
     const filterButton = document.querySelectorAll('.filter__expand-button');
     const filterItem = document.querySelectorAll('.filter__expand-item');
     const filterType = document.querySelectorAll('.type__item');
     const filterActive = document.querySelector('.type__item--active');
     const tabsButton = document.querySelectorAll('.tabs__button');
+    const tabs = document.querySelector('.filter__tabs');
+    const tabsCancel = document.querySelector('.tabs__cancel');
 
     filterButton.forEach(elem => {
         elem.addEventListener('click', event => {
-            const content = event.target.nextElementSibling;
-            event.target.classList.toggle('filter__expand-button--active')
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + 'px';
+            if (event.target.classList.contains('filter__expand-button')) {
+                const content = event.target.children[0];
+                event.target.classList.toggle('filter__expand-button--active');
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+                content.querySelectorAll('.filter__expand-item').forEach(elem => {
+                    elem.addEventListener('click', event => {
+                        content.querySelectorAll('.filter__expand-item').forEach(elem => {
+                            elem.classList.remove('filter__expand-item--active');
+                        });
+                        event.target.classList.toggle('filter__expand-item--active');
+                    });
+                });
             }
+
         });
     });
 
 
-    filterItem.forEach(elem => {
-        elem.addEventListener('click', event => {
-            filterItem.forEach(elem => {
-                elem.classList.remove('filter__expand-item--active');
-            });
-            event.target.classList.toggle('filter__expand-item--active');
-        });
-    });
+    // filterItem.
 
     tabsButton.forEach(elem => {
         elem.addEventListener('click', event => {
@@ -274,17 +285,7 @@ export default function catalog() {
         }
     });
 
-    const activeText = document.querySelector('.active-text');
-    // console.log($('.type__item--active').text(1, 'text'));
 
-    // filterType.forEach(elem => {
-    //     elem.addEventListener('click', event => {
-    //         let temp = event.target.textContent;
-    //         event.target.textContent = activeText.textContent;
-    //         activeText.textContent = temp;
-    //         console.log(activeText.textContent);
-    //     });
-    // });
 
     $('.filter__expand-price').on('click', event => {
         // range slider
@@ -301,13 +302,74 @@ export default function catalog() {
     });
 
 
-    document.querySelector('.tabs__more').addEventListener('click', event => {
+    document.querySelector('.tabs__more.hidden-768').addEventListener('click', event => {
         const content = event.target.previousElementSibling;
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
         } else {
             content.style.maxHeight = content.scrollHeight + 'px';
         }
+    });
+
+    document.querySelector('.tabs__more.visible-768').addEventListener('click', event => {
+        // console.log('he');
+        const content = document.querySelector('.tabs__expand');
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }
+        event.target.style.display = 'none';
+        tabs.style.maxHeight = tabs.scrollHeight + 'px';
+        tabsCancel.style.order = '2';
+        tabsCancel.style.marginLeft = 'auto';
+    });
+
+
+    document.querySelector('.tabs__cancel').addEventListener('click', event => {
+        tabsButton.forEach(elem => {
+            elem.classList.remove('tabs__button--active');
+        });
+        filterItem.forEach(elem => {
+            elem.classList.remove('filter__expand-item--active');
+        });
+        document.querySelectorAll('.filter__expand-list').forEach(elem => {
+            elem.style.maxHeight = null;
+        });
+        document.querySelectorAll('.tabs__expand').forEach(elem => {
+            elem.style.maxHeight = null;
+        });
+        document.querySelectorAll('.tabs__more').forEach(elem => {
+            elem.style.display = 'block';
+        });
+        tabs.style.maxHeight = 57 + 'px';
+        tabsCancel.style.order = '0';
+        tabsCancel.style.marginLeft = '0';
+    });
+
+    document.querySelector('.tabs__cancel2').addEventListener('click', event => {
+        tabsButton.forEach(elem => {
+            elem.classList.remove('tabs__button--active');
+        });
+        filterItem.forEach(elem => {
+            elem.classList.remove('filter__expand-item--active');
+        });
+        document.querySelectorAll('.filter__expand-list').forEach(elem => {
+            elem.style.maxHeight = null;
+        });
+
+
+
+    });
+
+    const range = $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 150000,
+        from: 20000,
+        to: 150000,
+        grid: true,
+        skin: 'round'
     });
 
 }

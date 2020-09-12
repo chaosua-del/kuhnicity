@@ -11,52 +11,56 @@ section.filter
             button.filter__button Фильтр
             .filter__menu 
                 button.filter__expand-button Стиль
-                .filter__expand-list
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
+                    .filter__expand-list
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
                 button.filter__expand-button Планировка 
-                .filter__expand-list
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
+                    .filter__expand-list
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
                 button.filter__expand-button Фасад
-                .filter__expand-list
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
+                    .filter__expand-list
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
                 button.filter__expand-button Покрытие
-                .filter__expand-list
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
+                    .filter__expand-list
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
                 button.filter__expand-button Цвет
-                .filter__expand-list
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
+                    .filter__expand-list
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
                 button.filter__expand-button Размер
-                .filter__expand-list
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
-                    span.filter__expand-item Из дерева
+                    .filter__expand-list
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
+                        span.filter__expand-item Из дерева
                 .filter__expand-block
                     .filter__input-group
                         input(type="checkbox" id="discount" name="discount" checked).filter__checkbox.checkbox
                         span.filter__customCheckbox
                         label(for="discount").filter__checkbox-label Только со скидкой
+                    .visible-768.filter__range
+                        button.filter__expand-price Фильтровать по цене
+                        .filter__expand-range
+                            input.js-range-slider(type="text", value="", name="my_range")
                     
                     .filter__expand-type.type
                         span.filter__expand-label Сначала
@@ -68,7 +72,7 @@ section.filter
 
 
 
-                .filter__expand-block
+                .filter__expand-block.hidden-768
                     button.filter__expand-price Фильтровать по цене
                     .filter__expand-range
                         input.js-range-slider(type="text", value="", name="my_range")
@@ -76,11 +80,36 @@ section.filter
             .tabs.filter__tabs
                 button.tabs__button Большие
                 button.tabs__button Маленькие
-            .tabs__expand
-                button.tabs__button 2 метра
+                button.tabs__button.visible-768 2 метра
+                button.tabs__more.visible-768.hidden-1280 Еще
+                button.tabs__cancel.visible-768.hidden-1280 Сбросить
+                button.tabs__cancel2.tabs__cancel Сбросить Фильтры
                 button.tabs__button 3 метра
                 button.tabs__button 4 метра
                 button.tabs__button 5 м
                     sup 2
-            button.tabs__more Еще 
-            button.tabs__cancel Сбросить
+                button.tabs__button 6 м
+                    sup 2
+                button.tabs__button 7 м
+                    sup 2
+                button.tabs__button 8 м
+                    sup 2
+                button.tabs__button 9 м
+                    sup 2
+                button.tabs__button 10 м
+                    sup 2
+                button.tabs__button 12 м
+                    sup 2
+                button.tabs__button 18 м
+                    sup 2
+                button.tabs__button 20 м
+                    sup 2
+            .tabs__expand
+                button.tabs__button.hidden-768 2 метра
+                button.tabs__button.hidden-768 3 метра
+                button.tabs__button.hidden-768 4 метра
+                button.tabs__button.hidden-768 5 метров
+               
+                
+            button.tabs__more.hidden-768 Еще 
+            button.tabs__cancel.hidden-768 Сбросить

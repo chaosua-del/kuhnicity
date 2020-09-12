@@ -24,6 +24,7 @@
     &__title {
         text-align: center;
         margin-bottom: 38px;
+        text-transform: uppercase;
     }
 
     &__status {
@@ -43,6 +44,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &-absolute {
+            position: absolute;
+            right: 0;
+            z-index: 50;
+            top: 240%;
+        }
 
         &::after {
             content: '';
@@ -76,6 +84,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
             color: #151515;
             padding-left: 19px;
             padding-right: 24px;
@@ -126,6 +135,8 @@
             padding-top: 20px;
             max-height: 0;
             overflow: hidden;
+            flex-basis: 100%;
+            order: 2;
             transition: max-height 0.2s ease-in-out;
         }
 
@@ -229,7 +240,7 @@
     &__customCheckbox {
         width: 14px;
         height: 14px;
-        border: 1px solid #FF3D00;
+        border: 1px solid #323232;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -250,9 +261,17 @@
     }
 
     .filter__checkbox:checked~.filter__customCheckbox {
+        border: 1px solid #FF3D00;
+
         &::after {
             display: block;
         }
+
+    }
+
+    .filter__checkbox:checked~.filter__checkbox-label {
+        color: $color-red;
+
     }
 
     &__tabs {
@@ -263,6 +282,9 @@
 .tabs {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 54px;
+    overflow: hidden;
 
     &__button {
         font-size: 12px;
@@ -342,7 +364,12 @@
             height: 10px;
             background: url('../img/filter/cancel.svg') no-repeat center / cover;
             margin-left: 14px;
+            display: inline-block;
         }
+    }
+
+    &__cancel2 {
+        display: none;
     }
 }
 
@@ -454,4 +481,8 @@
 
 .irs--round.irs-with-grid {
     width: 96% !important;
+}
+
+.visible-768 {
+    display: none;
 }

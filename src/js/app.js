@@ -103,6 +103,7 @@ let app = {
             } else if (document.querySelector('.content').id == 'catalog') {
                 catalog();
             }
+            location.reload();
             // console.log('rezising');
         });
 
