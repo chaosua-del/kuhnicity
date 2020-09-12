@@ -1,5 +1,19 @@
 .catalogLeader {
+    padding-top: 7px;
+    padding-bottom: 69px;
+    // margin-top: 84px;
+
     .leader {
+
+        &__container {
+            padding-right: 21px;
+            padding-left: 17px;
+        }
+
+        &__info {
+            margin-bottom: 74px;
+        }
+
         &__info-img {
             height: 225px;
             width: 320px;
@@ -11,6 +25,7 @@
             position: relative;
             width: 263px;
             margin-left: 15px;
+            margin-bottom: 64px;
 
             &::after {
                 content: '';
@@ -27,8 +42,8 @@
                 height: 62px;
                 width: 54px;
                 position: absolute;
-                right: 0px;
-                bottom: -27px;
+                right: 6px;
+                bottom: -18px;
                 transform: rotate(180deg);
                 background: url('../img/catalogLeader/text-decoration.svg') no-repeat center / cover;
             }
@@ -50,4 +65,33 @@
 
 .catalogModels {
     background-color: #F4F4F4;
+}
+
+#catalog {
+    .stages {
+        padding-top: 76px;
+
+        &__swiper {
+            &-button {
+
+                &-next,
+                &-prev {
+                    display: none;
+                }
+            }
+
+            &-wrapper {
+                padding-bottom: 61px !important;
+            }
+        }
+    }
+
+    .feedback {
+        padding-bottom: 0;
+    }
+
+    .benefits__container {
+        padding-top: 70px;
+    }
+
 }

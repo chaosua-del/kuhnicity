@@ -255,9 +255,6 @@ export default function catalog() {
                 }
                 content.querySelectorAll('.filter__expand-item').forEach(elem => {
                     elem.addEventListener('click', event => {
-                        content.querySelectorAll('.filter__expand-item').forEach(elem => {
-                            elem.classList.remove('filter__expand-item--active');
-                        });
                         event.target.classList.toggle('filter__expand-item--active');
                     });
                 });

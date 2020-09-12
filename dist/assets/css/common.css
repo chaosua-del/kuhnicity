@@ -2869,6 +2869,7 @@ strong {
       text-align: center;
       letter-spacing: 0.035em; }
   .list {
+    background-color: #fff;
     border-top: 3px solid #ECECEC;
     text-align-last: left; }
     .list__container {
