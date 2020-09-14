@@ -189,6 +189,7 @@
         max-height: 57px;
         overflow: hidden;
         transition: max-height 0.2s ease-in-out;
+        background-color: #fafafa;
 
         &__button {
             flex-basis: auto;
@@ -451,6 +452,12 @@
 
     // models-1920
     .catalogModels {
+        .card {
+            &:nth-last-child(1) {
+                display: none;
+            }
+        }
+
         .card--wide {
             width: 1045.42px;
 

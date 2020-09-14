@@ -26,7 +26,7 @@ export default function catalog() {
             spaceBetween: 0,
             freeMode: true,
             loop: false,
-            slidesOffsetAfter: 2,
+            slidesOffsetAfter: 0,
         });
 
         const stages = new Swiper('.stages__swiper-container', {
@@ -50,7 +50,7 @@ export default function catalog() {
         const stages = new Swiper('.stages__swiper-container', {
             slidesPerView: 'auto',
             spaceBetween: 0,
-            slidesOffsetAfter: 900,
+            slidesOffsetAfter: 450,
             updateOnWindowResize: false,
             loop: false,
             navigation: {
@@ -121,22 +121,28 @@ export default function catalog() {
         elem.addEventListener('click', event => {
             if (event.target.classList.contains('filter__expand-button')) {
                 const content = event.target.children[0];
-                event.target.classList.toggle('filter__expand-button--active');
+
                 if (content.style.maxHeight) {
                     content.style.maxHeight = null;
                 } else {
                     document.querySelectorAll('.filter__expand-list').forEach(elem => {
                         elem.style.maxHeight = null;
                     });
-                    content.style.maxHeight = content.scrollHeight + 'px';
-                }
-                content.querySelectorAll('.filter__expand-item').forEach(elem => {
-                    elem.addEventListener('click', event => {
-                        event.target.classList.toggle('filter__expand-item--active');
+                    filterButton.forEach(elem => {
+                        elem.classList.remove('filter__expand-button--active');
                     });
-                });
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    event.target.classList.toggle('filter__expand-button--active');
+                }
+
             }
 
+        });
+    });
+
+    document.querySelectorAll('.filter__expand-item').forEach(elem => {
+        elem.addEventListener('click', event => {
+            event.target.classList.toggle('filter__expand-item--active');
         });
     });
 
@@ -216,6 +222,9 @@ export default function catalog() {
         document.querySelectorAll('.tabs__more').forEach(elem => {
             elem.style.display = 'block';
         });
+        filterButton.forEach(elem => {
+            elem.classList.remove('filter__expand-button--active');
+        });
         tabs.style.maxHeight = 57 + 'px';
         tabsCancel.style.order = '0';
         tabsCancel.style.marginLeft = '0';
@@ -230,6 +239,9 @@ export default function catalog() {
         });
         document.querySelectorAll('.filter__expand-list').forEach(elem => {
             elem.style.maxHeight = null;
+        });
+        filterButton.forEach(elem => {
+            elem.classList.remove('filter__expand-button--active');
         });
 
 

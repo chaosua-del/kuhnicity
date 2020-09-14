@@ -2779,7 +2779,9 @@ strong {
       flex-wrap: wrap;
       order: 2;
       justify-content: center;
-      margin-top: -80px; }
+      margin-top: -80px;
+      position: absolute;
+      right: 0; }
       .leader__info-img {
         height: 594px;
         margin-bottom: 13px;

@@ -7,7 +7,7 @@ export default function sliders() {
             spaceBetween: 0,
             freeMode: true,
             loop: false,
-            slidesOffsetAfter: 2,
+            slidesOffsetAfter: 0,
         });
 
         const discounts = new Swiper('.discounts__swiper-container', {
@@ -69,7 +69,7 @@ export default function sliders() {
         const stages = new Swiper('.stages__swiper-container', {
             slidesPerView: 'auto',
             spaceBetween: 0,
-            slidesOffsetAfter: 900,
+            slidesOffsetAfter: 450,
             updateOnWindowResize: false,
             loop: false,
             navigation: {
