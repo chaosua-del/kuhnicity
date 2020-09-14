@@ -125,6 +125,9 @@ export default function catalog() {
                 if (content.style.maxHeight) {
                     content.style.maxHeight = null;
                 } else {
+                    document.querySelectorAll('.filter__expand-list').forEach(elem => {
+                        elem.style.maxHeight = null;
+                    });
                     content.style.maxHeight = content.scrollHeight + 'px';
                 }
                 content.querySelectorAll('.filter__expand-item').forEach(elem => {

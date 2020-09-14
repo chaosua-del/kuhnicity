@@ -957,6 +957,7 @@ strong {
     .filter__expand-item--active {
       color: #323232; }
   .filter__expand-list {
+    cursor: default;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
