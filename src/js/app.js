@@ -73,7 +73,7 @@ let app = {
 
 
         app.document.ready(() => {
-            document.querySelector('.hero').style.marginTop = `${document.querySelector('.header').offsetHeight}px`;
+            document.querySelector('.content').style.marginTop = `${document.querySelector('.header').offsetHeight}px`;
             if (document.querySelector('.content').id == 'main') {
                 console.log('main');
                 sliders();
@@ -85,7 +85,7 @@ let app = {
                 modals();
                 window.$mq = window.$('.discounts__marquee').marquee({
                     startVisible: true,
-                    speed: 200
+                    speed: 100
                 });
             } else if (document.querySelector('.content').id == 'catalog') {
                 catalog();
