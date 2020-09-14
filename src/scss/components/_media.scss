@@ -2052,9 +2052,7 @@
                 display: block;
             }
 
-            &__hover {
-                display: block;
-            }
+
         }
 
         &__filter {
@@ -2066,6 +2064,10 @@
         // margin-right: 40px;
         width: 363px;
         margin-bottom: 47px;
+
+        &__hover {
+            display: block;
+        }
 
         &__img {
             width: 363px;

@@ -16,7 +16,7 @@ export default function sliders() {
             updateOnWindowResize: false,
             // freeMode: true,
             // loop: false,
-            slidesOffsetAfter: 110,
+            slidesOffsetAfter: 0,
         });
 
         discounts.translateTo(269);
@@ -35,7 +35,7 @@ export default function sliders() {
         const stages = new Swiper('.stages__swiper-container', {
             slidesPerView: 'auto',
             spaceBetween: 0,
-            slidesOffsetAfter: 50,
+            slidesOffsetAfter: 100,
             updateOnWindowResize: false,
             loop: false,
             navigation: {

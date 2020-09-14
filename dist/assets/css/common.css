@@ -619,8 +619,8 @@ strong {
         margin-top: 120px; }
     .header__location::before {
       content: '';
-      width: 7px;
-      height: 7px;
+      min-width: 7px;
+      min-height: 7px;
       border-radius: 50%;
       background-color: #FF3D00;
       margin-right: 6px;
@@ -628,8 +628,8 @@ strong {
       z-index: 1000; }
     .header__location::after {
       content: '';
-      width: 8px;
-      height: 4px;
+      min-width: 8px;
+      min-height: 4px;
       background: url("../img/expand-arrow.svg") no-repeat center/cover;
       margin-left: 6px;
       display: inline-block;
@@ -3315,13 +3315,13 @@ strong {
       display: none; }
     .models .card:nth-last-of-type(n+6) {
       display: block; }
-    .models .card__hover {
-      display: block; }
     .models__filter {
       margin-right: 42px; }
   .card {
     width: 363px;
     margin-bottom: 47px; }
+    .card__hover {
+      display: block; }
     .card__img {
       width: 363px;
       height: 434px; }

@@ -74,13 +74,14 @@ let app = {
 
         app.document.ready(() => {
             document.querySelector('.content').style.marginTop = `${document.querySelector('.header').offsetHeight}px`;
+
             if (document.querySelector('.content').id == 'main') {
-                console.log('main');
+                // console.log('main');
+                expand();
                 sliders();
                 filters();
-                svgReplace();
                 customCursor();
-                expand();
+
                 hovers();
                 modals();
                 window.$mq = window.$('.discounts__marquee').marquee({
@@ -88,10 +89,11 @@ let app = {
                     speed: 100
                 });
             } else if (document.querySelector('.content').id == 'catalog') {
+                expand();
                 catalog();
-                svgReplace();
-            }
 
+            }
+            svgReplace();
 
         });
 
@@ -99,10 +101,11 @@ let app = {
         // });
 
         this.document.on(app.resizeEventName, () => {
-
+            expand();
             if (document.querySelector('.content').id == 'main') {
                 sliders();
                 hovers();
+
 
             } else if (document.querySelector('.content').id == 'catalog') {
                 catalog();
