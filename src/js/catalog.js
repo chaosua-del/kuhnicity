@@ -81,18 +81,18 @@ export default function catalog() {
     }
 
     // leader-expand
-    // making collapsible text in section leader
-    const coll = document.querySelector('.leader__button')
+    // // making collapsible text in section leader
+    // const coll = document.querySelector('.leader__button')
 
-    coll.addEventListener('click', event => {
-        const content = event.target.previousElementSibling;
-        coll.classList.toggle('leader__button--active')
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + 'px';
-        }
-    });
+    // coll.addEventListener('click', event => {
+    //     const content = event.target.previousElementSibling;
+    //     coll.classList.toggle('leader__button--active')
+    //     if (content.style.maxHeight) {
+    //         content.style.maxHeight = null;
+    //     } else {
+    //         content.style.maxHeight = content.scrollHeight + 'px';
+    //     }
+    // });
 
 
 
@@ -142,9 +142,9 @@ export default function catalog() {
 
     tabsButton.forEach(elem => {
         elem.addEventListener('click', event => {
-            tabsButton.forEach(elem => {
-                elem.classList.remove('tabs__button--active');
-            });
+            // tabsButton.forEach(elem => {
+            //     elem.classList.remove('tabs__button--active');
+            // });
             event.target.classList.toggle('tabs__button--active');
         });
     });
