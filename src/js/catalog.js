@@ -225,7 +225,7 @@ export default function catalog() {
         filterButton.forEach(elem => {
             elem.classList.remove('filter__expand-button--active');
         });
-        tabs.style.maxHeight = 57 + 'px';
+        tabs.style.maxHeight = 72 + 'px';
         tabsCancel.style.order = '0';
         tabsCancel.style.marginLeft = '0';
     });
