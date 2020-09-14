@@ -4276,7 +4276,8 @@ strong {
     background-color: #fff;
     margin-top: 84px; }
     .catalogLeader .leader__info {
-      margin-bottom: 87px; }
+      margin-bottom: 87px;
+      position: static; }
       .catalogLeader .leader__info-name {
         letter-spacing: 0.07em;
         margin-right: -30px;
