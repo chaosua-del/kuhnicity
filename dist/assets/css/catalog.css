@@ -1860,6 +1860,27 @@ strong {
 .main-social .social__block-img {
   transform: scale(0.5); }
 
+.contactUs {
+  background: #F2F2F2;
+  padding-bottom: 110px; }
+  .contactUs__title {
+    margin-top: 52px;
+    margin-bottom: 35px; }
+  .contactUs__description {
+    color: #666666;
+    margin-bottom: 52px; }
+  .contactUs__input {
+    margin-bottom: 28px;
+    font-size: 16px; }
+  .contactUs__button {
+    margin-top: 16px;
+    margin-bottom: 29px; }
+  .contactUs__policy {
+    width: 279px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+
 .list {
   background: #f2f2f2;
   padding-left: 25px;
