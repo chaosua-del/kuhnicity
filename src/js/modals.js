@@ -5,6 +5,18 @@ export default function modals() {
         $('.modal').fadeIn('slow');
     });
 
+    $('.designers__button').on('click', () => {
+        $('.modal').fadeIn('slow');
+    });
+
+    $('.navigation__button').on('click', () => {
+        $('.modal').fadeIn('slow');
+    });
+
+    $('.header__block-button').on('click', () => {
+        $('.modal').fadeIn('slow');
+    });
+
     $('.modal').on('click', event => {
 
         if (event.target.classList.contains('modal') || event.target.classList.contains('modal__close')) {

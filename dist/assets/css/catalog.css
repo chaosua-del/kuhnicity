@@ -1988,7 +1988,11 @@ strong {
     justify-content: center;
     position: relative;
     padding-left: 25px;
-    padding-right: 25px; }
+    padding-right: 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .modal__title {
     margin-bottom: 18px; }
   .modal__description {
