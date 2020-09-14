@@ -220,7 +220,7 @@
     // hero-768 
     .hero {
         height: 908px;
-        background: url(../img/hero/hero-bg-lg.webp) no-repeat center / cover;
+        background: url(../img/hero/hero-bg-lg.webp) no-repeat 90% 80% / cover;
 
         &__container {
             height: 100%;
@@ -513,6 +513,10 @@
 
         &__swiper-wrapper {
             margin-bottom: -13px !important;
+        }
+
+        &__swiper-slide {
+            width: 1400px !important;
         }
 
         .card {
@@ -1182,6 +1186,12 @@
             }
         }
 
+        &__button2 {
+            width: fit-content;
+            padding: 23px 42px;
+            margin-top: 57px;
+        }
+
         &__text {
             width: 357px;
             line-height: 140%;
@@ -1671,6 +1681,15 @@
         &__navigation {
             padding: 7px 0;
         }
+
+        &__expand {
+            transition: max-height 0.2s ease-in-out;
+            max-height: 155px;
+
+            &--active {
+                max-height: 800px;
+            }
+        }
     }
 
     // hero-1280 
@@ -1985,8 +2004,9 @@
                     line-height: 252%;
                     /* or 40px */
                     letter-spacing: 0.035em;
-                    color: #FFFFFF;
+                    color: rgba(#FFFFFF, 0.5);
                     text-transform: none;
+                    transition: color 0.2s ease-in-out;
                 }
             }
         }
@@ -2029,6 +2049,10 @@
 
         .card {
             &:nth-last-of-type(n+6) {
+                display: block;
+            }
+
+            &__hover {
                 display: block;
             }
         }
@@ -3634,7 +3658,7 @@
         &__button2 {
             display: inline-block;
             width: auto;
-            padding: 23px 47px;
+            padding: 23px 52px;
             // margin-top: 54px;
             position: absolute;
             bottom: 47px;

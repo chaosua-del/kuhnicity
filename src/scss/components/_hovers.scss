@@ -51,10 +51,15 @@
     //     //     }
     //     // }
     // }
-
     .production__card {
         &-list {
             transition: opacity 0.5s ease-in-out;
+
+            a {
+                &:hover {
+                    color: #FFFFFF;
+                }
+            }
         }
 
         &-name {
@@ -130,6 +135,30 @@
     .type__item {
         &:hover {
             color: #323232;
+        }
+    }
+
+    .social__block-link {
+        &:hover {
+            .social__block-img {
+                path {
+                    transition: fill 0.2s ease-in-out;
+                    fill: $color-red;
+                }
+            }
+        }
+    }
+
+    .models__button {
+        &:hover {
+            // color: blue;
+
+            .models__button-text {
+                &::after {
+                    transform: scaleX(1.5);
+                    margin-left: 20px;
+                }
+            }
         }
     }
 

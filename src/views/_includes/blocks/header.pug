@@ -2,11 +2,15 @@ header.header
   .navigation.header__navigation
     .container.header__container 
       button.header-button.navigation__button РАссчитать кухню
-      .header__location 
-        span.header__location--selected Москва
-        .header__location-menu
-          span.header__location--option Киев
-          span.header__location--option Минск
+      .header__location
+        .header__location-selected Москва
+        .header__location-block
+          .header__location-option Киев
+          .header__location-option Минск
+        //- span.header__location--selected Москва
+        //- .header__location-menu
+        //-   span.header__location--option Киев
+        //-   span.header__location--option Минск
       .header__about 
         span О компании
         .header__about-menu
@@ -292,7 +296,7 @@ header.header
             .swiper-scrollbar.expand__swiper-scrollbar
 
         .expand__item
-          button.expand__collapsible(data-bg="assets/img/header/wardrobes.jpg", data-isopen="true") Шкафы-купе
+          button.expand__collapsible(data-bg="assets/img/header/wardrobes.jpg", data-isopen="false") Шкафы-купе
           .swiper-container.expand__swiper-container
             .swiper-wrapper.expand__swiper-wrapper
               .swiper-slide.expand__swiper-slide

@@ -31,8 +31,12 @@
       <div class="navigation header__navigation">
         <div class="container header__container"> 
           <button class="header-button navigation__button">РАссчитать кухню</button>
-          <div class="header__location"> <span class="header__location--selected">Москва</span>
-            <div class="header__location-menu"><span class="header__location--option">Киев</span><span class="header__location--option">Минск</span></div>
+          <div class="header__location">
+            <div class="header__location-selected">Москва</div>
+            <div class="header__location-block">
+              <div class="header__location-option">Киев</div>
+              <div class="header__location-option">Минск</div>
+            </div>
           </div>
           <div class="header__about"> <span>О компании</span>
             <div class="header__about-menu"><a class="header__about-item" href="#">Рассрочка</a><a class="header__about-item" href="#">Адреса салонов</a><a class="header__about-item" href="#">Гарантии</a><a class="header__about-item" href="#">Отзывы</a><a class="header__about-item" href="#">Оплата</a></div>
@@ -131,7 +135,7 @@
               </div>
             </div>
             <div class="expand__item">
-              <button class="expand__collapsible" data-bg="assets/img/header/wardrobes.jpg" data-isopen="true">Шкафы-купе</button>
+              <button class="expand__collapsible" data-bg="assets/img/header/wardrobes.jpg" data-isopen="false">Шкафы-купе</button>
               <div class="swiper-container expand__swiper-container">
                 <div class="swiper-wrapper expand__swiper-wrapper">
                   <div class="swiper-slide expand__swiper-slide">
@@ -321,28 +325,37 @@
       <section class="discounts"> 
         <div class="container discounts__container"> 
           <div class="discounts__marquee" data-duration="5000" data-gap="10" data-duplicated="true"> <span>Акции</span><span>Акции</span><span>Акции</span></div>
-          <div class="swiper-container discounts__swiper-container">
-            <div class="swiper-wrapper discounts__swiper-wrapper">
-              <div class="swiper-slide discounts__swiper-slide">
-                <div class="discounts__card"><img class="discounts__card-bg" src="assets/img/discounts/1.webp">
-                  <h3 class="title discounts__card-title" data-swiper-parallax="-50">Скидка 40% на все модели месяца</h3>
-                  <p class="discounts__card-description" data-swiper-parallax="-50">Акции и спецпредложения для ещё более выгодной покупки кухни вашей мечты. А ещё мы бесплатно предлагаем дизайн-проект.</p>
-                  <button class="button button--light discounts__card-button" data-swiper-parallax="-50">Получить скидку</button>
-                </div>
-              </div>
-              <div class="swiper-slide discounts__swiper-slide">
-                <div class="discounts__card"><img class="discounts__card-bg" src="assets/img/discounts/2.webp">
-                  <p class="discounts__card-subtitle" data-swiper-parallax="-50">Заголовок акции</p>
-                </div>
-              </div>
-              <div class="swiper-slide discounts__swiper-slide">
-                <div class="discounts__card" id="customcursor">
-                  <picture class="discounts__hover-cursor">
-                    <source media="(min-width: 1920px)" srcset="assets/img/discounts/cursor-lg.png" type="image/png">
-                    <source media="(min-width: 1280px)" srcset="assets/img/discounts/cursor.png" type="image/png"><img src="assets/img/discounts/cursor-lg.png" alt="cursor">
-                  </picture><img class="discounts__card-bg" src="assets/img/discounts/1.webp">
-                  <h3 class="title discounts__card-title" data-swiper-parallax="-50">Дарим 150 000 ₽  на новую кухню</h3>
-                  <p class="discounts__card-description" data-swiper-parallax="-50">Акции и спецпредложения для ещё более выгодной покупки кухни вашей мечты. А ещё мы бесплатно предлагаем дизайн-проект.</p>
+          <div class="swiper-container discounts__swiper-container2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide discounts__swiper-slide2">
+                <div class="swiper-container discounts__swiper-container">
+                  <div class="swiper-wrapper discounts__swiper-wrapper">
+                    <div class="swiper-slide discounts__swiper-slide">
+                      <div class="discounts__card"><img class="discounts__card-bg" src="assets/img/discounts/1.webp">
+                        <h3 class="title discounts__card-title" data-swiper-parallax="-50">Скидка 40% на все модели месяца</h3>
+                        <p class="discounts__card-description" data-swiper-parallax="-50">Акции и спецпредложения для ещё более выгодной покупки кухни вашей мечты. А ещё мы бесплатно предлагаем дизайн-проект.</p>
+                        <button class="button button--light discounts__card-button" data-swiper-parallax="-50">Получить скидку</button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide discounts__swiper-slide">
+                      <div class="discounts__card customcursor"><img class="discounts__card-bg" src="assets/img/discounts/2.webp">
+                        <p class="discounts__card-subtitle" data-swiper-parallax="-50">Заголовок акции</p>
+                        <picture></picture>
+                        <source media="(min-width: 1920px)" srcset="assets/img/discounts/cursor-lg.png" type="image/png">
+                        <source media="(min-width: 1280px)" srcset="assets/img/discounts/cursor.png" type="image/png"><img class="discounts__hover-cursor" src="assets/img/discounts/cursor-lg.png" alt="cursor">
+                      </div>
+                    </div>
+                    <div class="swiper-slide discounts__swiper-slide">
+                      <div class="discounts__card customcursor">
+                        <picture class="discounts__hover-cursor">
+                          <source media="(min-width: 1920px)" srcset="assets/img/discounts/cursor-lg.png" type="image/png">
+                          <source media="(min-width: 1280px)" srcset="assets/img/discounts/cursor.png" type="image/png"><img src="assets/img/discounts/cursor-lg.png" alt="cursor">
+                        </picture><img class="discounts__card-bg" src="assets/img/discounts/1.webp">
+                        <h3 class="title discounts__card-title" data-swiper-parallax="-50">Дарим 150 000 ₽  на новую кухню</h3>
+                        <p class="discounts__card-description" data-swiper-parallax="-50">Акции и спецпредложения для ещё более выгодной покупки кухни вашей мечты. А ещё мы бесплатно предлагаем дизайн-проект.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -716,7 +729,7 @@
                         <source media="(min-width: 768px)" srcset="assets/img/feedback/zoon-md.svg" type="image/svg+xml">
                         <source media="(min-width: 320px)" srcset="assets/img/feedback/zoon.svg" type="image/svg+xml"><img src="assets/img/feedback/otzovik.svg" alt="Otzovik">
                       </picture></a></div>
-                  <p class="banner__card-quantity">На основе 65 отзывов</p>
+                  <p class="banner__card-quantity">На основе 85 отзывов</p>
                 </div>
                 <div class="banner__card">
                   <div class="banner__card-info"><span class="banner__card-rate">4,9</span><a class="banner__card-logo" href="#">
@@ -731,12 +744,12 @@
           </div>
         </div>
       </section>
-      <div class="social">
+      <div class="social main-social">
         <div class="container social__container">
           <h2 class="title social__title">КухниСити в соцсетях</h2>
           <p class="social__description">Новые модели, выгодные акции и неожиданные дизайнерские решения ежедневно в удобном для&nbsp;вас&nbsp;формате.&nbsp;Подписывайтесь!</p>
           <h2 class="social__subtitle">Подписывайтесь на нас</h2>
-          <div class="social__block"><a class="social__block-link" href="#"><img src="assets/img/social/facebook.svg" alt="facebook"></a><a class="social__block-link" href="#"><img src="assets/img/social/vk.svg" alt="vk"></a><a class="social__block-link" href="#"><img src="assets/img/social/instagram.svg" alt="instagram"></a><a class="social__block-link" href="#"><img src="assets/img/social/odnoklasniki.svg" alt="odnoklasniki"></a><a class="social__block-link" href="#"><img src="assets/img/social/pinterest.svg" alt="pinterest"></a><a class="social__block-link" href="#"><img src="assets/img/social/twitter.svg" alt="twitter"></a><a class="social__block-link" href="#"><img src="assets/img/social/youtube.svg" alt="youtube"></a></div>
+          <div class="social__block"><a class="social__block-link" href="#"><img class="social__block-img" src="assets/img/social/facebook.svg" alt="facebook"></a><a class="social__block-link" href="#"><img class="social__block-img" src="assets/img/social/vk.svg" alt="vk"></a><a class="social__block-link" href="#"><img class="social__block-img" src="assets/img/social/instagram.svg" alt="instagram"></a><a class="social__block-link" href="#"><img class="social__block-img" src="assets/img/social/odnoklasniki.svg" alt="odnoklasniki"></a><a class="social__block-link" href="#"><img class="social__block-img" src="assets/img/social/pinterest.svg" alt="pinterest"></a><a class="social__block-link" href="#"><img class="social__block-img" src="assets/img/social/twitter.svg" alt="twitter"></a><a class="social__block-link" href="#"><img class="social__block-img" src="assets/img/social/youtube.svg" alt="youtube"></a></div>
         </div>
         <div class="swiper-contaner social__swiper-container">
           <div class="swiper-wrapper social__swiper-wrapper"> 
@@ -864,7 +877,7 @@
           </div>
           <div class="leader__block">
             <div class="title leader__title">Кухни на заказ в&nbsp;салонах Кухнисити</div>
-            <div class="leader__text">Кухня – одно из самых важных помещений в доме. Здесь готовят еду, устраивают семейные обеды, дружеские посиделки, а&nbsp;порой и званые вечера. Отсюда вытекают главные критерии выбора мебели – материалы и фурнитура (от покрытия столешницы и заканчивая ручками на фасадах) должны быть готовы к интенсивным нагрузкам,  а продуманная планировка должна помогать выполнять бытовые дела с легкостью, комфортом и удовольствием. А еще хочется, чтобы было красиво!</div>
+            <div class="leader__text">Кухня – одно из самых важных помещений в доме. Здесь готовят еду, устраивают семейные обеды, дружеские посиделки, а&nbsp;порой и званые вечера. Отсюда вытекают главные критерии выбора мебели – материалы и фурнитура (от покрытия столешницы и заканчивая ручками на фасадах) должны быть готовы к интенсивным нагрузкам,  а продуманная планировка должна помогать выполнять бытовые дела с легкостью, комфортом и удовольствием. А&nbsp;еще хочется, чтобы было красиво!</div>
             <div class="leader__text leader__text-expand"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, obcaecati pariatur. Unde quas aspernatur sit, placeat repellendus iusto vitae excepturi.                    </div>
             <div class="leader__button">раскрыть</div>
             <div class="leader__button2 button button--dark">написать директору</div>
@@ -876,8 +889,7 @@
           <div class="title bonuses__title">Спецпредложения и бонусы</div>
           <div class="swiper-container bonuses__swiper-container">
             <div class="swiper-wrapper bonuses__swiper-wrapper">
-              <div class="swiper-slide bonuses__swiper-slide">
-                <div class="bonuses__card bonuses__card">
+              <div class="swiper-slide bonuses__swiper-slide"><a class="bonuses__card bonuses__card" href="#">
                   <picture class="bonuses__card-img bg-image">
                     <source media="(min-width: 768px)" srcset="assets/img/bonuses/ascona-md.webp" type="image/webp">
                     <source media="(min-width: 768px)" srcset="assets/img/bonuses/ascona-md.jpg" type="image/jpg">
@@ -885,11 +897,8 @@
                     <source media="(min-width: 320px)" srcset="assets/img/bonuses/ascona.jpg" type="image/jpg"><img class="lazyload" src="assets/img/bonuses/ascona.jpg" alt="bg">
                   </picture>
                   <h3 class="bonuses__card-title">Купите кухню <span class="bonuses__card-subtitle">Ascona</span></h3>
-                  <p class="bonuses__card-text">Столешница в подарок</p>
-                </div>
-              </div>
-              <div class="swiper-slide bonuses__swiper-slide">
-                <div class="bonuses__card bonuses__card--light">
+                  <p class="bonuses__card-text">Столешница в подарок</p></a></div>
+              <div class="swiper-slide bonuses__swiper-slide"><a class="bonuses__card bonuses__card--light" href="#">
                   <picture class="bonuses__card-img bg-image">
                     <source media="(min-width: 768px)" srcset="assets/img/bonuses/certificate-md.webp" type="image/webp">
                     <source media="(min-width: 768px)" srcset="assets/img/bonuses/certificate-md.jpg" type="image/jpg">
@@ -897,11 +906,8 @@
                     <source media="(min-width: 320px)" srcset="assets/img/bonuses/certificate.jpg" type="image/jpg"><img class="lazyload" src="assets/img/bonuses/certificate.jpg" alt="bg">
                   </picture>
                   <h3 class="bonuses__card-title">Получи сертификат на 100 000 ₽ </h3>
-                  <p class="bonuses__card-text">До конца августа</p><img class="bonuses__card-label" src="assets/img/bonuses/certificate-label.png" alt="certificate-label">
-                </div>
-              </div>
-              <div class="swiper-slide bonuses__swiper-slide">
-                <div class="bonuses__card bonuses__card--light">
+                  <p class="bonuses__card-text">До конца августа</p><img class="bonuses__card-label" src="assets/img/bonuses/certificate-label.png" alt="certificate-label"></a></div>
+              <div class="swiper-slide bonuses__swiper-slide"><a class="bonuses__card bonuses__card--light" href="#">
                   <picture class="bonuses__card-img bg-image">
                     <source media="(min-width: 768px)" srcset="assets/img/bonuses/discount-md.webp" type="image/webp">
                     <source media="(min-width: 768px)" srcset="assets/img/bonuses/discount-md.jpg" type="image/jpg">
@@ -909,9 +915,7 @@
                     <source media="(min-width: 320px)" srcset="assets/img/bonuses/discount.jpg" type="image/jpg"><img class="lazyload" src="assets/img/bonuses/discount-md.jpg" alt="bg">
                   </picture>
                   <h3 class="bonuses__card-title">Скидка 40% на все модели месяца</h3>
-                  <p class="bonuses__card-text">Бесплатный дизайн-проект в подарок</p>
-                </div>
-              </div>
+                  <p class="bonuses__card-text">Бесплатный дизайн-проект в подарок</p></a></div>
             </div>
             <div class="swiper-button-prev bonuses__swiper-button-prev"></div>
             <div class="swiper-button-next bonuses__swiper-button-next"></div>
@@ -934,7 +938,7 @@
               <input class="mainForm__input contactUs__input" type="text" placeholder="Ваше имя">
               <input class="mainForm__input contactUs__input" type="phone" placeholder="Ваш телефон">
             </div>
-            <button class="mainForm__button button button--dark contactUs__button">Отправить</button>
+            <button class="mainForm__button button button--primary contactUs__button">Отправить</button>
           </form>
         </div>
         <p class="policy contactUs__policy">Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>

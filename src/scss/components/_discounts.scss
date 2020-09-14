@@ -25,6 +25,12 @@
         }
     }
 
+    &__swiper {
+        &-container2 {
+            overflow: visible;
+        }
+    }
+
     &__card {
         // display: none;
         width: 269px;
@@ -139,6 +145,7 @@
     }
 
     &__hover-cursor {
+        overflow: hidden;
         z-index: 2000;
         // opacity: 0;  
         display: none;

@@ -60,6 +60,7 @@
         }
 
 
+
     }
 
     &__card {
@@ -92,5 +93,11 @@
 
     &__cards {
         display: none;
+    }
+}
+
+.main-social {
+    .social__block-img {
+        transform: scale(0.5);
     }
 }

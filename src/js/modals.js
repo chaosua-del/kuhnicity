@@ -1,6 +1,9 @@
 import $ from 'jquery';
 
 export default function modals() {
+    $('.header__contacts-button').on('click', () => {
+        $('.modal').fadeIn('slow');
+    });
 
     $('.modal').on('click', event => {
 

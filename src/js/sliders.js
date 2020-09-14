@@ -27,7 +27,7 @@ export default function sliders() {
             updateOnWindowResize: false,
             // freeMode: true,
             // loop: false,
-            slidesOffsetAfter: 110,
+            slidesOffsetAfter: 0,
         });
 
         social.translateTo(270);
@@ -35,13 +35,13 @@ export default function sliders() {
         const stages = new Swiper('.stages__swiper-container', {
             slidesPerView: 'auto',
             spaceBetween: 0,
-            slidesOffsetAfter: 500,
+            slidesOffsetAfter: 50,
             updateOnWindowResize: false,
             loop: false,
             navigation: {
                 nextEl: '.stages__swiper-button-next',
                 prevEl: '.stages__swiper-button-prev',
-            },
+            }
         });
 
         stages.translateTo(270);
@@ -54,15 +54,22 @@ export default function sliders() {
             slidesOffsetAfter: 2,
         });
 
+    } else {
+        const discounts2 = new Swiper('.discounts__swiper-container2', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            slidesOffsetAfter: 200,
+            updateOnWindowResize: false,
+            freeMode: true,
+        });
     }
-
     if (window.innerWidth >= 768 && window.innerWidth < 1280) {
 
 
         const stages = new Swiper('.stages__swiper-container', {
             slidesPerView: 'auto',
             spaceBetween: 0,
-            slidesOffsetAfter: 500,
+            slidesOffsetAfter: 900,
             updateOnWindowResize: false,
             loop: false,
             navigation: {
@@ -72,7 +79,6 @@ export default function sliders() {
         });
 
         stages.translateTo(318);
-
 
 
         const banner = new Swiper('.banner__swiper-container', {

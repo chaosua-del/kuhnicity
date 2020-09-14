@@ -73,6 +73,7 @@ let app = {
 
 
         app.document.ready(() => {
+            document.querySelector('.hero').style.marginTop = `${document.querySelector('.header').offsetHeight}px`;
             if (document.querySelector('.content').id == 'main') {
                 console.log('main');
                 sliders();
@@ -82,7 +83,10 @@ let app = {
                 expand();
                 hovers();
                 modals();
-                window.$mq = window.$('.discounts__marquee').marquee();
+                window.$mq = window.$('.discounts__marquee').marquee({
+                    startVisible: true,
+                    speed: 200
+                });
             } else if (document.querySelector('.content').id == 'catalog') {
                 catalog();
                 svgReplace();
