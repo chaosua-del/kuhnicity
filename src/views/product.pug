@@ -13,29 +13,11 @@ html(lang="ru", class="no-js")
 
         .content#product
           block content
-            block filter
-                include _includes/blocks/filter
-            
-            block models 
-                include _includes/blocks/catalogModels
+            block hero 
+                include _includes/blocks/product/hero
 
-            block leader
-                include _includes/blocks/catalogLeader
-
-            block models2
-                include _includes/blocks/catalogModels2
-
-            block stages
-                include _includes/blocks/stages
-
-            block feedback
-                include _includes/blocks/catalogFeedback
-
-            block benefits
-                include _includes/blocks/benefits
-
-            block leader
-                include _includes/blocks/leader
+            block chars 
+                include _includes/blocks/product/chars
                
                
         
@@ -47,7 +29,7 @@ html(lang="ru", class="no-js")
             include _includes/blocks/modal
 
         block styles
-          link(rel='stylesheet', href='assets/css/catalog.css?v=' + PACKAGE.version)
+          link(rel='stylesheet', href='assets/css/product.css?v=' + PACKAGE.version)
         block scripts-config
             script.
                 /* изменяемые настройки скриптов, указаны значения по умолчанию */

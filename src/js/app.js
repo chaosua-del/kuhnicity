@@ -13,6 +13,7 @@ import ionRangeSlider from 'ion-rangeSlider/js/ion.rangeSlider.min.js'
 
 
 import page from 'page';
+import header from 'header';
 import forms from 'forms';
 import sliders from 'sliders';
 import filters from 'filters';
@@ -21,6 +22,7 @@ import expand from 'expand';
 import hovers from 'hovers';
 import modals from 'modals';
 import customCursor from 'customCursor';
+import product from 'product';
 
 import catalog from 'catalog';
 
@@ -74,10 +76,10 @@ let app = {
 
         app.document.ready(() => {
             document.querySelector('.content').style.marginTop = `${document.querySelector('.header').offsetHeight}px`;
-
+            header();
             if (document.querySelector('.content').id == 'main') {
-                // console.log('main');
                 expand();
+                // console.log('main');
                 sliders();
                 filters();
                 customCursor();
@@ -93,6 +95,9 @@ let app = {
                 catalog();
                 modals();
 
+            } else if (document.querySelector('.content').id == 'product') {
+                product();
+                customCursor();
             }
             svgReplace();
 
@@ -102,14 +107,15 @@ let app = {
         // });
 
         this.document.on(app.resizeEventName, () => {
-            expand();
+
             if (document.querySelector('.content').id == 'main') {
                 sliders();
                 hovers();
-
+                expand();
 
             } else if (document.querySelector('.content').id == 'catalog') {
                 catalog();
+                expand();
             }
             location.reload();
             // console.log('rezising');

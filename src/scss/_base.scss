@@ -277,4 +277,28 @@ strong {
     &-disabled {
         transform: translate3d(0px, 0, 0) !important;
     }
+
+    &-scrollbar-drag {
+        background-color: $color-red;
+    }
+
+    &-scrollbar {
+        height: 2px !important;
+    }
+
+}
+
+.status {
+    font-size: 12px;
+    line-height: 15px;
+
+    /* identical to box height */
+    &-item {
+        color: #131313;
+
+        &--active {
+            color: #868686;
+        }
+    }
+
 }

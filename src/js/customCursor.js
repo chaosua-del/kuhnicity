@@ -2,14 +2,14 @@ import $ from 'jquery';
 
 export default function customCursor() {
     if (window.innerWidth >= 1280) {
-        const card = $('.discounts__hover-wrap');
+        // const card = $('.discounts__hover-wrap');
         const block = $('.customcursor');
 
         $.each(block, (i, elem) => {
-            const innerCursor = elem.querySelector('.discounts__hover-cursor');
+            const innerCursor = elem.querySelector('.hover-cursor');
             $(elem).on('mousemove', event => {
-                console.log('hello');
-                let parentOffset = $(elem).parent().offset();
+                // console.log(innerCursor);
+                let parentOffset = $(elem).offset();
                 let clientX = (event.pageX - parentOffset.left);
                 let clientY = (event.pageY - parentOffset.top);
                 // console.log(clientX - parentOffset.left, clientY - parentOffset.top);

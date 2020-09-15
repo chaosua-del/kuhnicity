@@ -1,0 +1,105 @@
+.chars {
+    background-color: #f4f4f4;
+
+    &__container {
+        padding-top: 58px;
+        // overflow: visible;
+        // padding-right: 0;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__swiper {
+        &-scrollbar {
+            display: none !important;
+        }
+    }
+
+    &__expand {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-in-out;
+
+        &-button {
+            cursor: pointer;
+            font-size: 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 41px;
+            user-select: none;
+            position: relative;
+            align-items: baseline;
+
+            &::after {
+                content: '+';
+                font-family: sans-serif;
+                font-weight: 600;
+                float: right;
+                font-size: 23px;
+                // display: inline-block;
+                // position: absolute;
+                // transform: rotate(0);
+                transition: transform 0.1s ease-in-out;
+                // transform-origin: center;
+            }
+
+            &--active {
+                &::after {
+                    // transform: ;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    &__info {
+        margin-bottom: 57px;
+
+        &-title {
+            text-transform: uppercase;
+            color: #292929;
+            font-weight: 600;
+            margin-bottom: 3px;
+
+        }
+
+        &-description {
+            font-size: 12px;
+            line-height: 140%;
+            /* identical to box height, or 17px */
+            letter-spacing: 0.035em;
+            color: #4E4E4E;
+            max-width: 233px;
+        }
+    }
+
+    &-image {
+
+
+        &__swiper {
+
+            &-slide {
+                width: 456px !important;
+                height: 42px;
+                background: url('../img/chars/shape.svg') no-repeat center / cover;
+            }
+
+            &-wrapper {
+                padding-bottom: 50px;
+            }
+
+            &-container {
+                padding-right: 25px;
+                margin-bottom: 64px;
+            }
+
+
+        }
+
+
+    }
+
+
+
+}

@@ -1,18 +1,3 @@
-.status {
-    font-size: 12px;
-    line-height: 15px;
-
-    /* identical to box height */
-    &-item {
-        color: #131313;
-
-        &--active {
-            color: #868686;
-        }
-    }
-
-}
-
 .filter {
     background-color: #f2f2f2;
 
