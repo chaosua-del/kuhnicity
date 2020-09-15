@@ -252,21 +252,6 @@
     }
 
     // models-1280
-    .catalogModels {
-        .card__hover-block {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .card__hover-button {
-            color: #323232;
-            border: 1px solid #323232;
-            background: transparent;
-            width: auto;
-            padding: 22px 57px;
-        }
-    }
 
     // leader-1280
     .catalogLeader {
@@ -630,7 +615,8 @@
         }
 
         &__cancel2 {
-            background-color: $color-red;
+            border: 1px solid #000000;
+            background-color: transparent;
             width: 47px;
             height: 47px;
             padding: 0;
@@ -638,16 +624,38 @@
             justify-content: center;
             align-items: center;
             top: -91px;
+            transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out;
 
             span {
                 display: none;
             }
 
             &::after {
-                width: 10px;
-                height: 10px;
-                background: url('../img/filter/cancel-xl.svg') no-repeat center / cover;
-                margin-left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                content: '+';
+                font-size: 25px;
+                transform: rotate(45deg);
+                // bottom: 2px;
+                // left: 2px;
+                font-weight: 600;
+                font-family: serif;
+                // background: url('../img/filter/cancel-xl.svg') no-repeat center / cover;
+                background: transparent;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                transition: color 0.2s ease-in-out;
+            }
+
+            &:hover {
+                background-color: $color-red;
+                border-color: transparent;
+
+                &::after {
+                    color: #FFFFFF;
+                }
             }
         }
     }

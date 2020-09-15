@@ -29,7 +29,7 @@ export default function expand() {
     });
 
     const headerLocation = document.querySelector('.header__location');
-    console.dir(headerLocation);
+    // console.dir(headerLocation);
     headerLocation.style.width = `${headerLocation.offsetWidth}px`;
 
     headerLocation.addEventListener('click', event => {

@@ -4411,16 +4411,6 @@ strong {
     margin-bottom: 51px; }
   #catalog .benefits__container {
     padding-top: 133px; }
-  .catalogModels .card__hover-block {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .catalogModels .card__hover-button {
-    color: #323232;
-    border: 1px solid #323232;
-    background: transparent;
-    width: auto;
-    padding: 22px 57px; }
   .catalogLeader {
     background-color: #fff;
     margin-top: 46px; }
@@ -4610,20 +4600,36 @@ strong {
     .tabs__button {
       margin-right: 20px; }
     .tabs__cancel2 {
-      background-color: #FF3D00;
+      border: 1px solid #000000;
+      background-color: transparent;
       width: 47px;
       height: 47px;
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      top: -91px; }
+      top: -91px;
+      transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out; }
       .tabs__cancel2 span {
         display: none; }
       .tabs__cancel2::after {
-        width: 10px;
-        height: 10px;
-        background: url("../img/filter/cancel-xl.svg") no-repeat center/cover;
-        margin-left: 0; } }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: '+';
+        font-size: 25px;
+        transform: rotate(45deg);
+        font-weight: 600;
+        font-family: serif;
+        background: transparent;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        transition: color 0.2s ease-in-out; }
+      .tabs__cancel2:hover {
+        background-color: #FF3D00;
+        border-color: transparent; }
+        .tabs__cancel2:hover::after {
+          color: #FFFFFF; } }
 
 /*# sourceMappingURL=maps/catalog.css.map */
