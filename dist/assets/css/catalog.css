@@ -1155,7 +1155,10 @@ strong {
       display: inline-block;
       top: 5px;
       position: absolute;
-      right: 0px; }
+      right: 0px;
+      transition: transform 0.2s ease-in-out; }
+    .type__select--active::after {
+      transform: rotate(180deg); }
   .type__block {
     max-height: 0;
     overflow: hidden;
@@ -1165,7 +1168,7 @@ strong {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    transition: max-height 0.2s ease-in-out; }
+    transition: max-height 0.1s ease-in-out; }
   .type__option {
     color: #AEAEAE;
     margin-bottom: 10px;
