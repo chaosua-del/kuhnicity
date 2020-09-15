@@ -913,7 +913,7 @@ strong {
     padding-right: 19px;
     position: absolute;
     width: 100%;
-    z-index: 1000;
+    z-index: 501;
     top: 58px;
     display: none; }
   .filter__expand-button {
@@ -1142,33 +1142,37 @@ strong {
   z-index: 400;
   position: relative;
   user-select: none; }
-  .type-list {
-    flex-direction: column;
+  .type__select {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    min-width: 100px; }
+    .type__select::after {
+      content: '';
+      width: 8px;
+      height: 4px;
+      background: url("../img/expand-arrow.svg") no-repeat center/cover;
+      display: inline-block;
+      top: 5px;
+      position: absolute;
+      right: 0px; }
+  .type__block {
+    max-height: 0;
+    overflow: hidden;
     position: absolute;
     width: 100%;
-    top: 20px;
-    padding-top: 15px;
-    align-items: center;
-    background-color: #ffffff;
-    display: none; }
-    .type-list--active {
-      display: flex; }
-  .type__item {
-    cursor: pointer;
+    top: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    color: #AEAEAE; }
-    .type__item--active {
-      color: #323232; }
-      .type__item--active::after {
-        content: '';
-        width: 8px;
-        height: 4px;
-        background: url("../img/expand-arrow.svg") no-repeat center/cover;
-        display: inline-block;
-        margin-left: 10px; }
+    flex-direction: column;
+    background-color: #fff;
+    transition: max-height 0.2s ease-in-out; }
+  .type__option {
+    color: #AEAEAE;
+    margin-bottom: 10px;
+    cursor: pointer; }
+    .type__option-selected {
+      color: #323232;
+      display: block; }
 
 .irs-bar {
   background-color: #FF3D00 !important; }

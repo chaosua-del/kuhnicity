@@ -68,7 +68,7 @@
         padding-right: 19px;
         position: absolute;
         width: 100%;
-        z-index: 1000;
+        z-index: 501;
         top: 58px;
         display: none;
     }
@@ -383,45 +383,95 @@
     position: relative;
     // cursor: pointer;
     user-select: none;
+    // align-items: center;
 
-    &-list {
-        // display: none;
-        flex-direction: column;
+    &__select {
+        position: relative;
+        display: flex;
+        // align-items: center;
+        cursor: pointer;
+        min-width: 100px;
+
+        &::after {
+            content: '';
+            width: 8px;
+            height: 4px;
+            background: url('../img/expand-arrow.svg') no-repeat center / cover;
+            display: inline-block;
+            // margin-left: 10px;
+            top: 5px;
+            position: absolute;
+            right: 0px;
+        }
+    }
+
+
+
+    &__block {
+        max-height: 0;
+        overflow: hidden;
         position: absolute;
         width: 100%;
-        top: 20px;
-        padding-top: 15px;
-        align-items: center;
-        background-color: #ffffff;
-        display: none;
-
-        &--active {
-            display: flex;
-        }
-    }
-
-    &__item {
-        cursor: pointer;
+        top: 30px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
+        flex-direction: column;
+        background-color: #fff;
+        transition: max-height 0.2s ease-in-out;
+    }
+
+    &__option {
         color: #AEAEAE;
+        margin-bottom: 10px;
 
 
-        &--active {
+        cursor: pointer;
+
+        &-selected {
             color: #323232;
+            display: block;
 
-            &::after {
-                content: '';
-                width: 8px;
-                height: 4px;
-                background: url('../img/expand-arrow.svg') no-repeat center / cover;
-                display: inline-block;
-                margin-left: 10px;
-            }
+
         }
     }
+
+    // &-list {
+    //     // display: none;
+    //     flex-direction: column;
+    //     position: absolute;
+    //     width: 100%;
+    //     top: 20px;
+    //     padding-top: 15px;
+    //     align-items: center;
+    //     background-color: #ffffff;
+    //     display: none;
+
+    //     &--active {
+    //         display: flex;
+    //     }
+    // }
+
+    // &__item {
+    //     cursor: pointer;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     margin-bottom: 20px;
+    //     color: #AEAEAE;
+
+
+    //     &--active {
+    //         color: #323232;
+
+    //         &::after {
+    //             content: '';
+    //             width: 8px;
+    //             height: 4px;
+    //             background: url('../img/expand-arrow.svg') no-repeat center / cover;
+    //             display: inline-block;
+    //             margin-left: 10px;
+    //         }
+    //     }
+    // }
 
 
 }

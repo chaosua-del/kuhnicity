@@ -80,19 +80,6 @@ export default function catalog() {
         });
     }
 
-    // leader-expand
-    // // making collapsible text in section leader
-    // const coll = document.querySelector('.leader__button')
-
-    // coll.addEventListener('click', event => {
-    //     const content = event.target.previousElementSibling;
-    //     coll.classList.toggle('leader__button--active')
-    //     if (content.style.maxHeight) {
-    //         content.style.maxHeight = null;
-    //     } else {
-    //         content.style.maxHeight = content.scrollHeight + 'px';
-    //     }
-    // });
 
 
 
@@ -111,11 +98,36 @@ export default function catalog() {
 
     const filterButton = document.querySelectorAll('.filter__expand-button');
     const filterItem = document.querySelectorAll('.filter__expand-item');
-    const filterType = document.querySelectorAll('.type__item');
-    const filterActive = document.querySelector('.type__item--active');
+    const filterSelect = document.querySelector('.type__select');
     const tabsButton = document.querySelectorAll('.tabs__button');
     const tabs = document.querySelector('.filter__tabs');
     const tabsCancel = document.querySelector('.tabs__cancel');
+
+    console.dir(filterSelect);
+
+    // filterActive.style.width = `${filterActive.offsetWidth}px`;
+
+    filterSelect.addEventListener('click', event => {
+        filterSelect.classList.toggle('type__select--active');
+        const content = document.querySelector('.type__block');
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }
+    });
+
+
+    const filterActive = document.querySelector('.type__option-selected')
+    const filterOption = document.querySelectorAll('.type__option');
+    filterOption.forEach(elem => {
+        elem.addEventListener('click', event => {
+            let temp = event.target.textContent;
+            event.target.textContent = filterActive.textContent;
+            filterActive.textContent = temp;
+        });
+    });
+
 
     filterButton.forEach(elem => {
         elem.addEventListener('click', event => {
@@ -132,8 +144,8 @@ export default function catalog() {
                         elem.classList.remove('filter__expand-button--active');
                     });
                     content.style.maxHeight = content.scrollHeight + 'px';
-                    event.target.classList.toggle('filter__expand-button--active');
                 }
+                event.target.classList.toggle('filter__expand-button--active');
 
             }
 
@@ -158,12 +170,6 @@ export default function catalog() {
         });
     });
 
-    filterActive.addEventListener('click', event => {
-        if (event.target.classList.contains('active-text')) {
-
-            document.querySelector('.type-list').classList.toggle('type-list--active');
-        }
-    });
 
 
 
