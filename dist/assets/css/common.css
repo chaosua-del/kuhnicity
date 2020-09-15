@@ -4156,7 +4156,8 @@ strong {
     padding-bottom: 56px; }
     .leader__container {
       max-width: 1920px;
-      padding-left: 158px; }
+      padding-left: 158px;
+      padding-bottom: 300px; }
     .leader__info-img {
       min-width: 1004px !important;
       height: 770px !important;
@@ -4181,7 +4182,7 @@ strong {
       width: auto;
       padding: 23px 52px;
       position: absolute;
-      bottom: 47px; }
+      bottom: -135px; }
   .bonuses__container {
     padding-top: 112px;
     min-width: 100%;

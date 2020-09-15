@@ -454,12 +454,15 @@
     }
 
     // models-1920
-    .catalogModels {
+    .catalogModels2 {
         .card {
             &:nth-last-child(1) {
                 display: none;
             }
         }
+    }
+
+    .catalogModels {
 
         .card--wide {
             width: 1045.42px;
