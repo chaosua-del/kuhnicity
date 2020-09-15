@@ -1,0 +1,94 @@
+.projects {
+    background-color: #f4f4f4;
+    // padding-left: 25px;
+
+    .bonuses__card {
+        height: 356px;
+        padding: 0 !important;
+
+        &::after {
+            display: none !important;
+        }
+
+        &-img {
+            img {
+                min-height: 100%;
+            }
+        }
+    }
+
+    .bonuses__swiper {
+        &-button {
+
+            &-next,
+            &-prev {
+                top: 630px;
+            }
+        }
+
+        &-slide {
+            height: 100% !important;
+        }
+    }
+
+    &__info {
+        background-color: #fff;
+        padding-top: 26px;
+        padding-left: 24px;
+        padding-bottom: 20px;
+        height: 228px;
+
+        &-name {
+            font-size: 14px;
+            line-height: 120.3%;
+            /* or 17px */
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+            color: #141414;
+            width: 233px;
+            margin-bottom: 7px;
+
+        }
+
+        &-description {
+            font-size: 10px;
+            line-height: 140%;
+            /* or 14px */
+            letter-spacing: 0.035em;
+            color: #666666;
+            margin-top: 33px;
+            width: 219px;
+        }
+
+    }
+
+    &__stats {
+        display: flex;
+
+        &-block {
+            margin-right: 13px;
+        }
+
+        &-number {
+            font-size: 20px;
+            line-height: 25px;
+            /* identical to box height */
+            color: #141414;
+
+            &--red {
+                color: $color-red;
+                font-weight: 600;
+            }
+        }
+
+        &-label {
+            font-size: 10px;
+            line-height: 120.3%;
+            /* identical to box height, or 12px */
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+            color: #4F4F4F;
+
+        }
+    }
+}

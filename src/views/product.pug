@@ -12,12 +12,21 @@ html(lang="ru", class="no-js")
             include _includes/blocks/header
 
         .content#product
-          block content
-            block hero 
-                include _includes/blocks/product/hero
+            block content
+                block hero 
+                    include _includes/blocks/product/hero
 
-            block chars 
-                include _includes/blocks/product/chars
+                block chars 
+                    include _includes/blocks/product/chars
+
+                block benefits 
+                    include _includes/blocks/product/benefits
+
+                block projects 
+                    include _includes/blocks/product/projects
+
+                block questions
+                    include _includes/blocks/product/questions
                
                
         

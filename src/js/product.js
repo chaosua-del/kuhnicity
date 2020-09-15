@@ -28,6 +28,14 @@ export default function product() {
     }
 
     if (window.innerWidth < 768) {
+        const benefits = new Swiper('.benefits__swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            freeMode: true,
+            loop: false,
+            slidesOffsetAfter: 0,
+        });
+
         const charsImage = new Swiper('.chars-image__swiper-container', {
             updateOnWindowResize: false,
             freeMode: true,
@@ -41,24 +49,67 @@ export default function product() {
         const charsImage = new Swiper('.chars__swiper-container', {
             updateOnWindowResize: false,
             freeMode: true,
-            slidesOffsetAfter: 150,
+            slidesOffsetAfter: 400,
             scrollbar: {
                 el: '.chars__swiper-scrollbar',
                 draggable: false,
             }
         });
+
+        const benefits = new Swiper('.benefits__swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            freeMode: true,
+            loop: false,
+            slidesOffsetAfter: 100,
+        });
     }
 
-    const coll = document.querySelector('.chars__expand-button')
+    const coll = document.querySelectorAll('.chars__expand-button')
 
-    coll.addEventListener('click', event => {
-        const content = event.target.nextElementSibling;
-        coll.classList.toggle('chars__expand-button--active');
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + 'px';
+    coll.forEach(elem => {
+        elem.addEventListener('click', event => {
+            const content = event.target.nextElementSibling;
+            elem.classList.toggle('chars__expand-button--active');
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        });
+    });
+
+    const expand = document.querySelectorAll('.questions__expand-button')
+
+    expand.forEach(elem => {
+        elem.addEventListener('click', event => {
+            const content = event.target.nextElementSibling;
+            elem.classList.toggle('questions__expand-button--active');
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        });
+    });
+
+
+    const bonuses = new Swiper('.bonuses__swiper-container', {
+        slidesPerView: 'auto',
+        // spaceBetween: 10,
+        updateOnWindowResize: false,
+        // freeMode: true,
+        // loop: false,
+        slidesOffsetAfter: 20,
+        navigation: {
+            nextEl: '.bonuses__swiper-button-next',
+            prevEl: '.bonuses__swiper-button-prev',
         }
     });
+
+
+    bonuses.translateTo(document.querySelector('.bonuses__swiper-wrapper').offsetWidth);
+
+
 
 }

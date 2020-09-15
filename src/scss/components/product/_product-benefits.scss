@@ -1,0 +1,21 @@
+.productBenefits2 {
+    background-color: #f4f4f4;
+    padding-bottom: 49px;
+
+    .benefits {
+        &__card {
+            height: 306px;
+
+            &-title {
+                color: $color-red;
+                margin-bottom: 13px;
+            }
+        }
+
+        &__swiper {
+            &-slide {
+                width: 900px !important;
+            }
+        }
+    }
+}

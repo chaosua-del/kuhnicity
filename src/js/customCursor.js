@@ -26,9 +26,9 @@ export default function customCursor() {
                 // console.log(clientX, block.width(), clientY, block.innerHeight());
             });
 
-            // $(elem).on('mouseleave', event => {
-            //     innerCursor.style.display = 'none';
-            // });
+            $(elem).on('mouseleave', event => {
+                innerCursor.style.display = 'none';
+            });
         });
 
 
