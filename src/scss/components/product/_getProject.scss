@@ -1,0 +1,71 @@
+.getProject {
+    &__container {
+        background: url('../img/product/form-bg-md.png') no-repeat center / cover;
+        position: relative;
+        padding-bottom: 54px;
+        padding-top: 49px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(#000000, 0.4);
+        }
+    }
+
+    &__title,
+    &__description {
+        color: #FFFFFF;
+        text-align: center;
+        width: 295px;
+        z-index: 10;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        span {
+            display: block;
+        }
+    }
+
+    &__description {
+        width: 274px;
+        font-size: 12px;
+    }
+
+    &__mainForm {
+        z-index: 100;
+        background-color: rgba(#ffffff, 0.9);
+        padding-top: 68px;
+        padding-bottom: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    &__input {
+        margin-bottom: 25px;
+        transition: border-color 0.2s ease-in-out;
+
+        &:focus {
+            border-color: #323232;
+        }
+    }
+
+    &__button {
+        margin-top: 14px;
+        margin-bottom: 24px;
+    }
+
+    &__policy {
+        color: #585858;
+
+        a {
+            color: #000000;
+        }
+    }
+}

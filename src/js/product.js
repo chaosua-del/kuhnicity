@@ -110,6 +110,23 @@ export default function product() {
 
     bonuses.translateTo(document.querySelector('.bonuses__swiper-wrapper').offsetWidth);
 
+    const others = new Swiper('.others__swiper-container', {
+        slidesPerView: 'auto',
+        // spaceBetween: 10,
+        updateOnWindowResize: false,
+        // freeMode: true,
+        // loop: false,
+        slidesOffsetAfter: 0,
+        navigation: {
+            nextEl: '.others__swiper-button-next',
+            prevEl: '.others__swiper-button-prev',
+        }
+    });
+
+
+    // others.translateTo(document.querySelector('.others__swiper-wrapper').offsetWidth);
+
+    // console.log(document.querySelector('.others__swiper-slide').style.marginRight);
 
 
 }

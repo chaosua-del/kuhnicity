@@ -311,6 +311,118 @@
         }
     }
 
+    // getProject-768
+    .getProject {
+        &__container {
+            padding-top: 69px;
+            padding-bottom: 52px;
+        }
+
+        &__title {
+            width: 694px;
+
+            span {
+                display: inline-block;
+            }
+        }
+
+        &__description {
+            font-size: 14px;
+            width: 602px;
+            line-height: 140%;
+            /* or 20px */
+            text-align: center;
+            letter-spacing: 0.035em;
+
+            span {
+                display: block;
+            }
+        }
+
+        &__mainForm {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 58px;
+            padding-bottom: 33px;
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__input {
+            width: 100%;
+            margin-bottom: 47px;
+            padding-bottom: 6px;
+        }
+
+        &__policy {
+            width: 257px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    // others-768
+    .others {
+        &__container {
+            padding-left: 50px;
+        }
+
+        &__swiper {
+            &-wrapper {
+                width: 331px !important;
+            }
+
+            &-slide {
+                width: 331px !important;
+            }
+
+            &-button {
+
+                &-next,
+                &-prev {
+                    top: 560px;
+
+                }
+
+                &-next {
+                    right: 45px;
+                }
+
+                &-prev {
+                    left: auto !important;
+                    right: 123px;
+                }
+            }
+        }
+
+        &__label {
+            font-size: 55px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .articles__link {
+            font-size: 55px;
+            width: 452px;
+            display: inline-block;
+            text-align: left;
+            padding-left: 5px !important;
+            padding-bottom: 10px !important;
+
+            &-arrow {
+                right: 15px;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    // end-768
+
 }
 
 @media (min-width: 1024px) {
@@ -552,6 +664,82 @@
         }
     }
 
+    // getProject-1280
+    .getProject {
+        &__container {
+            background: url('../img/product/form-bg-lg.png') no-repeat center / cover;
+            padding-top: 62px;
+            padding-bottom: 57px;
+        }
+
+        &__title {
+            width: 1106px;
+            margin-bottom: 27px;
+        }
+
+        &__description {
+            margin-bottom: 70px;
+        }
+
+        &__input {
+            width: 374px;
+            // margin-right: 26px;
+
+            &-group {
+                display: inline-flex;
+                width: 66%;
+            }
+        }
+
+        &__mainForm {
+            max-width: 1400px;
+            padding-top: 82px;
+            padding-bottom: 37px;
+            padding-left: 50px;
+            padding-right: 50px;
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+
+        &__button {
+            width: 358px;
+            padding: 23px 0;
+        }
+
+        &__policy {
+            // flex-basis: 100%;
+            margin-right: 47px;
+        }
+    }
+
+    // others-1280
+    .others {
+        &__swiper {
+            &-wrapper {
+                width: 363px !important;
+            }
+
+            &-slide {
+                width: 363px !important;
+                margin-right: 34px;
+            }
+        }
+
+        &__label {
+            font-size: 64px;
+        }
+
+        .articles__link {
+            font-size: 64px;
+            width: 534px;
+            // padding-bottom: 0px !important;
+        }
+    }
+
+    // end-1280
+
 }
 
 @media (min-width: 1920px) {
@@ -725,5 +913,65 @@
             }
         }
     }
+
+    // getProject-1920
+    .getProject {
+        &__mainForm {
+            max-width: 1599px;
+            padding-left: 85px;
+            padding-right: 85px;
+            padding-top: 88px;
+            padding-bottom: 58px;
+        }
+
+        &__input {
+            width: 458px;
+            padding-bottom: 23px;
+            margin-bottom: 16px;
+        }
+
+        &__button {
+            width: 431px;
+            margin-bottom: 16px;
+        }
+
+        &__policy {
+            font-size: 14px;
+            width: 431px;
+            margin-right: 0;
+        }
+    }
+
+    // others-1920
+    .others {
+        &__swiper {
+            &-wrapper {
+                width: 490px !important;
+            }
+
+            &-slide {
+                width: 490px !important;
+            }
+
+            &-button {
+
+                &-next,
+                &-prev {
+                    top: 740px;
+                }
+
+                &-next {
+                    right: 155px;
+                }
+
+                &-prev {
+                    right: 260px;
+                }
+            }
+        }
+    }
+
+    // end-1920
+
 
 }
