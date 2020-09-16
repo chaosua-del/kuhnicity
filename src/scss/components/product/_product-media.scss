@@ -292,13 +292,13 @@
         &__expand {
             &-button {
                 justify-content: space-between;
-                padding-right: 210px;
+                // padding-right: 210px;
                 margin-bottom: 59px;
                 padding-bottom: 32px;
 
                 &::after {
                     font-size: 30px;
-                    left: 185px;
+                    float: right;
                 }
             }
 
@@ -362,8 +362,23 @@
         }
     }
 
+    .getProject2 {
+        &__container {
+            max-width: 768px;
+        }
+
+        .mainForm {
+
+            &__input {
+                width: 324px;
+            }
+        }
+    }
+
     // others-768
     .others {
+        background-color: #fff;
+
         &__container {
             padding-left: 50px;
         }
@@ -419,6 +434,11 @@
                 height: 20px;
             }
         }
+    }
+
+    .benefits2 {
+        background-color: #fff;
+        padding-bottom: 89px;
     }
 
     // end-768
@@ -714,6 +734,23 @@
         }
     }
 
+    .getProject2 {
+        padding-bottom: 54px;
+
+        &__container {
+            max-width: 1280px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .mainForm {
+            &__input {
+                width: 354px;
+            }
+        }
+
+    }
+
     // others-1280
     .others {
         &__swiper {
@@ -916,6 +953,8 @@
 
     // getProject-1920
     .getProject {
+        // padding-bottom: 104px;
+
         &__mainForm {
             max-width: 1599px;
             padding-left: 85px;
@@ -939,6 +978,22 @@
             font-size: 14px;
             width: 431px;
             margin-right: 0;
+        }
+    }
+
+    .getProject2 {
+        padding-bottom: 104px;
+
+        &__container {
+            max-width: 1600px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        .mainForm {
+            &__input {
+                width: 458px;
+            }
         }
     }
 

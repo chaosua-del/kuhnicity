@@ -19,3 +19,35 @@
         }
     }
 }
+
+.benefits2 {
+    background-color: #f4f4f4;
+    padding-bottom: 108px;
+
+    .benefits__card {
+        height: 192px;
+        // width: 270px;
+
+        &-link {
+            font-size: 16px;
+            line-height: 20px;
+            /* identical to box height */
+            letter-spacing: 0.135em;
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 32px;
+            display: flex;
+            align-items: center;
+
+            &::after {
+                content: '';
+                width: 15px;
+                height: 15px;
+                background: url('../img/product/link.svg') no-repeat center / cover;
+                display: inline-block;
+                margin-left: 18px;
+            }
+
+        }
+    }
+}

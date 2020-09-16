@@ -108,7 +108,7 @@ export default function product() {
     });
 
 
-    bonuses.translateTo(document.querySelector('.bonuses__swiper-wrapper').offsetWidth);
+    // bonuses.translateTo(document.querySelector('.bonuses__swiper-wrapper').offsetWidth);
 
     const others = new Swiper('.others__swiper-container', {
         slidesPerView: 'auto',
