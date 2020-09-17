@@ -1,3 +1,5 @@
+import Swiper from 'swiper/js/swiper.js';
+
 export default function vacancies() {
     const coll = document.querySelectorAll('.chars__expand-button')
 
@@ -12,4 +14,14 @@ export default function vacancies() {
             }
         });
     });
+
+    if (window.innerWidth < 768) {
+        const benefits = new Swiper('.benefits__swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            freeMode: true,
+            loop: false,
+            slidesOffsetAfter: 0,
+        });
+    }
 }
