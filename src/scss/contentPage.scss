@@ -1,0 +1,44 @@
+// Commons
+@import "variables";
+@import "custom-reset";
+
+// External
+//@import "vendor/jquery.fancybox.css";
+//@import "node_modules/swiper/swiper.scss";
+
+// Base
+@import "grid";
+@import "mixins";
+@import "base";
+// @import "generated/sprites";
+// @import "generated/svgsprites";
+@import "fonts";
+
+// Components
+@import "components/content";
+@import "components/header";
+@import "components/vacancies/vacancies-hero";
+@import "components/product/product-hero";
+@import "components/content/gallery.scss";
+@import "components/content/advantages.scss";
+@import "components/models";
+@import "components/benefits";
+@import "components/product/getProject";
+@import "components/contactUs";
+@import "components/social";
+@import "components/footer";
+@import "components/articles";
+
+
+
+@import "components/modal";
+
+@import "components/hovers";
+
+@import "components/media";
+@import "components/product/product-media";
+@import "components/content/contentPage-media";
+
+#contentPage {
+    background: #f4f4f4;
+}

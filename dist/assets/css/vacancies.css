@@ -939,6 +939,15 @@ strong {
   .vacanciesHero .hero__description span {
     display: block; }
 
+.vacanciesHero .hero__stats {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center; }
+  .vacanciesHero .hero__stats-date {
+    margin-right: 10px; }
+  .vacanciesHero .hero__stats-views {
+    margin-left: 10px; }
+
 .benefits {
   background-color: #F2F2F2; }
   .benefits__container {

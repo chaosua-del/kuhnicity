@@ -27,6 +27,7 @@ import catalog from 'catalog';
 import vacancies from 'vacancies';
 import validation from 'validation';
 import news from 'news';
+import content from 'content';
 // import forms from 'forms'
 
 // import fancybox from '@fancyapps/fancybox';
@@ -106,6 +107,8 @@ let app = {
                 vacancies();
             } else if (document.querySelector('.content').id == 'news') {
                 news();
+            } else if (document.querySelector('.content').id == 'contentPage') {
+                content();
             }
             svgReplace();
 
