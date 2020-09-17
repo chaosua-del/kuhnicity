@@ -1720,6 +1720,9 @@
 
         &__mainForm {
             width: 475px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
 
         &__input {

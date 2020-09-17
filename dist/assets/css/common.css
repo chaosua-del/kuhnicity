@@ -3161,7 +3161,10 @@ strong {
     background: url(../img/hero/hero-bg-lg.webp) no-repeat center/cover;
     height: 721px; }
     .hero__mainForm {
-      width: 475px; }
+      width: 475px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
     .hero__input {
       width: 231px;
       font-size: 16px;
