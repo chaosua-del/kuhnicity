@@ -177,17 +177,19 @@ strong {
             margin-bottom: 5px;
 
             &:focus-within {
-                .mainForm__label {
-                    bottom: 100%;
-                    font-size: 12px;
-                    color: #181818;
-                }
+                // .mainForm__label {
+                //     bottom: 100%;
+                //     font-size: 12px;
+                //     color: #181818;
+                // }
 
                 .mainForm__input {
                     border-color: #181818;
 
                 }
             }
+
+
 
         }
     }
@@ -201,6 +203,12 @@ strong {
         left: 16px;
         color: #585858;
         transition: bottom 0.2s ease-in-out, font-size 0.2s ease-in-out, color 0.2s ease-in-out;
+
+        &--active {
+            bottom: 100%;
+            font-size: 12px;
+            color: #181818;
+        }
     }
 }
 

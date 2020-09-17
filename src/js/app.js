@@ -14,7 +14,7 @@ import ionRangeSlider from 'ion-rangeSlider/js/ion.rangeSlider.min.js'
 
 import page from 'page';
 import header from 'header';
-import forms from 'forms';
+// import forms from 'forms';
 import sliders from 'sliders';
 import filters from 'filters';
 import svgReplace from 'svgReplace';
@@ -25,6 +25,8 @@ import customCursor from 'customCursor';
 import product from 'product';
 import catalog from 'catalog';
 import vacancies from 'vacancies';
+import validation from 'validation';
+// import forms from 'forms'
 
 // import fancybox from '@fancyapps/fancybox';
 
@@ -65,8 +67,8 @@ let app = {
         this.page.init.call(this);
 
         // Init page
-        this.forms = forms;
-        this.forms.init.call(this);
+        // this.forms = forms;
+        // this.forms.init.call(this);
 
         app.checkMedia();
         app.window.on('resize', app.checkMedia);
@@ -78,6 +80,8 @@ let app = {
             document.querySelector('.content').style.marginTop = `${document.querySelector('.header').offsetHeight}px`;
             header();
             modals();
+            validation();
+            // forms();
             if (document.querySelector('.content').id == 'main') {
                 expand();
                 // console.log('main');
