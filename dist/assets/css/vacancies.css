@@ -1007,19 +1007,24 @@ strong {
     padding-top: 58px;
     max-width: 450px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding-bottom: 90px; }
   .chars__swiper-scrollbar {
     display: none !important; }
   .chars__expand {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-in-out; }
+    transition: max-height 0.2s ease-in-out;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d3d3d3; }
+    .chars__expand:nth-last-child(1) {
+      margin-bottom: 0; }
     .chars__expand-button {
       cursor: pointer;
       font-size: 30px;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 41px;
+      margin-bottom: 18px;
       user-select: none;
       position: relative;
       align-items: baseline; }
@@ -1063,12 +1068,14 @@ strong {
     min-width: 279px; }
   .vacanciesChars .chars__expand-button {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding-right: 10px; }
     .vacanciesChars .chars__expand-button::after {
       margin-left: 10px; }
   .vacanciesChars .chars__info-description {
     margin-top: 0px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    max-width: none; }
   .vacanciesChars .chars__info-title {
     margin-bottom: 12px; }
 
@@ -1092,6 +1099,37 @@ strong {
       position: absolute;
       top: 9px;
       left: -18px; }
+
+.vacancy__mainForm {
+  margin-top: 89px; }
+
+.vacancy__input-group {
+  margin-bottom: 36px; }
+
+.vacancy__addFile {
+  font-size: 16px;
+  line-height: 118.49%;
+  /* identical to box height, or 19px */
+  letter-spacing: 0.035em;
+  color: #585858;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #9D9D9D;
+  margin-bottom: 58px;
+  width: 100%; }
+  .vacancy__addFile::before {
+    content: '';
+    width: 13px;
+    height: 14px;
+    margin-right: 14px;
+    background: url("../img/vacancies/add-file.svg") no-repeat center/cover;
+    display: inline-block; }
+
+.vacancy__policy {
+  margin-top: 24px;
+  margin-bottom: 36px; }
 
 .social {
   padding-top: 50px;
@@ -4115,7 +4153,25 @@ strong {
     font-size: 14px;
     line-height: 140%; }
     .vacanciesHero .hero__description span {
-      display: inline-block; } }
+      display: inline-block; }
+  .vacanciesChars .chars__container {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto; }
+  .vacanciesChars .chars__info-description {
+    max-width: 669px; }
+    .vacanciesChars .chars__info-description:nth-child(1) {
+      margin-top: 40px; }
+  .vacancy__list {
+    font-size: 14px; }
+  .vacancy__mainForm {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap; }
+  .vacancy__input {
+    width: 100%; }
+  .vacancy__input-group {
+    flex-basis: 49%; } }
 
 @media (min-width: 1280px) {
   .vacanciesHero .hero__container {
@@ -4124,7 +4180,30 @@ strong {
     background: url("../img/vacancies/hero-bg-lg.png") no-repeat center/cover;
     flex-direction: column; }
   .vacanciesHero .hero__title {
-    font-size: 55px; } }
+    font-size: 55px; }
+  .vacanciesChars .chars__container {
+    max-width: 1280px;
+    padding-left: 50px;
+    padding-right: 50px; }
+  .vacanciesChars .chars__expand {
+    margin-bottom: 50px; }
+    .vacanciesChars .chars__expand-button {
+      margin-bottom: 50px; }
+  .vacancy__mainForm {
+    align-items: center; }
+  .vacancy__input-group:nth-child(6) {
+    order: 2;
+    flex-basis: 100%; }
+  .vacancy__addFile {
+    flex-basis: 49%;
+    top: 13px; }
+  .vacancy__button {
+    order: 3;
+    width: 372px; }
+  .vacancy__policy {
+    order: 3;
+    width: 372px;
+    margin-bottom: 150px; } }
 
 @media (min-width: 1920px) {
   .vacanciesHero .hero__container {
@@ -4137,6 +4216,20 @@ strong {
     margin-bottom: 65px; }
   .vacanciesHero .hero__description {
     font-size: 16px;
-    width: 625px; } }
+    width: 625px; }
+  .vacanciesChars .chars__container {
+    max-width: 1920px;
+    padding-left: 160px;
+    padding-right: 160px; }
+  .vacanciesChars .chars__info-description {
+    max-width: 996px; }
+  .vacanciesChars .chars__info-title {
+    margin-bottom: 44px; }
+  .vacancy__list {
+    font-size: 16px; }
+  .vacancy__button {
+    width: 505px; }
+  .vacancy__policy {
+    margin-left: 62px; } }
 
 /*# sourceMappingURL=maps/vacancies.css.map */

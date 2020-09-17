@@ -3,6 +3,49 @@ section.chars.vacanciesChars
         h2.chars__title.title Всегда открыты для:
         .chars__expand-button.title Дизайнер консультант
         .chars__expand 
+            .vacancy
+                p.vacancy__description.chars__info-description Хороший продавец всегда знает, как начать разговор и представить свой товар в лучшем свете. Он ведет клиента к сделке деликатно, но уверенно. Главный критерий его качественной работы – чувство удовлетворения у всех участников сделки.
+                p.vacancy__description.chars__info-description Мы ищем и отбираем в свою команду только лучших. Если Вы уверены в своих силах, непременно оставляйте свой отклик!
+                .vacancy__info
+                    h3.vacancy__title.chars__info-title МЫ ждем от вас
+                    ul.vacancy__list
+                        li опыт работы в сфере продаж мебели;
+                        li нацеленность на результат;
+                        li готовность к постоянному обучению и развитию;
+                        li лояльность и верность интересам компании.
+                .vacancy__info
+                    h3.vacancy__title.chars__info-title Мы предлагаем вам
+                    ul.vacancy__list
+                        li стабильную работу в надежной развивающейся компании;
+                        li оформление по ТК РФ;
+                        li конкурентоспособную заработную плату;
+                        li карьерные возможности;
+                        li скидки % на продукцию компании.    
+                form.mainForm.vacancy__mainForm(action="#")
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-name").mainForm__label Ваше имя
+                        input(type="text", id="vacancy-user-name").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-surname").mainForm__label Ваша фамилия
+                        input(type="text", id="vacancy-user-surname").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-city").mainForm__label Ваше город
+                        input(type="text", id="vacancy-user-city").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-phone").mainForm__label Ваша телефон
+                        input(type="tel", id="vacancy-user-phone").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-email").mainForm__label Ваше e-mail
+                        input(type="mail", id="vacancy-user-email").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-comment").mainForm__label Ваша комментарий
+                        input(type="text", id="vacancy-user-comment").mainForm__input.vacancy__input
+                    button.vacancy__addFile Прикрепите ваше резюме
+                    button.mainForm__button.button.button--primary.vacancy__button Отправить
+                p.policy.vacancy__policy Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+        
+        .chars__expand-button.title Дизайнер консультант (без опыта работы)
+        .chars__expand 
            .vacancy
                 p.vacancy__description.chars__info-description Хороший продавец всегда знает, как начать разговор и представить свой товар в лучшем свете. Он ведет клиента к сделке деликатно, но уверенно. Главный критерий его качественной работы – чувство удовлетворения у всех участников сделки.
                 p.vacancy__description.chars__info-description Мы ищем и отбираем в свою команду только лучших. Если Вы уверены в своих силах, непременно оставляйте свой отклик!
@@ -22,9 +65,67 @@ section.chars.vacanciesChars
                         li карьерные возможности;
                         li скидки % на продукцию компании.    
                 form.mainForm.vacancy__mainForm(action="#")
-                    .mainForm__input-group
-                        label(for="vacancy-user-name").mainForm__label.vacancy__label
-                        input(type="text", name="user-name", id="vacancy-user-name").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-name").mainForm__label Ваше имя
+                        input(type="text", id="vacancy-user-name").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-surname").mainForm__label Ваша фамилия
+                        input(type="text", id="vacancy-user-surname").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-city").mainForm__label Ваше город
+                        input(type="text", id="vacancy-user-city").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-phone").mainForm__label Ваша телефон
+                        input(type="tel", id="vacancy-user-phone").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-email").mainForm__label Ваше e-mail
+                        input(type="mail", id="vacancy-user-email").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-comment").mainForm__label Ваша комментарий
+                        input(type="text", id="vacancy-user-comment").mainForm__input.vacancy__input
+                    button.vacancy__addFile Прикрепите ваше резюме
+                    button.mainForm__button.button.button--primary.vacancy__button Отправить
+                p.policy.vacancy__policy Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
 
-
-        .chars__line
+        .chars__expand-button.title Администратор мебельного салона
+        .chars__expand 
+            .vacancy
+                p.vacancy__description.chars__info-description Хороший продавец всегда знает, как начать разговор и представить свой товар в лучшем свете. Он ведет клиента к сделке деликатно, но уверенно. Главный критерий его качественной работы – чувство удовлетворения у всех участников сделки.
+                p.vacancy__description.chars__info-description Мы ищем и отбираем в свою команду только лучших. Если Вы уверены в своих силах, непременно оставляйте свой отклик!
+                .vacancy__info
+                    h3.vacancy__title.chars__info-title МЫ ждем от вас
+                    ul.vacancy__list
+                        li опыт работы в сфере продаж мебели;
+                        li нацеленность на результат;
+                        li готовность к постоянному обучению и развитию;
+                        li лояльность и верность интересам компании.
+                .vacancy__info
+                    h3.vacancy__title.chars__info-title Мы предлагаем вам
+                    ul.vacancy__list
+                        li стабильную работу в надежной развивающейся компании;
+                        li оформление по ТК РФ;
+                        li конкурентоспособную заработную плату;
+                        li карьерные возможности;
+                        li скидки % на продукцию компании.    
+                form.mainForm.vacancy__mainForm(action="#")
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-name").mainForm__label Ваше имя
+                        input(type="text", id="vacancy-user-name").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-surname").mainForm__label Ваша фамилия
+                        input(type="text", id="vacancy-user-surname").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-city").mainForm__label Ваше город
+                        input(type="text", id="vacancy-user-city").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-phone").mainForm__label Ваша телефон
+                        input(type="tel", id="vacancy-user-phone").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-email").mainForm__label Ваше e-mail
+                        input(type="mail", id="vacancy-user-email").mainForm__input.vacancy__input
+                    .mainForm__input-group.vacancy__input-group
+                        label(for="vacancy-user-comment").mainForm__label Ваша комментарий
+                        input(type="text", id="vacancy-user-comment").mainForm__input.vacancy__input
+                    button.vacancy__addFile Прикрепите ваше резюме
+                    button.mainForm__button.button.button--primary.vacancy__button Отправить
+                p.policy.vacancy__policy Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>

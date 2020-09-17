@@ -1,6 +1,7 @@
 .chars {
     background-color: #f4f4f4;
 
+
     &__container {
         padding-top: 58px;
         // overflow: visible;
@@ -8,6 +9,7 @@
         max-width: 450px;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 90px;
     }
 
     &__swiper {
@@ -20,13 +22,19 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-in-out;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #d3d3d3;
+
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
 
         &-button {
             cursor: pointer;
             font-size: 30px;
             display: flex;
             justify-content: space-between;
-            margin-bottom: 41px;
+            margin-bottom: 18px;
             user-select: none;
             position: relative;
             align-items: baseline;

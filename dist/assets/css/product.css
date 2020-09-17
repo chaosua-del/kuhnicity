@@ -1082,19 +1082,24 @@ strong {
     padding-top: 58px;
     max-width: 450px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding-bottom: 90px; }
   .chars__swiper-scrollbar {
     display: none !important; }
   .chars__expand {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-in-out; }
+    transition: max-height 0.2s ease-in-out;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d3d3d3; }
+    .chars__expand:nth-last-child(1) {
+      margin-bottom: 0; }
     .chars__expand-button {
       cursor: pointer;
       font-size: 30px;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 41px;
+      margin-bottom: 18px;
       user-select: none;
       position: relative;
       align-items: baseline; }
