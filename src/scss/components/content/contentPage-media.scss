@@ -1,6 +1,10 @@
 @media(min-width:768px) {
     #contentPage {
         background-color: #fff !important;
+
+        .articles {
+            padding-bottom: 0 !important;
+        }
     }
 
     .gallery {

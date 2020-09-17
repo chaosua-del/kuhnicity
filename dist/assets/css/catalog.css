@@ -2760,6 +2760,9 @@ strong {
       padding: 22px 51px;
       top: -72px;
       background-color: transparent; }
+    .articles__swiper-container2 .swiper-button-next,
+    .articles__swiper-container2 .swiper-button-prev {
+      top: 88% !important; }
   .leader {
     padding-top: 50px;
     padding-bottom: 35px; }

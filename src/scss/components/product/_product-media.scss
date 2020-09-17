@@ -389,6 +389,11 @@
             padding-left: 50px;
         }
 
+        &__title {
+            margin-bottom: 60px;
+            max-width: 468px;
+        }
+
         &__swiper {
             &-wrapper {
                 width: 331px !important;
@@ -440,6 +445,26 @@
                 height: 20px;
             }
         }
+
+        &__social {
+            margin-top: -85px;
+        }
+
+        &__stats {
+            font-size: 16px;
+            line-height: 120.3%;
+            margin-bottom: 135px;
+
+            .stats-date {
+                display: inline-block;
+                margin-right: 30px;
+            }
+
+            .stats-views {
+                margin-right: 30px;
+            }
+        }
+
     }
 
     .benefits2 {
@@ -771,6 +796,10 @@
             }
         }
 
+        &__title {
+            max-width: none;
+        }
+
         &__label {
             font-size: 64px;
         }
@@ -779,6 +808,11 @@
             font-size: 64px;
             width: 534px;
             // padding-bottom: 0px !important;
+        }
+
+        &__social {
+            z-index: 100;
+            margin-top: -200px;
         }
     }
 
@@ -1035,6 +1069,10 @@
                     right: 260px;
                 }
             }
+        }
+
+        &__stats {
+            font-size: 18px;
         }
     }
 

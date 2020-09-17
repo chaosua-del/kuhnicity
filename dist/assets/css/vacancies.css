@@ -2152,6 +2152,9 @@ strong {
       padding: 22px 51px;
       top: -72px;
       background-color: transparent; }
+    .articles__swiper-container2 .swiper-button-next,
+    .articles__swiper-container2 .swiper-button-prev {
+      top: 88% !important; }
   .leader {
     padding-top: 50px;
     padding-bottom: 35px; }
@@ -3920,6 +3923,9 @@ strong {
     background-color: #fff; }
     .others__container {
       padding-left: 50px; }
+    .others__title {
+      margin-bottom: 60px;
+      max-width: 468px; }
     .others__swiper-wrapper {
       width: 331px !important; }
     .others__swiper-slide {
@@ -3947,6 +3953,17 @@ strong {
       .others .articles__link img {
         width: 20px;
         height: 20px; }
+    .others__social {
+      margin-top: -85px; }
+    .others__stats {
+      font-size: 16px;
+      line-height: 120.3%;
+      margin-bottom: 135px; }
+      .others__stats .stats-date {
+        display: inline-block;
+        margin-right: 30px; }
+      .others__stats .stats-views {
+        margin-right: 30px; }
   .benefits2 {
     background-color: #fff;
     padding-bottom: 89px; } }
@@ -4119,11 +4136,16 @@ strong {
   .others__swiper-slide {
     width: 363px !important;
     margin-right: 34px; }
+  .others__title {
+    max-width: none; }
   .others__label {
     font-size: 64px; }
   .others .articles__link {
     font-size: 64px;
-    width: 534px; } }
+    width: 534px; }
+  .others__social {
+    z-index: 100;
+    margin-top: -200px; } }
 
 @media (min-width: 1920px) {
   .productBenefits__text {
@@ -4242,7 +4264,9 @@ strong {
   .others__swiper-button-next {
     right: 155px; }
   .others__swiper-button-prev {
-    right: 260px; } }
+    right: 260px; }
+  .others__stats {
+    font-size: 18px; } }
 
 @media (min-width: 768px) {
   .vacanciesHero .hero__title {

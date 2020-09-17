@@ -6,6 +6,10 @@
         padding-left: 25px;
     }
 
+    &__title {
+        margin-bottom: 37px;
+    }
+
     &__swiper {
         &-wrapper {
             width: 270px !important;
@@ -59,5 +63,30 @@
                 top: 3px;
             }
         }
+    }
+
+    &__social {
+        margin-top: -50px;
+        margin-bottom: 39px;
+    }
+
+    &__stats {
+        font-size: 12px;
+        line-height: 120.3%;
+        /* identical to box height, or 14px */
+        letter-spacing: 0.105em;
+        text-transform: uppercase;
+        color: #4F4F4F;
+        margin-bottom: 60px;
+
+        .stats-date {
+            display: block;
+            margin-bottom: 22px;
+        }
+
+        .stats-views {
+            margin-right: 12px;
+        }
+
     }
 }

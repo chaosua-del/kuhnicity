@@ -288,6 +288,7 @@
             max-width: 768px;
             margin-left: auto;
             margin-right: auto;
+            // justify-content: center;
         }
 
         &__swiper-container {
@@ -1111,6 +1112,14 @@
             padding: 22px 51px;
             top: -72px;
             background-color: transparent;
+        }
+
+        &__swiper-container2 {
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                top: 88% !important;
+            }
         }
     }
 

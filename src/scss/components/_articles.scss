@@ -2,6 +2,10 @@
     padding-top: 50px;
     background: #F2F2F2;
 
+    &__title2 {
+        margin-top: 110px;
+    }
+
     &__container {
         padding-right: 0;
     }
@@ -14,6 +18,10 @@
         margin-right: 15px;
     }
 
+    &__swiper-slide2 {
+        height: auto !important;
+    }
+
     &__swiper-wrapper {
         width: 270px !important;
         padding-bottom: 100px;
@@ -23,11 +31,19 @@
         margin-top: 27px;
     }
 
+    &__swiper-container2 {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 80%;
+        }
+    }
+
     &__swiper {
 
         &-button-next,
         &-button-prev {
-            top: 420px;
+            top: 90%;
         }
 
         &-button-next {
