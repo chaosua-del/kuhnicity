@@ -62,6 +62,34 @@
 
 
     }
+
+    .unavalible {
+        .getProject {
+            &__container {
+                padding-top: 76px;
+            }
+
+            &__description {
+                width: 505px;
+                margin-bottom: 54px;
+            }
+
+            &__mainForm {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            &__input-group {
+                flex-basis: 48%;
+            }
+
+            &__policy {
+                width: 100%;
+            }
+
+        }
+    }
 }
 
 @media(min-width: 1280px) {
@@ -131,6 +159,40 @@
 
         }
     }
+
+    .unavalible {
+        .getProject {
+            &__input {
+                width: 100%;
+
+                &-group {
+                    flex-basis: 31%;
+
+                    &:nth-child(4) {
+                        flex-basis: 66%;
+                    }
+                }
+            }
+
+            &__button {
+                display: block;
+                // flex-basis: 100%;
+                margin-right: 50%;
+            }
+
+            &__policy {
+                max-width: 304px;
+                flex-basis: 100%;
+                margin-right: auto;
+                margin-left: 32px;
+            }
+        }
+
+        &__addFile {
+            flex-basis: 31%;
+            top: 4px;
+        }
+    }
 }
 
 @media(min-width: 1920px) {
@@ -187,6 +249,18 @@
 
         &__policy {
             margin-left: 62px;
+        }
+    }
+
+    .unavalible {
+        .getProject {
+            &__input-group {
+                margin-bottom: 108px;
+            }
+
+            &__policy {
+                margin-left: 70px;
+            }
         }
     }
 }

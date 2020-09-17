@@ -970,8 +970,12 @@
 
         &__input {
             width: 458px;
-            // padding-bottom: 23px;
-            margin-bottom: 16px;
+
+            // padding-bottom: 23px !important;
+            &-group {
+                margin-bottom: 16px;
+
+            }
         }
 
         &__button {

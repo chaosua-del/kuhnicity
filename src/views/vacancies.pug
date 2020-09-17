@@ -13,11 +13,14 @@ html(lang="ru", class="no-js")
 
         .content#vacancies
             block content
-              block hero
-                include _includes/blocks/vacancies/hero
+                block hero
+                    include _includes/blocks/vacancies/hero
               
-              block hero
-                include _includes/blocks/vacancies/chars
+                block chars
+                    include _includes/blocks/vacancies/chars
+            
+                block unavalible
+                    include _includes/blocks/vacancies/unavalible
                
                
         
