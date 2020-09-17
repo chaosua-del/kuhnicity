@@ -278,6 +278,7 @@
         &__container {
             padding-top: 62px;
             padding-bottom: 25px;
+            // padding-left: 160px;
         }
 
         &__swiper-slide {
@@ -287,6 +288,10 @@
             max-width: 768px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        &__swiper-container {
+            padding-left: 0;
         }
 
         &__card {

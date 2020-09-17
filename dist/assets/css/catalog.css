@@ -582,6 +582,13 @@ strong {
     .status-item--active {
       color: #868686; }
 
+@media (max-width: 1280px) {
+  .overflow-hidden {
+    overflow: hidden; }
+  .overflow-auto {
+    height: 100vh;
+    overflow: auto; } }
+
 @font-face {
   font-family: 'Averta';
   src: local("Averta Regular"), local("Averta-Regular"), url("fonts/Averta/font.woff2") format("woff2"), url("fonts/Averta/font.woff") format("woff");
@@ -1737,10 +1744,13 @@ strong {
   background-color: #F2F2F2; }
   .benefits__container {
     padding-top: 26px;
-    padding-right: 0; }
+    padding-right: 0;
+    padding-left: 0; }
   .benefits__swiper-slide {
     display: flex;
     width: 1210px !important; }
+  .benefits__swiper-container {
+    padding-left: 25px; }
   .benefits__card {
     background-color: #FFFFFF;
     width: 270px;
@@ -2271,6 +2281,8 @@ strong {
       max-width: 768px;
       margin-left: auto;
       margin-right: auto; }
+    .benefits__swiper-container {
+      padding-left: 0; }
     .benefits__card {
       border-left: 2px solid rgba(50, 50, 50, 0.08);
       margin-right: 0;

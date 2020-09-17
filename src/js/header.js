@@ -1,3 +1,5 @@
+import Swiper from 'swiper/js/swiper.js';
+
 export default function header() {
     const headerButton = document.querySelector('.header__about');
 
@@ -47,6 +49,8 @@ export default function header() {
         // headerExpand.style.height = headerExpand.scrollHeight;
         $('.header__expand').fadeToggle();
         const content = document.querySelector('.header__about-menu');
+        $('body').toggleClass('overflow-hidden');
+        $('.header').toggleClass('overflow-auto');
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
             headerButton.classList.remove('header__about--active');

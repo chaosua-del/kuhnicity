@@ -344,3 +344,15 @@ strong {
     }
 
 }
+
+@media(max-width:1280px) {
+
+    .overflow-hidden {
+        overflow: hidden;
+    }
+
+    .overflow-auto {
+        height: 100vh;
+        overflow: auto;
+    }
+}

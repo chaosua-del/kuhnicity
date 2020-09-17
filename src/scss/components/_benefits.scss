@@ -5,11 +5,16 @@
     &__container {
         padding-top: 26px;
         padding-right: 0;
+        padding-left: 0;
     }
 
     &__swiper-slide {
         display: flex;
         width: 1210px !important;
+    }
+
+    &__swiper-container {
+        padding-left: 25px;
     }
 
     &__card {
