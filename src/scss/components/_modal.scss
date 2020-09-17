@@ -57,4 +57,16 @@
         font-size: 40px;
         transform: rotate(45deg);
     }
+
+    .mainForm {
+        width: 100%;
+
+        &__input {
+            width: 100%;
+
+            &-group {
+                margin-bottom: 28px;
+            }
+        }
+    }
 }

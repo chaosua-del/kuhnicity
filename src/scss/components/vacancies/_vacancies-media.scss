@@ -1,0 +1,62 @@
+@media(min-width: 768px) {
+
+    // hero
+    .vacanciesHero {
+        .hero {
+            &__title {
+                width: 710px;
+            }
+
+            &__description {
+                width: 625px;
+                font-size: 14px;
+                line-height: 140%;
+
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1280px) {
+    .vacanciesHero {
+        .hero {
+            &__container {
+                max-width: 100%;
+                width: 100%;
+                background: url('../img/vacancies/hero-bg-lg.png') no-repeat center / cover;
+                flex-direction: column;
+            }
+
+            &__title {
+                font-size: 55px;
+            }
+        }
+    }
+}
+
+@media(min-width: 1920px) {
+    .vacanciesHero {
+        .hero {
+            &__container {
+                padding-top: 100px;
+                padding-bottom: 100px;
+                background: url('../img/vacancies/hero-bg-xl.png') no-repeat center / cover;
+
+            }
+
+            &__title {
+                font-size: 72px;
+                width: 1095px;
+                margin-bottom: 65px;
+            }
+
+            &__description {
+                font-size: 16px;
+                width: 625px;
+            }
+        }
+    }
+}

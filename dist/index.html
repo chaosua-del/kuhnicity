@@ -285,12 +285,16 @@
           <div class="hero__wrap"> 
             <h1 class="title hero__title">Создаем кухни, в&nbsp;которые вы влюбитесь</h1>
             <p class="hero__description">Производим кухни по российской-немецкой технологии. В&nbsp;каталоге&nbsp;более&nbsp;300 моделей. А ещё, делаем бесплатный дизайн-проект конкретно для вас. </p>
-            <form class="mainForm hero__mainForm" action="#">
-              <div class="mainForm__input-group">
-                <input class="mainForm__input hero__input" type="text" placeholder="Ваше имя">
-                <input class="mainForm__input hero__input" type="phone" placeholder="Ваш телефон">
+            <form class="mainForm hero__mainForm" action="#" id="hero-form">
+              <div class="mainForm__input-group hero__input-group">
+                <label class="mainForm__label" for="hero-user-name">Ваше имя</label>
+                <input class="mainForm__input hero__input" type="text" name="user-name" id="hero-user-name">
               </div>
-              <button class="mainForm__button button button--primary hero__button">Получить дизайн-проект</button>
+              <div class="mainForm__input-group hero__input-group">
+                <label class="mainForm__label" for="hero-user-name">Ваш телефон</label>
+                <input class="mainForm__input hero__input" type="tel" name="user-tel" id="hero-user-tel">
+              </div>
+              <button class="mainForm__button button button--primary hero__button" for="hero-form">Получить дизайн-проект</button>
             </form>
             <div class="hero__info"><span class="hero__info-text">С 1999 года выполено заказов</span><strong class="hero__info-number">72 125</strong></div>
           </div>
@@ -934,9 +938,13 @@
           <h3 class="title contactUs__title">Приходите к нам, поговорим о вашем проекте</h3>
           <p class="contactUs__description">Новые модели, выгодные акции и неожиданные дизайнерские решения ежедневно в удобном для&nbsp;вас формате. Подписывайтесь!</p>
           <form class="mainForm contactUs__mainForm" action="#">
-            <div class="mainForm__input-group">
-              <input class="mainForm__input contactUs__input" type="text" placeholder="Ваше имя">
-              <input class="mainForm__input contactUs__input" type="phone" placeholder="Ваш телефон">
+            <div class="mainForm__input-group contactUs__input-group">
+              <label class="mainForm__label" for="contactUs-user-name">Ваше имя</label>
+              <input class="mainForm__input contactUs__input" type="text" name="user-name" id="contactUs-user-name">
+            </div>
+            <div class="mainForm__input-group contactUs__input-group">
+              <label class="mainForm__label" for="contactUs-user-name">Ваш телефон</label>
+              <input class="mainForm__input contactUs__input" type="tel" name="user-tel" id="contactUs-user-tel">
             </div>
             <button class="mainForm__button button button--primary contactUs__button">Отправить</button>
           </form>
@@ -986,8 +994,12 @@
         <div class="modal__description">Оставьте свои контактные данные, менеджер свяжется с Вами в течение 15 минут.</div>
         <form class="mainForm" action="#">
           <div class="mainForm__input-group">
-            <input class="mainForm__input contactUs__input" type="text" placeholder="Ваше имя">
-            <input class="mainForm__input contactUs__input" type="phone" placeholder="Ваш телефон">
+            <label class="mainForm__label" for="modal-user-name">Ваше имя</label>
+            <input class="mainForm__input hero__input" type="text" name="user-name" id="modal-user-name">
+          </div>
+          <div class="mainForm__input-group">
+            <label class="mainForm__label" for="modal-user-name">Ваш телефон</label>
+            <input class="mainForm__input hero__input" type="tel" name="user-tel" id="modal-user-tel">
           </div>
           <button class="mainForm__button button button--primary contactUs__button">Оставить заявку</button>
         </form>

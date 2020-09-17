@@ -3,11 +3,14 @@ section.hero
     .hero__wrap 
       h1.title.hero__title Создаем кухни, в&nbsp;которые вы влюбитесь
       p.hero__description Производим кухни по российской-немецкой технологии. В&nbsp;каталоге&nbsp;более&nbsp;300 моделей. А ещё, делаем бесплатный дизайн-проект конкретно для вас. 
-      form(action="#").mainForm.hero__mainForm
-        .mainForm__input-group
-          input(type="text", placeholder="Ваше имя").mainForm__input.hero__input
-          input(type="phone", placeholder="Ваш телефон").mainForm__input.hero__input
-        button.mainForm__button.button.button--primary.hero__button Получить дизайн-проект
+      form(action="#", id="hero-form").mainForm.hero__mainForm
+        .mainForm__input-group.hero__input-group
+          label(for="hero-user-name").mainForm__label Ваше имя
+          input(type="text", name="user-name").mainForm__input.hero__input#hero-user-name
+        .mainForm__input-group.hero__input-group
+           label(for="hero-user-name").mainForm__label Ваш телефон
+           input(type="tel", name="user-tel").mainForm__input.hero__input#hero-user-tel
+        button.mainForm__button.button.button--primary.hero__button(for="hero-form") Получить дизайн-проект
       .hero__info
         span.hero__info-text С 1999 года выполено заказов
         strong.hero__info-number 72 125

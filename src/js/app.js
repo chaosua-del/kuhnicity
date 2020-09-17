@@ -23,8 +23,8 @@ import hovers from 'hovers';
 import modals from 'modals';
 import customCursor from 'customCursor';
 import product from 'product';
-
 import catalog from 'catalog';
+import vacancies from 'vacancies';
 
 // import fancybox from '@fancyapps/fancybox';
 
@@ -77,15 +77,15 @@ let app = {
         app.document.ready(() => {
             document.querySelector('.content').style.marginTop = `${document.querySelector('.header').offsetHeight}px`;
             header();
+            modals();
             if (document.querySelector('.content').id == 'main') {
                 expand();
                 // console.log('main');
                 sliders();
                 filters();
                 customCursor();
-
                 hovers();
-                modals();
+
                 window.$mq = window.$('.discounts__marquee').marquee({
                     startVisible: true,
                     speed: 100
@@ -93,11 +93,12 @@ let app = {
             } else if (document.querySelector('.content').id == 'catalog') {
                 expand();
                 catalog();
-                modals();
 
             } else if (document.querySelector('.content').id == 'product') {
                 product();
                 customCursor();
+            } else if (document.querySelector('.content').id == 'vacancies') {
+                vacancies();
             }
             svgReplace();
 

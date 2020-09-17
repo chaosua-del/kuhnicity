@@ -17,17 +17,11 @@
 // Components
 @import "components/content";
 @import "components/header";
-@import "components/product/product-hero";
+@import "components/vacancies/vacancies-hero";
 @import "components/benefits";
 @import "components/product/product-benefits";
 @import "components/product/chars";
-@import "components/bonuses";
-@import "components/product/projects";
-@import "components/product/questions";
-@import "components/product/getProject";
-@import "components/articles";
-@import "components/product/others";
-@import "components/models";
+@import "components/vacancies/vacancies-chars";
 @import "components/social";
 @import "components/contactUs";
 @import "components/footer";
@@ -39,3 +33,4 @@
 
 @import "components/media";
 @import "components/product/product-media";
+@import "components/vacancies/vacancies-media";

@@ -11,9 +11,12 @@ section.contactUs
     p.contactUs__description Новые модели, выгодные акции и неожиданные дизайнерские решения ежедневно в удобном для&nbsp;вас формате. Подписывайтесь!
 
     form(action="#").mainForm.contactUs__mainForm
-      .mainForm__input-group
-        input(type="text", placeholder="Ваше имя").mainForm__input.contactUs__input
-        input(type="phone", placeholder="Ваш телефон").mainForm__input.contactUs__input
+      .mainForm__input-group.contactUs__input-group
+          label(for="contactUs-user-name").mainForm__label Ваше имя
+          input(type="text", name="user-name").mainForm__input.contactUs__input#contactUs-user-name
+      .mainForm__input-group.contactUs__input-group
+          label(for="contactUs-user-name").mainForm__label Ваш телефон
+          input(type="tel", name="user-tel").mainForm__input.contactUs__input#contactUs-user-tel
       button.mainForm__button.button.button--primary.contactUs__button Отправить
   p.policy.contactUs__policy Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
     

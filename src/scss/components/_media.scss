@@ -139,8 +139,14 @@
     }
 
     .mainForm {
+        // justify-content: space-between;
+
         &__input {
             width: 329px;
+
+            &-group {
+                display: inline-block;
+            }
         }
     }
 
@@ -1306,9 +1312,14 @@
         }
 
         .mainForm {
+            display: flex;
+            justify-content: space-between;
+            // flex-direction: column;
+            flex-wrap: wrap;
+
             &__input {
                 width: 306px;
-                padding-left: 26px;
+                // padding-left: 26px;
                 font-size: 19px;
                 line-height: 118.49%;
                 padding-bottom: 21px;
@@ -1495,12 +1506,20 @@
         }
 
         .mainForm__input {
-            width: 100%;
+            width: 100% !important;
             padding-bottom: 13px;
+
+            &-group {
+                margin-bottom: 47px;
+                width: 100%;
+            }
         }
 
         .mainForm {
             width: 509px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
 
         .policy {
@@ -3911,6 +3930,10 @@
 
             &__input {
                 padding-bottom: 21px;
+            }
+
+            &__label {
+                left: 26px;
             }
         }
 
