@@ -351,8 +351,13 @@
 
         &__input {
             width: 100%;
-            margin-bottom: 47px;
-            padding-bottom: 6px;
+            // padding-bottom: 6px;
+
+            &-group {
+                // display: inline-block;
+                width: 100%;
+                margin-bottom: 47px;
+            }
         }
 
         &__policy {
@@ -702,12 +707,12 @@
         }
 
         &__input {
-            width: 374px;
+            width: 100%;
             // margin-right: 26px;
 
             &-group {
                 display: inline-flex;
-                width: 66%;
+                width: 33%;
             }
         }
 
@@ -965,7 +970,7 @@
 
         &__input {
             width: 458px;
-            padding-bottom: 23px;
+            // padding-bottom: 23px;
             margin-bottom: 16px;
         }
 

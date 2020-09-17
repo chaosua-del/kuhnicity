@@ -48,12 +48,14 @@
     }
 
     &__input {
-        margin-bottom: 25px;
+
         transition: border-color 0.2s ease-in-out;
 
-        &:focus {
-            border-color: #323232;
+        &-group {
+            margin-bottom: 25px;
         }
+
+
     }
 
     &__button {

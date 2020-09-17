@@ -1377,10 +1377,9 @@ strong {
   padding-right: 25px; }
 
 .getProject__input {
-  margin-bottom: 25px;
   transition: border-color 0.2s ease-in-out; }
-  .getProject__input:focus {
-    border-color: #323232; }
+  .getProject__input-group {
+    margin-bottom: 25px; }
 
 .getProject__button {
   margin-top: 14px;
@@ -4433,9 +4432,10 @@ strong {
     margin-left: auto;
     margin-right: auto; }
   .getProject__input {
-    width: 100%;
-    margin-bottom: 47px;
-    padding-bottom: 6px; }
+    width: 100%; }
+    .getProject__input-group {
+      width: 100%;
+      margin-bottom: 47px; }
   .getProject__policy {
     width: 257px;
     margin-left: auto;
@@ -4615,10 +4615,10 @@ strong {
   .getProject__description {
     margin-bottom: 70px; }
   .getProject__input {
-    width: 374px; }
+    width: 100%; }
     .getProject__input-group {
       display: inline-flex;
-      width: 66%; }
+      width: 33%; }
   .getProject__mainForm {
     max-width: 1400px;
     padding-top: 82px;
@@ -4744,7 +4744,6 @@ strong {
     padding-bottom: 58px; }
   .getProject__input {
     width: 458px;
-    padding-bottom: 23px;
     margin-bottom: 16px; }
   .getProject__button {
     width: 431px;
