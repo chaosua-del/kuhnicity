@@ -3812,6 +3812,8 @@ strong {
       width: 286px;
       padding-left: 28px;
       padding-bottom: 25px; }
+    .hero .mainForm__label {
+      left: 28px; }
     .hero__button {
       margin-top: 22px;
       margin-bottom: 23px; }

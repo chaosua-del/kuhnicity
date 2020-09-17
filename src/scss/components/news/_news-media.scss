@@ -1,0 +1,111 @@
+@media(min-width:768px) {
+    #news {
+        background-color: #FFFFFF !important;
+    }
+
+    .newsCards {
+        .articles {
+            &__card {
+                width: 672px;
+                height: 313px;
+
+                &--full {
+                    height: 645px;
+                }
+
+                &-img {
+                    img {
+                        min-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .newsProjects2 {
+        &__wrap {
+            width: 768px !important;
+            height: 675px !important;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .newsLeader {
+        margin-top: -222px !important;
+    }
+
+
+}
+
+
+@media(min-width:1280px) {
+    .newsCards {
+
+
+        &__block {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &:nth-child(2) {
+                display: flex;
+                // flex-wrap: wrap-reverse;
+                flex-direction: row-reverse;
+            }
+        }
+
+        .articles {
+            &__card {
+                margin-left: 0;
+                margin-right: 0;
+                width: 572px;
+                height: 313px;
+
+                &--full {
+                    height: 645px;
+                }
+
+            }
+        }
+    }
+
+    .newsProjects2 {
+        &__wrap {
+            width: 1295px !important;
+            height: 672px !important;
+        }
+    }
+
+
+}
+
+@media(min-width:1920px) {
+    .newsCards {
+        &__block {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .articles {
+            &__card {
+                width: 525px;
+                height: 329px;
+
+                &--full {
+                    width: 1057px;
+                    height: 672px;
+                }
+            }
+        }
+    }
+
+    .newsProjects2 {
+        &__wrap {
+
+            width: 1936px !important;
+            height: 904px !important;
+        }
+    }
+}

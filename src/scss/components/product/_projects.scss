@@ -22,7 +22,7 @@
 
             &-next,
             &-prev {
-                top: 630px;
+                top: 83%;
             }
         }
 
@@ -36,7 +36,8 @@
         padding-top: 26px;
         padding-left: 24px;
         padding-bottom: 20px;
-        height: 228px;
+        // height: 228px;
+        // height: auto !important;
 
         &-name {
             font-size: 14px;
@@ -58,6 +59,18 @@
             color: #666666;
             margin-top: 33px;
             width: 219px;
+        }
+
+        &-date {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 120.3%;
+            /* identical to box height, or 17px */
+
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+            color: #4F4F4F;
         }
 
     }

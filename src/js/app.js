@@ -26,6 +26,7 @@ import product from 'product';
 import catalog from 'catalog';
 import vacancies from 'vacancies';
 import validation from 'validation';
+import news from 'news';
 // import forms from 'forms'
 
 // import fancybox from '@fancyapps/fancybox';
@@ -103,6 +104,8 @@ let app = {
                 customCursor();
             } else if (document.querySelector('.content').id == 'vacancies') {
                 vacancies();
+            } else if (document.querySelector('.content').id == 'news') {
+                news();
             }
             svgReplace();
 

@@ -207,7 +207,8 @@
             left: 7px;
             z-index: 10;
             width: 365px;
-            height: 269px;
+            // height: 269px;
+            padding-bottom: 16px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -605,7 +606,8 @@
             top: 27px;
             left: 32px;
             width: 454px;
-            height: 308px;
+            // height: 308px;
+            padding-bottom: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -898,7 +900,8 @@
             top: 58px;
             left: 50px;
             width: 483px;
-            height: 375px;
+            // height: 375px;
+            padding-bottom: 36px;
 
             &-name {
                 margin-bottom: 21px;
