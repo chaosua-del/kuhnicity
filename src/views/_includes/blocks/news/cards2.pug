@@ -30,9 +30,10 @@ section.newsCards
 
 .projects.newsProjects2
    .newsProjects2__wrap
-      .projects__info
-          p.projects__info-date 5 февраля 2020
-          h3.projects__info-name Обновление коллекции кухонь
+      .container
+        .projects__info(style="left:0")
+            p.projects__info-date 5 февраля 2020
+            h3.projects__info-name Обновление коллекции кухонь
       a(href='#').newsProjects2__card
           picture.newsProjects2__card-img
               source(media="(min-width: 768px)", srcset="assets/img/projects/1-md.webp", type="image/webp")
