@@ -29,6 +29,7 @@ import validation from 'validation';
 import news from 'news';
 import content from 'content';
 import notFound from 'notFound';
+import contacts from 'contacts';
 // import forms from 'forms'
 
 // import fancybox from '@fancyapps/fancybox';
@@ -112,7 +113,8 @@ let app = {
                 content();
             } else if (document.querySelector('.content').id == 'notFound') {
                 notFound();
-                // customCursor();
+            } else if (document.querySelector('.content').id == 'notFound') {
+                contacts();
             }
             svgReplace();
 
@@ -123,15 +125,15 @@ let app = {
 
         this.document.on(app.resizeEventName, () => {
 
-            if (document.querySelector('.content').id == 'main') {
-                sliders();
-                hovers();
-                expand();
+            // if (document.querySelector('.content').id == 'main') {
+            //     sliders();
+            //     hovers();
+            //     expand();
 
-            } else if (document.querySelector('.content').id == 'catalog') {
-                catalog();
-                expand();
-            }
+            // } else if (document.querySelector('.content').id == 'catalog') {
+            //     catalog();
+            //     expand();
+            // }
             location.reload();
             // console.log('rezising');
         });

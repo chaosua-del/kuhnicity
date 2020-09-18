@@ -1,0 +1,33 @@
+@media(min-width:768px) {
+    .contactsHero {
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__container {
+            padding-bottom: 57px;
+
+        }
+
+        &__description {
+            font-size: 14px;
+            max-width: 625px;
+        }
+    }
+}
+
+@media(min-width:1280px) {
+    .contactsHero {
+        &__title {
+            margin-bottom: 49px;
+        }
+
+        &__container {
+            padding-top: 44px;
+            padding-bottom: 97px;
+            background: url('../img/contacts/hero-bg-lg.png') no-repeat center / cover;
+        }
+
+
+    }
+}
