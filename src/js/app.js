@@ -113,8 +113,10 @@ let app = {
                 content();
             } else if (document.querySelector('.content').id == 'notFound') {
                 notFound();
-            } else if (document.querySelector('.content').id == 'notFound') {
+            } else if (document.querySelector('.content').id == 'contacts') {
                 contacts();
+            } else if (document.querySelector('.content').id == 'questions') {
+                vacancies();
             }
             svgReplace();
 

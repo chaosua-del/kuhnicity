@@ -39,6 +39,11 @@
         // height: 228px;
         // height: auto !important;
 
+        &-container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         &-name {
             font-size: 14px;
             line-height: 120.3%;

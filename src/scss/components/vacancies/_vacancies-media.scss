@@ -1,4 +1,14 @@
 @media(min-width: 768px) {
+    #questions {
+        .articles {
+            padding-top: 0 !important;
+            // padding-bottom: 0 !important;
+        }
+
+        .leader {
+            padding-bottom: 0 !important;
+        }
+    }
 
     // hero
     .vacanciesHero {

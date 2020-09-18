@@ -203,8 +203,8 @@
         &__info {
             background: rgba(255, 255, 255, 0.85);
             position: absolute;
-            top: 12px;
-            left: 7px;
+            top: 20px;
+            left: 25px !important;
             z-index: 10;
             width: 365px;
             // height: 269px;
@@ -220,7 +220,7 @@
                 font-size: 16px;
                 line-height: 120.3%;
                 /* or 19px */
-
+                // left: 25px !important;
                 letter-spacing: 0.105em;
                 width: 291px;
                 margin-bottom: 21px;
@@ -470,6 +470,19 @@
     .benefits2 {
         background-color: #fff;
         padding-bottom: 89px;
+
+        .benefits {
+
+
+            &__card {
+                height: 104px;
+                margin-bottom: 93px;
+
+                &-link {
+                    bottom: -46px;
+                }
+            }
+        }
     }
 
     // end-768
@@ -515,6 +528,16 @@
     }
 
     // benefits2-1280
+    .benefits2 {
+        .benefits__swiper-slide {
+            width: 100% !important;
+            flex-wrap: nowrap;
+        }
+
+        .benefits__card-link {
+            bottom: -70px;
+        }
+    }
 
     .productBenefits2 {
         .benefits {

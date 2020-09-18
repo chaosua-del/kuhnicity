@@ -111,3 +111,15 @@
         background: url('../img/questions-bg.png') no-repeat center / cover !important;
     }
 }
+
+#questions {
+    background-color: #f4f4f4;
+
+    .newsCards__container {
+        padding-bottom: 50px !important;
+    }
+
+    .articles__title2 {
+        margin-top: 20px;
+    }
+}
