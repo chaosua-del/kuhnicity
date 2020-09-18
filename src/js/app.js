@@ -83,7 +83,7 @@ let app = {
         app.document.ready(() => {
             document.querySelector('.content').style.marginTop = `${document.querySelector('.header').offsetHeight}px`;
             header();
-            modals();
+            // modals();
             validation();
             // forms();
             if (document.querySelector('.content').id == 'main') {
