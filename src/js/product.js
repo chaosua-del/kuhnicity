@@ -12,7 +12,7 @@ export default function product() {
             loop: true,
             navigation: {
                 nextEl: '.productHero__swiper-button-next',
-                prevEl: '.stages__swiper-button-prev',
+                prevEl: '.productHero__swiper-button-prev',
             }
         });
 

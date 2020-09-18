@@ -3,7 +3,22 @@ import Swiper from 'swiper/js/swiper.js';
 import ionRangeSlider from 'ion-rangeSlider/js/ion.rangeSlider.min.js';
 
 export default function catalog() {
-
+    const stages = new Swiper('.stages__swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        slidesOffsetAfter: 20,
+        updateOnWindowResize: false,
+        // loop: true,
+        navigation: {
+            nextEl: '.stages__swiper-button-next',
+            prevEl: '.stages__swiper-button-prev',
+        },
+        breakpoints: {
+            450: {
+                slidesOffsetAfter: 500,
+            }
+        }
+    });
 
     const feedback = new Swiper('.feedback__swiper-container', {
         slidesPerView: 'auto',
@@ -29,37 +44,6 @@ export default function catalog() {
             slidesOffsetAfter: 0,
         });
 
-        const stages = new Swiper('.stages__swiper-container', {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            slidesOffsetAfter: 100,
-            updateOnWindowResize: false,
-            loop: false,
-            navigation: {
-                nextEl: '.stages__swiper-button-next',
-                prevEl: '.stages__swiper-button-prev',
-            },
-        });
-
-        stages.translateTo(270);
-    }
-
-    if (window.innerWidth >= 768 && window.innerWidth < 1280) {
-
-
-        const stages = new Swiper('.stages__swiper-container', {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            slidesOffsetAfter: 450,
-            updateOnWindowResize: false,
-            loop: false,
-            navigation: {
-                nextEl: '.stages__swiper-button-next',
-                prevEl: '.stages__swiper-button-prev',
-            },
-        });
-
-        stages.translateTo(318);
     }
 
     // stages-hover 

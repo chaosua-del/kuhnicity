@@ -1,6 +1,23 @@
 import Swiper from 'swiper/js/swiper.js';
 
 export default function sliders() {
+    const stages = new Swiper('.stages__swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        slidesOffsetAfter: 20,
+        updateOnWindowResize: false,
+        // loop: true,
+        navigation: {
+            nextEl: '.stages__swiper-button-next',
+            prevEl: '.stages__swiper-button-prev',
+        },
+        breakpoints: {
+            450: {
+                slidesOffsetAfter: 500,
+            }
+        }
+    });
+
     if (window.innerWidth < 768) {
         const benefits = new Swiper('.benefits__swiper-container', {
             slidesPerView: 'auto',
@@ -32,19 +49,8 @@ export default function sliders() {
 
         social.translateTo(270);
 
-        const stages = new Swiper('.stages__swiper-container', {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            slidesOffsetAfter: 100,
-            updateOnWindowResize: false,
-            loop: false,
-            navigation: {
-                nextEl: '.stages__swiper-button-next',
-                prevEl: '.stages__swiper-button-prev',
-            }
-        });
 
-        stages.translateTo(270);
+
 
         const banner = new Swiper('.banner__swiper-container', {
             slidesPerView: 'auto',
@@ -65,20 +71,6 @@ export default function sliders() {
     }
     if (window.innerWidth >= 768 && window.innerWidth < 1280) {
 
-
-        const stages = new Swiper('.stages__swiper-container', {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            slidesOffsetAfter: 450,
-            updateOnWindowResize: false,
-            loop: false,
-            navigation: {
-                nextEl: '.stages__swiper-button-next',
-                prevEl: '.stages__swiper-button-prev',
-            },
-        });
-
-        stages.translateTo(318);
 
 
         const banner = new Swiper('.banner__swiper-container', {
