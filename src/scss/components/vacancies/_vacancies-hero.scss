@@ -66,5 +66,47 @@
                 margin-left: 10px;
             }
         }
+
+        &__block {
+            font-size: 12px;
+            line-height: 120.3%;
+            /* or 19px */
+            z-index: 5;
+            text-align: center;
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__tab {
+            display: flex;
+            align-items: center;
+            border: 1px solid #FFFFFF;
+            padding: 14px 14px;
+            margin-right: 2px;
+            margin-left: 2px;
+            margin-bottom: 5px;
+
+            &::after {
+                content: '';
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                background: url('../img/tab-close.svg') no-repeat center / cover;
+                margin-left: 12px;
+
+            }
+        }
+    }
+
+
+}
+
+.questionsHero {
+    .hero__container {
+        background: url('../img/questions-bg.png') no-repeat center / cover !important;
     }
 }

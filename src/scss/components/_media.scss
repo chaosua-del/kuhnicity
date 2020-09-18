@@ -1546,6 +1546,25 @@
 }
 
 @media (min-width: 1280px) {
+    .newsCards__container {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .articles__card {
+            width: 575px;
+            height: 313px;
+
+            &--full {
+                width: 572px;
+                height: 645px;
+            }
+
+            img {
+                min-width: 100%;
+            }
+        }
+    }
 
     // expand-1280
     .expand {
@@ -2348,6 +2367,10 @@
         padding-top: 71px;
         padding-bottom: 66px;
 
+        &__wrap {
+            display: flex;
+        }
+
         &__container {
             max-width: 100%;
             padding-left: 52px;
@@ -2770,6 +2793,22 @@
 }
 
 @media(min-width: 1920px) {
+    .newsCards__container {
+        max-width: 1620px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .articles__card {
+            width: 525px;
+            height: 329px;
+
+            &--full {
+                width: 1057px;
+                height: 672px;
+            }
+
+        }
+    }
 
     // base-1920
     .title {

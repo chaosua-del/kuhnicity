@@ -948,6 +948,38 @@ strong {
   .vacanciesHero .hero__stats-views {
     margin-left: 10px; }
 
+.vacanciesHero .hero__block {
+  font-size: 12px;
+  line-height: 120.3%;
+  /* or 19px */
+  z-index: 5;
+  text-align: center;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.vacanciesHero .hero__tab {
+  display: flex;
+  align-items: center;
+  border: 1px solid #FFFFFF;
+  padding: 14px 14px;
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-bottom: 5px; }
+  .vacanciesHero .hero__tab::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: url("../img/tab-close.svg") no-repeat center/cover;
+    margin-left: 12px; }
+
+.questionsHero .hero__container {
+  background: url("../img/questions-bg.png") no-repeat center/cover !important; }
+
 .productHero__status {
   text-align: center;
   background: rgba(240, 240, 240, 0.88);
@@ -1204,6 +1236,13 @@ strong {
       height: 100%; }
   .articles__button {
     display: none; }
+  .articles__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.newsCards__container .articles__card {
+  margin-bottom: 20px !important; }
 
 .newsCards__container {
   padding-top: 32px;
@@ -1423,7 +1462,8 @@ strong {
 
 .catalogLeader {
   padding-top: 7px;
-  padding-bottom: 69px; }
+  padding-bottom: 69px;
+  background-color: #ffffff; }
   .catalogLeader .leader__container {
     padding-right: 21px;
     padding-left: 17px; }
@@ -1790,6 +1830,15 @@ strong {
     line-height: 140%; }
     .vacanciesHero .hero__description span {
       display: inline-block; }
+  .vacanciesHero .hero__block {
+    font-size: 16px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto; }
+  .vacanciesHero .hero__tab {
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-bottom: 20px; }
   .vacanciesChars .chars__container {
     max-width: 920px;
     margin-left: auto;
@@ -1827,6 +1876,8 @@ strong {
 @media (min-width: 1280px) {
   #vacancies .benefits2 {
     padding-bottom: 10px; }
+  .questionsHero .hero__container {
+    background: url("../img/questions-bg-lg.png") no-repeat center/cover !important; }
   .vacanciesHero .hero__container {
     max-width: 100%;
     width: 100%;
@@ -1834,6 +1885,8 @@ strong {
     flex-direction: column; }
   .vacanciesHero .hero__title {
     font-size: 55px; }
+  .vacanciesHero .hero__block {
+    max-width: none; }
   .vacanciesChars .chars__container {
     max-width: 1280px;
     padding-left: 50px;
@@ -1876,6 +1929,8 @@ strong {
     top: 4px; } }
 
 @media (min-width: 1920px) {
+  .questionsHero .hero__title {
+    width: 652px !important; }
   .vacanciesHero .hero__container {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -1887,6 +1942,8 @@ strong {
   .vacanciesHero .hero__description {
     font-size: 16px;
     width: 625px; }
+  .vacanciesHero .hero__tab {
+    padding: 14px 30px; }
   .vacanciesChars .chars__container {
     max-width: 1920px;
     padding-left: 160px;
@@ -3385,6 +3442,18 @@ strong {
     margin-top: 26px; } }
 
 @media (min-width: 1280px) {
+  .newsCards__container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto; }
+    .newsCards__container .articles__card {
+      width: 575px;
+      height: 313px; }
+      .newsCards__container .articles__card--full {
+        width: 572px;
+        height: 645px; }
+      .newsCards__container .articles__card img {
+        min-width: 100%; }
   .expand {
     top: 92px;
     padding-top: 47px;
@@ -3837,6 +3906,8 @@ strong {
   .articles {
     padding-top: 71px;
     padding-bottom: 66px; }
+    .articles__wrap {
+      display: flex; }
     .articles__container {
       max-width: 100%;
       padding-left: 52px; }
@@ -4071,6 +4142,16 @@ strong {
     font-size: 14px; } }
 
 @media (min-width: 1920px) {
+  .newsCards__container {
+    max-width: 1620px;
+    margin-left: auto;
+    margin-right: auto; }
+    .newsCards__container .articles__card {
+      width: 525px;
+      height: 329px; }
+      .newsCards__container .articles__card--full {
+        width: 1057px;
+        height: 672px; }
   .title {
     font-size: 72px; }
   .mainForm__input {

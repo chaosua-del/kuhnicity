@@ -16,6 +16,19 @@
                     display: inline-block;
                 }
             }
+
+            &__block {
+                font-size: 16px;
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            &__tab {
+                margin-left: 11px;
+                margin-right: 11px;
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -103,6 +116,14 @@
         }
     }
 
+    .questionsHero {
+        .hero {
+            &__container {
+                background: url('../img/questions-bg-lg.png') no-repeat center / cover !important;
+            }
+        }
+    }
+
     .vacanciesHero {
         .hero {
             &__container {
@@ -114,6 +135,10 @@
 
             &__title {
                 font-size: 55px;
+            }
+
+            &__block {
+                max-width: none;
             }
         }
     }
@@ -206,6 +231,14 @@
 }
 
 @media(min-width: 1920px) {
+    .questionsHero {
+        .hero {
+            &__title {
+                width: 652px !important;
+            }
+        }
+    }
+
     .vacanciesHero {
         .hero {
             &__container {
@@ -224,6 +257,10 @@
             &__description {
                 font-size: 16px;
                 width: 625px;
+            }
+
+            &__tab {
+                padding: 14px 30px;
             }
         }
     }
