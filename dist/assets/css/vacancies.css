@@ -970,7 +970,8 @@ strong {
   padding: 14px 14px;
   margin-right: 2px;
   margin-left: 2px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  color: #FFFFFF; }
   .vacanciesHero .hero__tab::after {
     content: '';
     width: 10px;

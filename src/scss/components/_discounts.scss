@@ -41,6 +41,7 @@
         padding-left: 26px;
         height: 332px;
 
+
         &::after {
             content: '';
             position: absolute;
@@ -155,6 +156,6 @@
         transition: opacity 0.2s ease-in-out;
         width: 182px;
         height: 182px;
-        cursor: none;
+        cursor: none !important;
     }
 }

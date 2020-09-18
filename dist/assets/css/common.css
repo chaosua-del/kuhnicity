@@ -1105,7 +1105,7 @@ strong {
     transition: opacity 0.2s ease-in-out;
     width: 182px;
     height: 182px;
-    cursor: none; }
+    cursor: none !important; }
 
 .production__wrap {
   display: flex;
