@@ -1,4 +1,8 @@
 @media(min-width:768px) {
+    #contacts {
+        background-color: #fff !important;
+    }
+
     .contactsHero {
         &__title {
             margin-bottom: 20px;
@@ -12,6 +16,44 @@
         &__description {
             font-size: 14px;
             max-width: 625px;
+        }
+    }
+
+    .region {
+
+        &__select,
+        &__select2 {
+            width: 356px;
+        }
+
+        &__label {
+            font-size: 16px;
+        }
+
+        &__container2 {
+            background-color: #fff;
+        }
+
+        &__block {
+            flex-direction: row;
+            flex-wrap: wrap;
+            // align-items: baseline;
+            align-items: end;
+        }
+
+        &__contacts {
+            flex-basis: 100%;
+            display: flex;
+
+            &-link {
+                margin-right: 20px;
+            }
+        }
+
+        &__button {
+            width: auto;
+            padding: 15px 28px;
+            margin-left: 16px;
         }
     }
 }
@@ -29,5 +71,67 @@
         }
 
 
+    }
+
+    .region {
+        &__select {
+            margin-right: 81px;
+        }
+
+        &__container {
+            padding-top: 67px;
+        }
+
+        &__container2 {
+            padding-bottom: 130px;
+        }
+
+        &__contacts {
+            margin-top: 16px;
+
+
+            &-link {
+                font-size: 45px;
+                line-height: 56px;
+            }
+        }
+
+        &__wrap {
+            display: flex;
+            align-items: baseline;
+        }
+
+        &__button {
+            margin-left: 43px;
+        }
+
+        &__title {
+            margin-bottom: 96px;
+        }
+
+
+    }
+}
+
+@media(min-width:1920px) {
+    .region {
+        &__label {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        &__select-selected {
+            padding-left: 35px;
+        }
+
+        &__select2-selected {
+            padding-left: 15px;
+        }
+
+        &__contacts {
+            &-link {
+                margin-right: 52px;
+            }
+        }
     }
 }

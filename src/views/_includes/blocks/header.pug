@@ -1,7 +1,7 @@
 header.header
   .navigation.header__navigation
     .container.header__container 
-      button.header-button.navigation__button РАссчитать кухню
+      button.header-button.navigation__button(data-fancybox, data-src="#modal") РАссчитать кухню
       .header__location
         .header__location-selected Москва
         .header__location-block
@@ -28,7 +28,7 @@ header.header
           a(href='#') Адреса салонов
       .header__contacts
         a(href="mailto:info@kuhnicity.ru").header__contacts-mail info@kuhnicity.ru
-        button.header__contacts-button Заказать звонок
+        button.header__contacts-button(data-fancybox, data-src="#modal") Заказать звонок
         a(href="tel:+74991354378").header__contacts-phone +7 (499) 135-43-78
   .header__block
     .header__expand.expand(data-isopen="false")
@@ -725,7 +725,7 @@ header.header
           a(href="#").expand__nav-item Адреса салонов
         
         .expand__contacts
-          button.expand__contacts-button Заказать звонок
+          button.expand__contacts-button(data-fancybox, data-src="#modal") Заказать звонок
           a(href="tel:+74991354378").expand__contacts-phone +7 (499) 135-43-78
 
     .container.header__container
