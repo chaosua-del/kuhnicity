@@ -22,6 +22,10 @@
     }
 }
 
+.newsCards2 {
+    display: none;
+}
+
 .newsProjects {
     .projects {
         &__info {
@@ -57,5 +61,17 @@
             margin-top: -7px !important;
             margin-left: -17px !important;
         }
+    }
+}
+
+.catalogLeader {
+    .leader__container {
+        padding-bottom: 0 !important;
+    }
+}
+
+#news {
+    .articles {
+        padding-top: 0 !important;
     }
 }

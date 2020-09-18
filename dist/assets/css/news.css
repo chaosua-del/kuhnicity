@@ -1220,6 +1220,9 @@ strong {
 .newsCards .articles__card {
   margin-bottom: 20px; }
 
+.newsCards2 {
+  display: none; }
+
 .newsProjects .projects__info-name {
   margin-bottom: 0 !important; }
 
@@ -1236,6 +1239,12 @@ strong {
 .newsLeader .leader__info-img {
   margin-top: -7px !important;
   margin-left: -17px !important; }
+
+.catalogLeader .leader__container {
+  padding-bottom: 0 !important; }
+
+#news .articles {
+  padding-top: 0 !important; }
 
 .projects {
   background-color: #f4f4f4; }
@@ -1900,6 +1909,17 @@ strong {
 @media (min-width: 768px) {
   #news {
     background-color: #FFFFFF !important; }
+    #news .articles {
+      display: none; }
+    #news .projects__info-name {
+      font-size: 25px !important;
+      text-transform: none;
+      line-height: 31px;
+      letter-spacing: normal; }
+    #news .projects__info {
+      padding-top: 38px !important;
+      padding-bottom: 38px !important;
+      width: 503px !important; }
   .newsCards .articles__card {
     width: 672px;
     height: 313px; }
@@ -1907,6 +1927,21 @@ strong {
       height: 645px; }
     .newsCards .articles__card-img img {
       min-width: 100%; }
+  .newsCards2 {
+    display: block; }
+  .news__swiper-container {
+    padding-bottom: 110px; }
+  .news__container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto; }
+  .news__swiper-button-next, .news__swiper-button-prev {
+    top: 96% !important; }
+  .news__swiper-button-next {
+    right: 0px !important; }
+  .news__swiper-button-prev {
+    right: 70px !important;
+    left: auto !important; }
   .newsProjects2__wrap {
     width: 768px !important;
     height: 675px !important;
@@ -1916,6 +1951,16 @@ strong {
     margin-top: -222px !important; } }
 
 @media (min-width: 1280px) {
+  #news .projects__info {
+    padding-top: 42px !important;
+    padding-bottom: 33px !important;
+    width: 503px !important; }
+    #news .projects__info-name {
+      width: 396px !important; }
+  .news__container {
+    max-width: 1170px; }
+  .news__swiper-button-next, .news__swiper-button-prev {
+    top: 95% !important; }
   .newsCards__block {
     width: 100%;
     display: flex;
@@ -1936,6 +1981,17 @@ strong {
     height: 672px !important; } }
 
 @media (min-width: 1920px) {
+  #news .projects__info {
+    left: 68px;
+    padding-top: 38px !important;
+    padding-bottom: 33px !important;
+    width: 487px !important; }
+    #news .projects__info-name {
+      width: 396px !important; }
+  .news__container {
+    max-width: 1620px; }
+  .news__swiper-button-prev, .news__swiper-button-next {
+    top: 94% !important; }
   .newsCards__block {
     display: flex;
     flex-direction: row; }
