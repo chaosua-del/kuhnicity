@@ -1346,7 +1346,7 @@ strong {
         height: 7px;
         background: url("../img/models/new.svg") no-repeat center/cover; }
   .card__hover {
-    display: none;
+    opacity: 0;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1372,7 +1372,8 @@ strong {
       height: 100%; }
     .card__hover-group {
       margin-bottom: 25px !important;
-      margin-left: 36px; }
+      margin-left: 36px;
+      display: none; }
     .card__hover-title {
       font-size: 14px;
       line-height: 120.3%;
@@ -1413,6 +1414,9 @@ strong {
         width: 163px;
         opacity: 0;
         transition: opacity 0.2s ease-in-out; }
+    .card__hover-button {
+      min-height: 100%;
+      z-index: 10; }
 
 .benefits {
   background-color: #F2F2F2; }
@@ -3214,7 +3218,9 @@ strong {
   .card {
     width: 363px;
     margin-bottom: 47px; }
-    .card__hover {
+    .card__hover-button {
+      min-height: auto; }
+    .card__hover-group {
       display: block; }
     .card__img {
       width: 363px;

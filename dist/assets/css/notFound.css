@@ -2553,7 +2553,9 @@ strong {
   .card {
     width: 363px;
     margin-bottom: 47px; }
-    .card__hover {
+    .card__hover-button {
+      min-height: auto; }
+    .card__hover-group {
       display: block; }
     .card__img {
       width: 363px;

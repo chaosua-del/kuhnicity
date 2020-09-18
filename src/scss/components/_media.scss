@@ -2123,7 +2123,13 @@
         margin-bottom: 47px;
 
         &__hover {
-            display: block;
+            &-button {
+                min-height: auto;
+            }
+
+            &-group {
+                display: block;
+            }
         }
 
         &__img {

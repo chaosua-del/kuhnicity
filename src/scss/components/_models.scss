@@ -166,7 +166,8 @@
     }
 
     &__hover {
-        display: none;
+        // display: none;
+        opacity: 0;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -193,13 +194,14 @@
             justify-content: flex-end;
             align-items: flex-start;
             height: 100%;
+            // opacity: 1;
 
         }
 
         &-group {
             margin-bottom: 25px !important;
             margin-left: 36px;
-
+            display: none;
 
         }
 
@@ -250,6 +252,11 @@
                 opacity: 0;
                 transition: opacity 0.2s ease-in-out;
             }
+        }
+
+        &-button {
+            min-height: 100%;
+            z-index: 10;
         }
 
     }
