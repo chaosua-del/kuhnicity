@@ -14,6 +14,15 @@ export default function sliders() {
         breakpoints: {
             450: {
                 slidesOffsetAfter: 500,
+            },
+            800: {
+                slidesOffsetAfter: 700,
+            },
+            1000: {
+                slidesOffsetAfter: 900,
+            },
+            1200: {
+                slidesOffsetAfter: 1000,
             }
         }
     });
