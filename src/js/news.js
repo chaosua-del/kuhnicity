@@ -37,7 +37,7 @@ export default function news() {
         });
     } else {
         const news = new Swiper('.news__swiper-container', {
-            // updateOnWindowResize: false,
+            updateOnWindowResize: false,
             slidesPerView: 'auto',
             spaceBetween: 10,
             freeMode: false,
