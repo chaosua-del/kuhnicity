@@ -1957,6 +1957,8 @@ strong {
     width: 503px !important; }
     #news .projects__info-name {
       width: 396px !important; }
+  .news__container {
+    padding-left: 50px; }
   .news__swiper-slide {
     width: 1170px !important; }
   .news__swiper-wrapper {
@@ -1994,6 +1996,8 @@ strong {
     max-width: 1920px !important;
     margin-left: auto !important;
     margin-right: auto !important; }
+  .news__container {
+    padding-left: 160px; }
   .news__swiper-slide {
     width: 1620px !important; }
   .news__swiper-wrapper {

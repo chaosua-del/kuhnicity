@@ -119,6 +119,10 @@
     }
 
     .news {
+        &__container {
+            padding-left: 50px;
+        }
+
         &__swiper {
             &-slide {
                 width: 1170px !important;
@@ -206,6 +210,9 @@
     }
 
 
+    .news__container {
+        padding-left: 160px;
+    }
 
     .news__swiper {
         &-slide {
