@@ -28,6 +28,7 @@ import vacancies from 'vacancies';
 import validation from 'validation';
 import news from 'news';
 import content from 'content';
+import notFound from 'notFound';
 // import forms from 'forms'
 
 // import fancybox from '@fancyapps/fancybox';
@@ -109,6 +110,9 @@ let app = {
                 news();
             } else if (document.querySelector('.content').id == 'contentPage') {
                 content();
+            } else if (document.querySelector('.content').id == 'notFound') {
+                notFound();
+                // customCursor();
             }
             svgReplace();
 

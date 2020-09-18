@@ -1,0 +1,60 @@
+block config
+
+doctype html
+html(lang="ru", class="no-js")
+    head
+        block head
+            include _includes/head
+    body.body
+        include _includes/mixins/svgsprite
+        
+        block header
+            include _includes/blocks/header
+
+        .content#notFound
+            block content
+                block hero 
+                    .status.notFound__status
+                        a(href="index.html").status-item Главная&ensp; 
+                        span >   
+                        span.status-item.status-item--active &ensp;Контентная страница
+                    
+                    a(href="index.html").container.notFound__container.customcursor
+                        .title.notFound__title Страница, которую вы ищете, не&nbsp;существует
+                        .notFound__img
+                        .hover-cursor.notFound__hover-cursor
+
+
+                block benefits2
+                    include _includes/blocks/product/benefits2
+
+                
+              
+               
+               
+               
+        
+        block footer
+            include _includes/blocks/footer
+        
+        // include popups here
+        block modal
+            include _includes/blocks/modal
+
+        block styles
+          link(rel='stylesheet', href='assets/css/notFound.css?v=' + PACKAGE.version)
+        block scripts-config
+            script.
+                /* изменяемые настройки скриптов, указаны значения по умолчанию */
+                var appConfig = {
+                    /*
+                    scrollToOffset: 150, // оффсет при скролле до элемента
+                    scrollToSpeed: 500, // скорость скролла 
+                    */
+                }
+        block scripts
+            script(src='assets/js/vendors~main.bundle.js')
+            script(src='assets/js/main.bundle.js?v=' + PACKAGE.version)
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+            <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js" type="text/javascript"></script>

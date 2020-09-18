@@ -2336,6 +2336,7 @@ strong {
     .benefits__swiper-slide {
       width: 100% !important;
       flex-wrap: wrap;
+      justify-content: center;
       max-width: 768px;
       margin-left: auto;
       margin-right: auto; }

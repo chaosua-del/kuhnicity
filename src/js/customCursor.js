@@ -13,7 +13,7 @@ export default function customCursor() {
                 let clientX = (event.pageX - parentOffset.left);
                 let clientY = (event.pageY - parentOffset.top);
                 // console.log(clientX - parentOffset.left, clientY - parentOffset.top);
-                innerCursor.style.transform = `translate(${clientX - 100}px, ${clientY - 100}px)`;
+                innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
                 // innerCursor.style.opacity = '1'; 
                 // innerCursor.style.opacity = '1';
                 innerCursor.style.display = 'block';
