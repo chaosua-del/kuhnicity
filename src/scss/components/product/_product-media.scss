@@ -1048,14 +1048,46 @@
             &__swiper-wrapper {
                 transform: translate3d(0, 0, 0) !important;
                 flex-direction: column;
+                width: 100% !important;
+            }
+
+            &__swiper-slide {
+                width: 100% !important;
             }
 
             &__card {
                 border: none;
+                width: auto;
+                max-width: none;
+                margin-bottom: 44px;
+
+                &-text {
+                    width: 771px;
+                    height: auto;
+                }
 
                 &-button {
                     display: none;
                 }
+
+                &-date {
+                    right: 0;
+                    top: 10px;
+                    position: absolute;
+                    margin: 0;
+                    opacity: 1;
+                    color: rgba(#171717, 0.5);
+                }
+            }
+
+            &__user {
+                margin-bottom: 88px;
+
+
+            }
+
+            &__rating {
+                display: inline-block;
             }
         }
     }

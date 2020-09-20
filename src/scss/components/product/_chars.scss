@@ -192,6 +192,10 @@
         &__swiper-wrapper {
             padding-bottom: 50px !important;
         }
+
+        &__rating {
+            display: none;
+        }
     }
 
     &__block {
@@ -238,4 +242,34 @@
         margin-top: 39px;
         font-size: 14px;
     }
+}
+
+.rating-mini {
+    display: inline-block;
+    font-size: 0;
+}
+
+.rating-mini span {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: lightgrey;
+    margin-right: 4px;
+}
+
+.rating-mini>span:before {
+    content: '★';
+}
+
+.rating-mini>span.star-active {
+    color: #F8CD02;
+}
+
+.rating-number {
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    margin-right: 13px;
+    margin-left: 24px;
+    color: #141414;
 }
