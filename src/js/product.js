@@ -123,10 +123,37 @@ export default function product() {
         }
     });
 
+    const articles = new Swiper('.articles__swiper-container2', {
+        slidesPerView: 'auto',
+        // spaceBetween: 10,
+        updateOnWindowResize: false,
+        // freeMode: true,
+        // loop: false,
+        slidesOffsetAfter: 0,
+        navigation: {
+            nextEl: '.chars-description__swiper-button-next',
+            prevEl: '.chars-description__swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.chars-description__swiper-scrollbar',
+            draggable: false,
+        }
+    });
 
-    // others.translateTo(document.querySelector('.others__swiper-wrapper').offsetWidth);
+    const feedback = new Swiper('.feedback__swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        slidesOffsetAfter: 20,
+        updateOnWindowResize: false,
+        loop: false,
+        parallax: true,
+        scrollbar: {
+            el: '.chars-feedback__swiper-scrollbar',
+            draggable: false,
+        },
+    });
 
-    // console.log(document.querySelector('.others__swiper-slide').style.marginRight);
+
 
 
 }

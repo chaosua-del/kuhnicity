@@ -4300,11 +4300,13 @@ strong {
         max-width: none; }
     .chars__container {
       max-width: none; }
-    .chars__expand-button {
-      font-size: 36px; }
-      .chars__expand-button::after {
-        font-size: 30px;
-        font-weight: normal; }
+    .chars__expand {
+      margin-right: -50px; }
+      .chars__expand-button {
+        font-size: 36px; }
+        .chars__expand-button::after {
+          font-size: 30px;
+          font-weight: normal; }
     .chars__info-title {
       font-size: 16px; }
     .chars__info-description {
@@ -4313,6 +4315,23 @@ strong {
       display: none; }
     .chars-image__swiper-wrapper {
       padding-bottom: 14px; }
+  .chars-materials__wrap {
+    margin-bottom: 267px;
+    display: flex; }
+  .chars-materials__card {
+    flex-basis: 42%;
+    margin-top: 37px;
+    margin-right: 49px; }
+  .chars-feedback__wrap {
+    margin-bottom: 50px; }
+  .chars-feedback .banner__card-rate {
+    margin-right: 50%; }
+  .chars-feedback__button {
+    flex-basis: auto;
+    width: auto;
+    display: block;
+    padding: 15px 51px;
+    font-size: 16px; }
   .projects {
     background-color: #fff; }
     .projects .bonuses__card {
@@ -4492,7 +4511,11 @@ strong {
     justify-content: center; } }
 
 @media (min-width: 1280px) {
+  .chars__line {
+    margin-bottom: 35px; }
   .chars__block {
+    margin-right: 0; }
+  .chars__expand {
     margin-right: 0; }
   .chars__container {
     max-width: 1170px; }
@@ -4503,6 +4526,25 @@ strong {
   .chars__swiper-slide {
     width: 100% !important;
     justify-content: space-between; }
+  .chars-description .chars__info-description {
+    max-width: 855px;
+    margin-bottom: 42px;
+    margin-top: 20px; }
+  .chars-materials__card {
+    max-width: 390px;
+    margin-right: 72px; }
+  .chars-feedback__wrap {
+    justify-content: space-between; }
+  .chars-feedback .banner__title {
+    font-size: 30px; }
+  .chars-feedback .banner__card-quantity {
+    font-size: 12px; }
+  .chars-feedback .banner__card-rate {
+    font-size: 30px;
+    margin-right: auto; }
+    .chars-feedback .banner__card-rate::after {
+      width: 29.55px;
+      height: 28.07px; }
   .benefits2 .benefits__swiper-slide {
     width: 100% !important;
     flex-wrap: nowrap; }
@@ -4696,6 +4738,28 @@ strong {
   .chars-image__swiper-slide {
     width: 808px !important;
     height: 73px; }
+  .chars-description__swiper-button-next, .chars-description__swiper-button-prev {
+    display: block !important; }
+  .chars-description .chars__info-description {
+    max-width: 1011px;
+    margin-bottom: 58px;
+    margin-top: 20px; }
+  .chars-description .articles__button {
+    display: none; }
+  .chars-description .articles__swiper-wrapper {
+    padding-bottom: 100px !important; }
+  .chars-materials__wrap {
+    margin-top: 80px; }
+  .chars-materials__card {
+    max-width: 473px;
+    margin-right: 161px; }
+  .chars-feedback .feedback__swiper-wrapper {
+    transform: translate3d(0, 0, 0) !important;
+    flex-direction: column; }
+  .chars-feedback .feedback__card {
+    border: none; }
+    .chars-feedback .feedback__card-button {
+      display: none; }
   .projects .bonuses__container {
     padding-left: 151px; }
   .projects .bonuses__swiper-slide {
@@ -4893,6 +4957,152 @@ strong {
     font-size: 20px; }
     .advantages__list-description {
       font-size: 16px; } }
+
+@media (min-width: 768px) {
+  #questions .articles {
+    padding-top: 0 !important; }
+  #questions .leader {
+    padding-bottom: 0 !important; }
+  .vacanciesHero .hero__title {
+    width: 710px; }
+  .vacanciesHero .hero__description {
+    width: 625px;
+    font-size: 14px;
+    line-height: 140%; }
+    .vacanciesHero .hero__description span {
+      display: inline-block; }
+  .vacanciesHero .hero__block {
+    font-size: 16px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto; }
+  .vacanciesHero .hero__tab {
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-bottom: 20px; }
+  .vacanciesChars .chars__container {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto; }
+  .vacanciesChars .chars__info-description {
+    max-width: 669px; }
+    .vacanciesChars .chars__info-description:nth-child(1) {
+      margin-top: 40px; }
+  .vacancy__list {
+    font-size: 14px; }
+  .vacancy__mainForm {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap; }
+  .vacancy__input {
+    width: 100%; }
+  .vacancy__input-group {
+    flex-basis: 49%; }
+  .vacancy__button {
+    padding: 23px 0; }
+  .unavalible .getProject__container {
+    padding-top: 76px; }
+  .unavalible .getProject__description {
+    width: 505px;
+    margin-bottom: 54px; }
+  .unavalible .getProject__mainForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .unavalible .getProject__input-group {
+    flex-basis: 48%; }
+  .unavalible .getProject__policy {
+    width: 100%; } }
+
+@media (min-width: 1280px) {
+  #vacancies .benefits2 {
+    padding-bottom: 10px; }
+  .questionsHero .hero__container {
+    background: url("../img/questions-bg-lg.png") no-repeat center/cover !important; }
+  .vacanciesHero .hero__container {
+    max-width: 100% !important;
+    width: 100% !important;
+    background: url("../img/vacancies/hero-bg-lg.png") no-repeat center/cover;
+    flex-direction: column; }
+  .vacanciesHero .hero__title {
+    font-size: 55px; }
+  .vacanciesHero .hero__block {
+    max-width: none; }
+  .vacanciesChars .chars__container {
+    max-width: 1280px;
+    padding-left: 50px;
+    padding-right: 50px; }
+  .vacanciesChars .chars__expand {
+    margin-bottom: 50px; }
+    .vacanciesChars .chars__expand-button {
+      margin-bottom: 50px; }
+  .vacancy__mainForm {
+    align-items: center; }
+  .vacancy__input-group:nth-child(6) {
+    order: 2;
+    flex-basis: 100%; }
+  .vacancy__addFile {
+    flex-basis: 49%;
+    top: 13px; }
+  .vacancy__button {
+    order: 3;
+    width: 372px; }
+  .vacancy__policy {
+    order: 3;
+    width: 372px;
+    margin-bottom: 150px; }
+  .unavalible .getProject__input {
+    width: 100%; }
+    .unavalible .getProject__input-group {
+      flex-basis: 31%; }
+      .unavalible .getProject__input-group:nth-child(4) {
+        flex-basis: 66%; }
+  .unavalible .getProject__button {
+    display: block;
+    margin-right: 50%; }
+  .unavalible .getProject__policy {
+    max-width: 304px;
+    flex-basis: 100%;
+    margin-right: auto;
+    margin-left: 32px; }
+  .unavalible__addFile {
+    flex-basis: 31%;
+    top: 4px; } }
+
+@media (min-width: 1920px) {
+  .questionsHero .hero__title {
+    width: 652px !important; }
+  .vacanciesHero .hero__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url("../img/vacancies/hero-bg-xl.png") no-repeat center/cover; }
+  .vacanciesHero .hero__title {
+    font-size: 72px;
+    width: 1095px;
+    margin-bottom: 65px; }
+  .vacanciesHero .hero__description {
+    font-size: 16px;
+    width: 625px; }
+  .vacanciesHero .hero__tab {
+    padding: 14px 30px; }
+  .vacanciesChars .chars__container {
+    max-width: 1920px;
+    padding-left: 160px;
+    padding-right: 160px; }
+  .vacanciesChars .chars__info-description {
+    max-width: 996px; }
+  .vacanciesChars .chars__info-title {
+    margin-bottom: 44px; }
+  .vacancy__list {
+    font-size: 16px; }
+  .vacancy__button {
+    width: 505px; }
+  .vacancy__policy {
+    margin-left: 62px; }
+  .unavalible .getProject__input-group {
+    margin-bottom: 108px; }
+  .unavalible .getProject__policy {
+    margin-left: 70px; } }
 
 #contentPage {
   background: #f4f4f4; }

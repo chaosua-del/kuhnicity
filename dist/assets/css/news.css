@@ -1895,8 +1895,8 @@ strong {
   .questionsHero .hero__container {
     background: url("../img/questions-bg-lg.png") no-repeat center/cover !important; }
   .vacanciesHero .hero__container {
-    max-width: 100%;
-    width: 100%;
+    max-width: 100% !important;
+    width: 100% !important;
     background: url("../img/vacancies/hero-bg-lg.png") no-repeat center/cover;
     flex-direction: column; }
   .vacanciesHero .hero__title {
@@ -4859,11 +4859,13 @@ strong {
         max-width: none; }
     .chars__container {
       max-width: none; }
-    .chars__expand-button {
-      font-size: 36px; }
-      .chars__expand-button::after {
-        font-size: 30px;
-        font-weight: normal; }
+    .chars__expand {
+      margin-right: -50px; }
+      .chars__expand-button {
+        font-size: 36px; }
+        .chars__expand-button::after {
+          font-size: 30px;
+          font-weight: normal; }
     .chars__info-title {
       font-size: 16px; }
     .chars__info-description {
@@ -4872,6 +4874,23 @@ strong {
       display: none; }
     .chars-image__swiper-wrapper {
       padding-bottom: 14px; }
+  .chars-materials__wrap {
+    margin-bottom: 267px;
+    display: flex; }
+  .chars-materials__card {
+    flex-basis: 42%;
+    margin-top: 37px;
+    margin-right: 49px; }
+  .chars-feedback__wrap {
+    margin-bottom: 50px; }
+  .chars-feedback .banner__card-rate {
+    margin-right: 50%; }
+  .chars-feedback__button {
+    flex-basis: auto;
+    width: auto;
+    display: block;
+    padding: 15px 51px;
+    font-size: 16px; }
   .projects {
     background-color: #fff; }
     .projects .bonuses__card {
@@ -5051,7 +5070,11 @@ strong {
     justify-content: center; } }
 
 @media (min-width: 1280px) {
+  .chars__line {
+    margin-bottom: 35px; }
   .chars__block {
+    margin-right: 0; }
+  .chars__expand {
     margin-right: 0; }
   .chars__container {
     max-width: 1170px; }
@@ -5062,6 +5085,25 @@ strong {
   .chars__swiper-slide {
     width: 100% !important;
     justify-content: space-between; }
+  .chars-description .chars__info-description {
+    max-width: 855px;
+    margin-bottom: 42px;
+    margin-top: 20px; }
+  .chars-materials__card {
+    max-width: 390px;
+    margin-right: 72px; }
+  .chars-feedback__wrap {
+    justify-content: space-between; }
+  .chars-feedback .banner__title {
+    font-size: 30px; }
+  .chars-feedback .banner__card-quantity {
+    font-size: 12px; }
+  .chars-feedback .banner__card-rate {
+    font-size: 30px;
+    margin-right: auto; }
+    .chars-feedback .banner__card-rate::after {
+      width: 29.55px;
+      height: 28.07px; }
   .benefits2 .benefits__swiper-slide {
     width: 100% !important;
     flex-wrap: nowrap; }
@@ -5255,6 +5297,28 @@ strong {
   .chars-image__swiper-slide {
     width: 808px !important;
     height: 73px; }
+  .chars-description__swiper-button-next, .chars-description__swiper-button-prev {
+    display: block !important; }
+  .chars-description .chars__info-description {
+    max-width: 1011px;
+    margin-bottom: 58px;
+    margin-top: 20px; }
+  .chars-description .articles__button {
+    display: none; }
+  .chars-description .articles__swiper-wrapper {
+    padding-bottom: 100px !important; }
+  .chars-materials__wrap {
+    margin-top: 80px; }
+  .chars-materials__card {
+    max-width: 473px;
+    margin-right: 161px; }
+  .chars-feedback .feedback__swiper-wrapper {
+    transform: translate3d(0, 0, 0) !important;
+    flex-direction: column; }
+  .chars-feedback .feedback__card {
+    border: none; }
+    .chars-feedback .feedback__card-button {
+      display: none; }
   .projects .bonuses__container {
     padding-left: 151px; }
   .projects .bonuses__swiper-slide {

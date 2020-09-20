@@ -137,8 +137,8 @@
     .vacanciesHero {
         .hero {
             &__container {
-                max-width: 100%;
-                width: 100%;
+                max-width: 100% !important;
+                width: 100% !important;
                 background: url('../img/vacancies/hero-bg-lg.png') no-repeat center / cover;
                 flex-direction: column;
             }
