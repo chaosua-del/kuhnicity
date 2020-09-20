@@ -323,6 +323,41 @@
           </div>
         </div>
       </section>
+      <section class="location">
+        <div class="location__container">
+          <div class="salon">
+            <h3 class="salon__title">Центральный салон </h3>
+            <p class="salon__subtitle">Фото салона</p>
+            <div class="salon__wrap">
+              <div class="swiper-container salon__swiper-container">
+                <div class="swiper-wrapper salon__swiper-wrapper">
+                  <div class="swiper-slide salon__swiper-slide">
+                    <div class="salon__photo"><img src="assets/img/contacts/salon1.jpg" alt="salon-photo"></div>
+                  </div>
+                  <div class="swiper-slide salon__swiper-slide">
+                    <div class="salon__photo"><img src="assets/img/contacts/salon2.jpg" alt="salon-photo"></div>
+                  </div>
+                  <div class="swiper-slide salon__swiper-slide">
+                    <div class="salon__photo"><img src="assets/img/contacts/salon3.jpg" alt="salon-photo"></div>
+                  </div>
+                  <div class="swiper-slide salon__swiper-slide">
+                    <div class="salon__photo"><img src="assets/img/contacts/salon1.jpg" alt="salon-photo"></div>
+                  </div>
+                  <div class="swiper-slide salon__swiper-slide">
+                    <div class="salon__photo"><img src="assets/img/contacts/salon2.jpg" alt="salon-photo"></div>
+                  </div>
+                  <div class="swiper-slide salon__swiper-slide">
+                    <div class="salon__photo"><img src="assets/img/contacts/salon3.jpg" alt="salon-photo"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev salon__swiper-button-prev"></div>
+              <div class="swiper-button-next salon__swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="map" id="centralMap"></div>
+        </div>
+      </section>
     </div>
     <section class="list">
       <div class="container list__container">
@@ -359,25 +394,23 @@
       </div>
     </footer>
     <!-- include popups here-->
-    <div class="modal" id="modal">
-      <div class="modal__wrap">
-        <button class="modal__close">+</button>
-        <div class="title modal__title">Оставить заявку </div>
-        <div class="modal__description">Оставьте свои контактные данные, менеджер свяжется с Вами в течение 15 минут.</div>
-        <form class="mainForm" action="#">
-          <div class="mainForm__input-group">
-            <label class="mainForm__label" for="modal-user-name">Ваше имя</label>
-            <input class="mainForm__input hero__input" type="text" name="user-name" id="modal-user-name">
-          </div>
-          <div class="mainForm__input-group">
-            <label class="mainForm__label" for="modal-user-name">Ваш телефон</label>
-            <input class="mainForm__input hero__input" type="tel" name="user-tel" id="modal-user-tel">
-          </div>
-          <button class="mainForm__button button button--primary contactUs__button">Оставить заявку</button>
-        </form>
-        <p class="policy contactUs__policy">Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
-      </div>
-    </div>
+    <div class="modal__wrap modal" id="modal">
+      <button class="modal__close">+</button>
+      <div class="title modal__title">Оставить заявку </div>
+      <div class="modal__description">Оставьте свои контактные данные, менеджер свяжется с Вами в течение 15 минут.</div>
+      <form class="mainForm" action="#">
+        <div class="mainForm__input-group">
+          <label class="mainForm__label" for="modal-user-name">Ваше имя</label>
+          <input class="mainForm__input hero__input" type="text" name="user-name" id="modal-user-name">
+        </div>
+        <div class="mainForm__input-group">
+          <label class="mainForm__label" for="modal-user-name">Ваш телефон</label>
+          <input class="mainForm__input hero__input" type="tel" name="user-tel" id="modal-user-tel">
+        </div>
+        <button class="mainForm__button button button--primary contactUs__button">Оставить заявку</button>
+      </form>
+      <p class="policy contactUs__policy">Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+    </div><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="crossorigin=""/>
     <link rel="stylesheet" href="assets/css/contacts.css?v=1.1.1">
     <script>
       /* изменяемые настройки скриптов, указаны значения по умолчанию */

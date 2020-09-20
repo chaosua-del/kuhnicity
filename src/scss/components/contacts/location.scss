@@ -1,0 +1,84 @@
+.salon {
+    padding: 45px 25px;
+    background-color: #fff;
+
+    &__swiper {
+        // &-container {
+        //     max-width: 534px;
+        // }
+
+        &-button {
+
+            &-next,
+            &-prev {
+                width: 25px !important;
+                height: 25px !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                top: 58%;
+
+                &::after {
+                    width: 8px !important;
+                    height: 8px !important;
+                    margin-right: 4px;
+                }
+            }
+
+            &-prev {
+                left: -14px !important;
+            }
+
+            &-next {
+                right: -14px !important;
+            }
+
+        }
+
+        &-slide {
+            width: 86px;
+        }
+
+        &-wrapper {
+            width: 86px !important;
+        }
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+        /* identical to box height */
+        color: #323232;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    &__subtitle {
+
+        font-size: 12px;
+        line-height: 120.3%;
+        /* or 14px */
+        letter-spacing: 0.105em;
+        text-transform: uppercase;
+        color: #FF3D00;
+        margin-bottom: 22px;
+
+    }
+
+    &__photo {
+        width: 86px;
+        height: 86px;
+    }
+}
+
+.map {
+    height: 490px;
+    // background-color: red;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+    z-index: 900 !important;
+}

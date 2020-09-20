@@ -1,4 +1,6 @@
 import $ from 'jquery';
+import Swiper from 'swiper/js/swiper.js';
+import leaflet from 'leaflet/dist/leaflet.js';
 
 export default function contacts() {
 
@@ -57,4 +59,37 @@ export default function contacts() {
             regionSelected2.textContent = temp2;
         });
     });
+
+    const salon = new Swiper('.salon__swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 4,
+        updateOnWindowResize: false,
+        loop: true,
+        navigation: {
+            nextEl: '.salon__swiper-button-next',
+            prevEl: '.salon__swiper-button-prev',
+        },
+    });
+
+    const mymap = L.map('centralMap', {
+        zoom: 15,
+        scrollWheelZoom: false,
+        center: [55.729636, 37.587501]
+    });
+    // setView([51.505, -0.09], 13);
+
+
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        scrollWheelZoom: false,
+        accessToken: 'pk.eyJ1IjoiY2hhb3N1YS1kZWwiLCJhIjoiY2tkbjBqY3dqMGlmaDJxcW4xbnljb2V1aiJ9.lKJeJfZMCU8J2h9G8aMbVg'
+    }).addTo(mymap);
 }
+
+
+// 

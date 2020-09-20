@@ -16,8 +16,11 @@ html(lang="ru", class="no-js")
                 block hero
                     include _includes/blocks/contacts/hero
 
-                block hero
+                block region
                     include _includes/blocks/contacts/region
+
+                block location
+                    include _includes/blocks/contacts/location
                
               
 
@@ -30,6 +33,7 @@ html(lang="ru", class="no-js")
             include _includes/blocks/modal
 
         block styles
+          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="crossorigin=""/>
           link(rel='stylesheet', href='assets/css/contacts.css?v=' + PACKAGE.version)
         block scripts-config
             script.

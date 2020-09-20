@@ -2786,8 +2786,8 @@
         }
 
         .policy {
-            margin-left: 0;
-            margin-right: 0;
+            // margin-left: 0;
+            // margin-right: 0;
             margin-top: 22px;
             font-size: 14px;
         }
@@ -3990,10 +3990,13 @@
             width: 1305px;
             padding-top: 97px;
             padding-bottom: 81px;
+
         }
 
         .mainForm {
             width: 597px;
+            margin-left: auto;
+            margin-right: auto;
 
             &__input {
                 padding-bottom: 21px;

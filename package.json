@@ -25,6 +25,7 @@
         "ion-rangeslider": "^2.3.1",
         "jquery": "3.x",
         "lazysizes": "5.x",
+        "leaflet": "^1.7.1",
         "svg4everybody": "2.x",
         "swiper": "^5.3.0"
     },

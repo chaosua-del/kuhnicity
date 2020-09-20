@@ -6,6 +6,7 @@ import {
 import 'lazysizes';
 import Swiper from 'swiper/js/swiper.js';
 import ionRangeSlider from 'ion-rangeSlider/js/ion.rangeSlider.min.js'
+import leaflet from 'leaflet/dist/leaflet.js';
 
 // import marquee from 'libs/jquery.marquee.min.js';
 

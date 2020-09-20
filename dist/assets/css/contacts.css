@@ -1110,6 +1110,56 @@ strong {
     font-weight: 500;
     top: 1px; }
 
+.salon {
+  padding: 45px 25px;
+  background-color: #fff; }
+  .salon__swiper-button-next, .salon__swiper-button-prev {
+    width: 25px !important;
+    height: 25px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    top: 58%; }
+    .salon__swiper-button-next::after, .salon__swiper-button-prev::after {
+      width: 8px !important;
+      height: 8px !important;
+      margin-right: 4px; }
+  .salon__swiper-button-prev {
+    left: -14px !important; }
+  .salon__swiper-button-next {
+    right: -14px !important; }
+  .salon__swiper-slide {
+    width: 86px; }
+  .salon__swiper-wrapper {
+    width: 86px !important; }
+  .salon__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #323232;
+    text-transform: uppercase;
+    margin-bottom: 24px; }
+  .salon__subtitle {
+    font-size: 12px;
+    line-height: 120.3%;
+    /* or 14px */
+    letter-spacing: 0.105em;
+    text-transform: uppercase;
+    color: #FF3D00;
+    margin-bottom: 22px; }
+  .salon__photo {
+    width: 86px;
+    height: 86px; }
+
+.map {
+  height: 490px; }
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 900 !important; }
+
 .contactUs {
   background: #F2F2F2;
   padding-bottom: 110px; }
@@ -1311,7 +1361,9 @@ strong {
     color: #FF3D00; }
   .modal .policy {
     width: 279px;
-    letter-spacing: 0.035em; }
+    letter-spacing: 0.035em;
+    margin-right: auto;
+    margin-right: auto; }
   .modal__wrap {
     background-color: #fff;
     width: 100%;
@@ -1326,12 +1378,15 @@ strong {
     padding-right: 25px;
     position: relative; }
   .modal__title {
-    margin-bottom: 18px; }
+    margin-bottom: 18px;
+    text-align: center; }
   .modal__description {
     text-align: center;
     width: 238px;
     margin-bottom: 63px;
-    color: #494949; }
+    color: #494949;
+    margin-left: auto;
+    margin-right: auto; }
   .modal__close {
     position: absolute;
     display: none;
@@ -2989,8 +3044,6 @@ strong {
     width: 100%;
     margin-left: 0; }
   .modal .policy {
-    margin-left: 0;
-    margin-right: 0;
     margin-top: 22px;
     font-size: 14px; } }
 
@@ -3616,7 +3669,9 @@ strong {
     padding-top: 97px;
     padding-bottom: 81px; }
   .modal .mainForm {
-    width: 597px; }
+    width: 597px;
+    margin-left: auto;
+    margin-right: auto; }
     .modal .mainForm__input {
       padding-bottom: 21px; }
     .modal .mainForm__label {
