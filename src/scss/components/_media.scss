@@ -1838,9 +1838,9 @@
     // benefits-1280 
     .benefits {
         &__swiper-slide {
-            width: 101% !important;
+            width: 104% !important;
             max-width: none;
-            // margin-left: -10px;
+            margin-left: -30px;
         }
 
         &__container {
@@ -2955,7 +2955,7 @@
     // hero-1920
     .hero {
 
-        height: 755px;
+        height: 806px;
 
         &__container {
             width: 48.7%;

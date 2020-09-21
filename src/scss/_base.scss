@@ -137,7 +137,7 @@ strong {
 }
 
 .title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant Garamond', serif !important;
     font-size: 36px;
     line-height: 117.3%;
     /* or 42px */
@@ -145,6 +145,8 @@ strong {
     font-weight: 300;
 
 }
+
+// test123
 
 // .content {
 //     max-width: 2400px;

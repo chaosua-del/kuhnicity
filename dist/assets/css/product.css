@@ -3,7 +3,6 @@
 /* Fonts */
 /* Screen sizes */
 /* custom-reset.css | 27.08.2018 | https://yurch-html.github.io/dist/custom-reset.html */
-@import url("fonts/Fontello/css/fontello.css");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap");
 *,
 *:before,
@@ -460,7 +459,7 @@ strong {
   page-break-inside: avoid; }
 
 .title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', serif !important;
   font-size: 36px;
   line-height: 117.3%;
   /* or 42px */
@@ -1022,6 +1021,9 @@ strong {
       padding-bottom: 3px;
       border-bottom: 1px solid #D3D3D3; }
 
+#product {
+  background-color: #f4f4f4; }
+
 .benefits {
   background-color: #F2F2F2; }
   .benefits__container {
@@ -1193,6 +1195,8 @@ strong {
     margin-right: -25px; }
   .chars-feedback .feedback__swiper-wrapper {
     padding-bottom: 50px !important; }
+  .chars-feedback .feedback__card {
+    background-color: #fff; }
   .chars-feedback .feedback__rating {
     display: none; }
   .chars-feedback__block {
@@ -1222,6 +1226,68 @@ strong {
     margin-bottom: 24px;
     margin-top: 39px;
     font-size: 14px; }
+
+.chars__coll {
+  display: flex;
+  flex-direction: column;
+  margin-right: 42px;
+  margin-bottom: 30px; }
+  .chars__coll-title {
+    font-size: 12px;
+    line-height: 120.3%;
+    /* identical to box height, or 14px */
+    letter-spacing: 0.105em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    color: #323232; }
+  .chars__coll-option {
+    font-size: 12px;
+    line-height: 140%;
+    /* or 17px */
+    margin-bottom: 13px;
+    letter-spacing: 0.035em;
+    height: 34px;
+    color: #323232;
+    max-width: 146px;
+    display: flex;
+    align-items: center; }
+  .chars__coll-tab {
+    padding: 6px 7px;
+    width: fit-content; }
+    .chars__coll-tab::after {
+      content: '₽';
+      display: inline-block;
+      margin-left: 5px; }
+
+.chars-calculator .chars__info-description {
+  margin-bottom: 34px; }
+
+.chars-calculator__swiper-container {
+  margin-bottom: 50px; }
+
+.chars-calculator__swiper-slide {
+  width: 800px !important;
+  display: flex; }
+
+.chars-calculator__number {
+  font-size: 20px;
+  line-height: 116.3%;
+  /* or 23px */
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 31px; }
+  .chars-calculator__number button {
+    font-size: 30px; }
+
+.chars-calculator__input {
+  width: 56px;
+  display: flex;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px; }
 
 .rating-mini {
   display: inline-block;
@@ -3462,8 +3528,9 @@ strong {
       margin-top: 1px;
       margin-bottom: 18px; }
   .benefits__swiper-slide {
-    width: 101% !important;
-    max-width: none; }
+    width: 104% !important;
+    max-width: none;
+    margin-left: -30px; }
   .benefits__container {
     padding-top: 49px;
     padding-bottom: 0; }
@@ -4052,7 +4119,7 @@ strong {
     content: url("../img/header/header-burger-xl.svg");
     margin-right: 10px; }
   .hero {
-    height: 755px; }
+    height: 806px; }
     .hero__container {
       width: 48.7%;
       padding-top: 77px;
@@ -4631,6 +4698,8 @@ strong {
     width: 463px; } }
 
 @media (min-width: 768px) {
+  #product {
+    background-color: #fff; }
   .productHero__title {
     width: 611px; }
   .productHero__button {
@@ -4842,8 +4911,6 @@ strong {
     margin-right: auto; }
   .getProject2__container {
     max-width: 768px; }
-  .getProject2 .mainForm__input {
-    width: 324px; }
   .others {
     background-color: #fff; }
     .others__title {

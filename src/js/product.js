@@ -45,6 +45,16 @@ export default function product() {
                 draggable: false,
             }
         });
+
+        const charsCalculator = new Swiper('.chars-calculator__swiper-container', {
+            updateOnWindowResize: false,
+            freeMode: true,
+            slidesOffsetAfter: 150,
+            scrollbar: {
+                el: '.chars-calculator__swiper-scrollbar',
+                draggable: false,
+            }
+        });
     } else {
         const charsImage = new Swiper('.chars__swiper-container', {
             updateOnWindowResize: false,
@@ -153,7 +163,38 @@ export default function product() {
         },
     });
 
+    const input = document.querySelector('.chars-calculator__input');
+    const plus = document.querySelector('.chars-calculator__plus');
+    const minus = document.querySelector('.chars-calculator__minus');
+    const calcTabs = document.querySelectorAll('.chars__coll-tab');
 
+
+
+    calc();
+
+    plus.addEventListener('click', event => {
+        input.value = (parseInt(input.value) + 1);
+        calc();
+    });
+
+    minus.addEventListener('click', event => {
+        input.value = (parseInt(input.value) - 1);
+        calc();
+    });
+
+    function prettify(num) {
+        var n = num.toString();
+        return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ');
+    }
+
+    function calc() {
+        calcTabs.forEach(elem => {
+            let tabValue = parseInt(elem.textContent.replace(/\s+/g, ''), 10);
+            let sum = input.value * 100;
+            elem.textContent = prettify(sum);
+            // console.log(parseInt(elem.textContent.replace(/\s+/g, ''), 10));
+        });
+    }
 
 
 }

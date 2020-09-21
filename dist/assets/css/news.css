@@ -3,7 +3,6 @@
 /* Fonts */
 /* Screen sizes */
 /* custom-reset.css | 27.08.2018 | https://yurch-html.github.io/dist/custom-reset.html */
-@import url("fonts/Fontello/css/fontello.css");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap");
 *,
 *:before,
@@ -460,7 +459,7 @@ strong {
   page-break-inside: avoid; }
 
 .title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', serif !important;
   font-size: 36px;
   line-height: 117.3%;
   /* or 42px */
@@ -1111,6 +1110,9 @@ strong {
     .productBenefits__text--underline {
       padding-bottom: 3px;
       border-bottom: 1px solid #D3D3D3; }
+
+#product {
+  background-color: #f4f4f4; }
 
 .articles {
   padding-top: 50px;
@@ -3644,8 +3646,9 @@ strong {
       margin-top: 1px;
       margin-bottom: 18px; }
   .benefits__swiper-slide {
-    width: 101% !important;
-    max-width: none; }
+    width: 104% !important;
+    max-width: none;
+    margin-left: -30px; }
   .benefits__container {
     padding-top: 49px;
     padding-bottom: 0; }
@@ -4234,7 +4237,7 @@ strong {
     content: url("../img/header/header-burger-xl.svg");
     margin-right: 10px; }
   .hero {
-    height: 755px; }
+    height: 806px; }
     .hero__container {
       width: 48.7%;
       padding-top: 77px;
@@ -4813,6 +4816,8 @@ strong {
     width: 463px; } }
 
 @media (min-width: 768px) {
+  #product {
+    background-color: #fff; }
   .productHero__title {
     width: 611px; }
   .productHero__button {
@@ -5024,8 +5029,6 @@ strong {
     margin-right: auto; }
   .getProject2__container {
     max-width: 768px; }
-  .getProject2 .mainForm__input {
-    width: 324px; }
   .others {
     background-color: #fff; }
     .others__title {

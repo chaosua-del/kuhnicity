@@ -1,4 +1,8 @@
 @media (min-width: 768px) {
+    #product {
+        background-color: #fff;
+    }
+
     .productHero {
         &__title {
             width: 611px;
@@ -412,12 +416,12 @@
             max-width: 768px;
         }
 
-        .mainForm {
+        // .mainForm {
 
-            &__input {
-                width: 324px;
-            }
-        }
+        //     // &__input {
+        //     //     width: 324px;
+        //     // }
+        // }
     }
 
     // others-768
