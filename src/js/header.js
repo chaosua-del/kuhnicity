@@ -1,6 +1,17 @@
 import Swiper from 'swiper/js/swiper.js';
+import $ from 'jquery';
 
 export default function header() {
+    window.addEventListener('scroll', event => {
+        if ($(window).scrollTop() > 0) {
+            $('.header__block').addClass('header__block--fixed');
+        } else {
+            $('.header__block').removeClass('header__block--fixed');
+        }
+    })
+
+
+
     const headerButton = document.querySelector('.header__about');
 
     headerButton.addEventListener('click', event => {
