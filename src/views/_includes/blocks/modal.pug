@@ -1,16 +1,16 @@
-.modal__wrap.modal#modal
-    button.modal__close +
+.modal#modal
+  .modal__wrap
+      button.modal__close +
 
-    .title.modal__title Оставить заявку 
-    .modal__description Оставьте свои контактные данные, менеджер свяжется с Вами в течение 15 минут.
+      .title.modal__title Оставить заявку 
+      .modal__description Оставьте свои контактные данные, менеджер свяжется с Вами в течение 15 минут.
 
-    form(action="#").mainForm
-      .mainForm__input-group
-          label(for="modal-user-name").mainForm__label Ваше имя
-          input(type="text", name="user-name").mainForm__input.hero__input#modal-user-name
-      .mainForm__input-group
-           label(for="modal-user-name").mainForm__label Ваш телефон
-           input(type="tel", name="user-tel").mainForm__input.hero__input#modal-user-tel
-      button.mainForm__button.button.button--primary.contactUs__button Оставить заявку
-    p.policy.contactUs__policy Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
-    
+      form(action="#").mainForm
+        .mainForm__input-group
+            label(for="modal-user-name").mainForm__label Ваше имя
+            input(type="text", name="user-name").mainForm__input.hero__input#modal-user-name
+        .mainForm__input-group
+            label(for="modal-user-name").mainForm__label Ваш телефон
+            input(type="tel", name="user-tel").mainForm__input.hero__input#modal-user-tel
+        button.mainForm__button.button.button--primary.contactUs__button Оставить заявку
+      p.policy.contactUs__policy Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>

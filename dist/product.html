@@ -1251,22 +1251,24 @@
       </div>
     </footer>
     <!-- include popups here-->
-    <div class="modal__wrap modal" id="modal">
-      <button class="modal__close">+</button>
-      <div class="title modal__title">Оставить заявку </div>
-      <div class="modal__description">Оставьте свои контактные данные, менеджер свяжется с Вами в течение 15 минут.</div>
-      <form class="mainForm" action="#">
-        <div class="mainForm__input-group">
-          <label class="mainForm__label" for="modal-user-name">Ваше имя</label>
-          <input class="mainForm__input hero__input" type="text" name="user-name" id="modal-user-name">
-        </div>
-        <div class="mainForm__input-group">
-          <label class="mainForm__label" for="modal-user-name">Ваш телефон</label>
-          <input class="mainForm__input hero__input" type="tel" name="user-tel" id="modal-user-tel">
-        </div>
-        <button class="mainForm__button button button--primary contactUs__button">Оставить заявку</button>
-      </form>
-      <p class="policy contactUs__policy">Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+    <div class="modal" id="modal">
+      <div class="modal__wrap">
+        <button class="modal__close">+</button>
+        <div class="title modal__title">Оставить заявку </div>
+        <div class="modal__description">Оставьте свои контактные данные, менеджер свяжется с Вами в течение 15 минут.</div>
+        <form class="mainForm" action="#">
+          <div class="mainForm__input-group">
+            <label class="mainForm__label" for="modal-user-name">Ваше имя</label>
+            <input class="mainForm__input hero__input" type="text" name="user-name" id="modal-user-name">
+          </div>
+          <div class="mainForm__input-group">
+            <label class="mainForm__label" for="modal-user-name">Ваш телефон</label>
+            <input class="mainForm__input hero__input" type="tel" name="user-tel" id="modal-user-tel">
+          </div>
+          <button class="mainForm__button button button--primary contactUs__button">Оставить заявку</button>
+        </form>
+        <p class="policy contactUs__policy">Отправляя контакты, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+      </div>
     </div>
     <link rel="stylesheet" href="assets/css/product.css?v=1.1.1">
     <script>
