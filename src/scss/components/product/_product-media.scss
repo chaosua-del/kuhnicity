@@ -302,7 +302,6 @@
         background-color: #fff;
 
         &__title {
-            margin-left: 50px;
             margin-bottom: 56px;
         }
 
@@ -425,9 +424,9 @@
     .others {
         background-color: #fff;
 
-        &__container {
-            padding-left: 50px;
-        }
+        // &__container {
+        //     // padding-left: 50px;
+        // }
 
         &__title {
             margin-bottom: 60px;
@@ -710,9 +709,8 @@
     // projects-1280
     .projects {
         .bonuses {
-            &__container {
-                max-width: none;
-                padding-left: 57px;
+            &__swiper-container {
+                margin-right: -50px;
             }
 
             &__swiper-slide {
@@ -947,14 +945,17 @@
 
     // hero-1920
     .productHero {
+
         &__swiper {
             &-slide {
                 max-height: 1113px;
+
             }
         }
 
         &__info {
             padding: 0 150px;
+
         }
 
         &__img {
@@ -1109,9 +1110,6 @@
     // projects-1920
     .projects {
         .bonuses {
-            &__container {
-                padding-left: 151px;
-            }
 
             &__swiper-slide {
                 width: 1597px !important;
@@ -1133,6 +1131,10 @@
                 &-prev {
                     right: 220px;
                 }
+            }
+
+            &__swiper-container {
+                margin-right: -150px;
             }
 
             &__swiper-wrapper {
@@ -1172,23 +1174,30 @@
 
     // questions-1920
     .questions {
-        max-width: 1920px;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
 
         &__container {
             max-width: 1028px;
             // padding-right: 165px;
             padding-right: 0;
-            margin-right: 165px;
+            // margin-right: 165px;
         }
 
-        &__title {
-            margin-left: 150px;
-        }
+
 
         &__leader {
+            // margin-left: -300px;
+            margin-left: -149px;
+
             &-img {
                 width: 622px;
                 height: 647px;
+            }
+
+            &-block {
+                margin-left: 164px;
             }
         }
 
@@ -1280,13 +1289,13 @@
                     top: 740px;
                 }
 
-                &-next {
-                    right: 155px;
-                }
+                // &-next {
+                //     right: 155px;
+                // }
 
-                &-prev {
-                    right: 260px;
-                }
+                // &-prev {
+                //     right: 260px;
+                // }
             }
         }
 

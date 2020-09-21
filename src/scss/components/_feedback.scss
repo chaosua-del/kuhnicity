@@ -6,6 +6,10 @@
         padding-right: 0;
     }
 
+    &__swiper-container {
+        margin-right: -25px;
+    }
+
     &__swiper-wrapper {
         width: 270px !important;
         // padding-bottom: 102px;
@@ -22,6 +26,10 @@
             &-next {
                 bottom: 0px !important;
                 top: auto !important;
+            }
+
+            &-prev {
+                left: 25px !important;
             }
 
             &-next {

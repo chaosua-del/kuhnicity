@@ -2277,8 +2277,8 @@
 
         &__container {
             padding-right: 0;
-            max-width: none;
-            padding-left: 40px;
+            // max-width: none;
+            // padding-left: 40px;
         }
 
         &__title {
@@ -2389,10 +2389,10 @@
             display: flex;
         }
 
-        &__container {
-            max-width: 100%;
-            padding-left: 52px;
-        }
+        // &__container {
+        //     max-width: 100%;
+        //     padding-left: 52px;
+        // }
 
         &__button {
             top: -61px;
@@ -3442,9 +3442,6 @@
         padding-top: 106px;
         padding-bottom: 150px;
 
-        &__container {
-            padding-left: 150px;
-        }
 
         &__swiper {
 
@@ -3467,13 +3464,6 @@
                     top: 366px;
                 }
 
-                &-next {
-                    right: 170px;
-                }
-
-                &-prev {
-                    right: 245px;
-                }
             }
         }
 
@@ -3643,12 +3633,12 @@
                     top: 750px;
                 }
 
-                &-next {
-                    right: 161px;
-                }
+                // &-next {
+                //     right: 161px;
+                // }
 
                 &-prev {
-                    right: 233px;
+                    right: 140px;
                 }
             }
 
@@ -3658,7 +3648,7 @@
         }
 
         &__container {
-            padding-left: 161px;
+            // padding-left: 161px;
             padding-top: 36px;
         }
 
@@ -3727,7 +3717,7 @@
 
         &__container {
             max-width: 1920px;
-            margin-left: 0;
+            // margin-left: 0;
             padding-left: 158px;
             padding-bottom: 300px;
         }
@@ -3780,8 +3770,7 @@
     .bonuses {
         &__container {
             padding-top: 112px;
-            min-width: 100%;
-            padding-left: 160px;
+
         }
 
         &__title {
@@ -3831,12 +3820,9 @@
                     top: 443px;
                 }
 
-                &-next {
-                    right: 162px;
-                }
 
                 &-prev {
-                    right: 234px;
+                    right: 80px;
                 }
             }
         }
