@@ -2469,20 +2469,23 @@ strong {
         bottom: 8px; }
       .feedback__card-arrow {
         width: 15px; }
+      .feedback__card-bottom {
+        flex-direction: row;
+        align-items: center;
+        right: 62px; }
       .feedback__card-date {
         font-size: 14px;
         line-height: 118.49%;
         /* identical to box height, or 17px */
         letter-spacing: 0.035em;
-        margin-top: 28px;
-        margin-right: 45px; }
+        margin: 0; }
       .feedback__card-button {
+        margin-left: 43px;
         font-size: 16px;
         width: 186px;
         display: inline-block; }
       .feedback__card-text {
-        width: 372px;
-        height: 110px; }
+        width: 372px; }
     .feedback__swiper-slide {
       width: 672px; }
     .feedback__user {
@@ -3944,9 +3947,8 @@ strong {
         height: 239px; }
       .feedback__card-text {
         width: 446px; }
-      .feedback__card-date {
-        margin-top: 37px;
-        margin-right: 83px; }
+      .feedback__card-title {
+        font-size: 18px; }
       .feedback__card-link {
         width: 39px;
         height: 39px;
@@ -3958,7 +3960,8 @@ strong {
         line-height: 120.3%;
         /* identical to box height, or 22px */
         letter-spacing: 0.105em;
-        width: 208px; }
+        width: 208px;
+        margin-left: 79px; }
         .feedback__card-button::after {
           width: 25.5px;
           height: 10px;
@@ -4762,22 +4765,29 @@ strong {
   .chars-feedback .feedback__card {
     border: none;
     width: auto;
-    max-width: none;
+    max-width: 1067px;
     margin-bottom: 44px; }
     .chars-feedback .feedback__card-text {
       width: 771px;
       height: auto; }
+    .chars-feedback .feedback__card-bottom {
+      top: 7px;
+      right: 10px;
+      bottom: auto; }
     .chars-feedback .feedback__card-button {
       display: none; }
     .chars-feedback .feedback__card-date {
-      right: 0;
-      top: 10px;
-      position: absolute;
       margin: 0;
       opacity: 1;
       color: rgba(23, 23, 23, 0.5); }
+    .chars-feedback .feedback__card-info {
+      display: flex;
+      flex-direction: column; }
+    .chars-feedback .feedback__card-block {
+      margin-top: auto;
+      margin-bottom: 51px; }
   .chars-feedback .feedback__user {
-    margin-bottom: 88px; }
+    margin-bottom: 37px; }
   .chars-feedback .feedback__rating {
     display: inline-block; }
   .projects .bonuses__container {

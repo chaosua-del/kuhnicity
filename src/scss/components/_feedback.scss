@@ -8,7 +8,7 @@
 
     &__swiper-wrapper {
         width: 270px !important;
-        padding-bottom: 102px;
+        // padding-bottom: 102px;
     }
 
     &__swiper-slide {
@@ -20,7 +20,8 @@
 
             &-prev,
             &-next {
-                top: 640px;
+                bottom: 0px !important;
+                top: auto !important;
             }
 
             &-next {
@@ -45,14 +46,32 @@
         padding-left: 20px;
         padding-right: 19px;
         padding-bottom: 33px;
+        position: relative;
         // flex-direction: row;
 
         &-text {
             // margin-bottom: 24px;
             line-height: 143%;
             width: 211px;
-            height: 160px;
+            // height: 160px;
             overflow: hidden;
+        }
+
+        &-block {
+            margin-bottom: 30px;
+
+            &:nth-last-child(1) {
+                margin-bottom: 100px;
+            }
+        }
+
+        &-title {
+            font-size: 16px;
+            line-height: 120.3%;
+            /* identical to box height, or 22px */
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+            margin-bottom: 9px;
         }
 
         &-img {
@@ -95,6 +114,13 @@
             height: 21px;
         }
 
+        &-bottom {
+            position: absolute;
+            bottom: 37px;
+            display: flex;
+            flex-direction: column;
+        }
+
         &-date {
             font-size: 12px;
             line-height: 118.49%;
@@ -106,6 +132,7 @@
             opacity: 0.5;
             display: inline-block;
             margin-right: 23px;
+
         }
 
         &-button {

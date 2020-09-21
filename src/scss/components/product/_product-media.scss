@@ -1058,7 +1058,7 @@
             &__card {
                 border: none;
                 width: auto;
-                max-width: none;
+                max-width: 1067px;
                 margin-bottom: 44px;
 
                 &-text {
@@ -1066,22 +1066,36 @@
                     height: auto;
                 }
 
+                &-bottom {
+                    top: 7px;
+                    right: 10px;
+                    bottom: auto;
+                }
+
                 &-button {
                     display: none;
                 }
 
                 &-date {
-                    right: 0;
-                    top: 10px;
-                    position: absolute;
+
                     margin: 0;
                     opacity: 1;
                     color: rgba(#171717, 0.5);
                 }
+
+                &-info {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                &-block {
+                    margin-top: auto;
+                    margin-bottom: 51px;
+                }
             }
 
             &__user {
-                margin-bottom: 88px;
+                margin-bottom: 37px;
 
 
             }

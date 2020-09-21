@@ -183,6 +183,11 @@
 .chars-feedback {
     position: relative;
 
+
+    &__swiper-scrollbar {
+        bottom: 90px;
+    }
+
     .feedback {
         &__swiper-container {
             margin-bottom: 62px;
@@ -192,6 +197,7 @@
         &__swiper-wrapper {
             padding-bottom: 50px !important;
         }
+
 
         &__rating {
             display: none;

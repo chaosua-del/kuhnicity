@@ -22,6 +22,7 @@ import svgReplace from 'svgReplace';
 import expand from 'expand';
 import hovers from 'hovers';
 import modals from 'modals';
+import cardHeight from 'cardHeight';
 import customCursor from 'customCursor';
 import product from 'product';
 import catalog from 'catalog';
@@ -94,6 +95,7 @@ let app = {
                 filters();
                 customCursor();
                 hovers();
+                cardHeight();
 
                 window.$mq = window.$('.discounts__marquee').marquee({
                     startVisible: true,
@@ -106,6 +108,10 @@ let app = {
             } else if (document.querySelector('.content').id == 'product') {
                 product();
                 customCursor();
+                if (window.innerWidth < 1920) {
+
+                    cardHeight();
+                }
             } else if (document.querySelector('.content').id == 'vacancies') {
                 vacancies();
             } else if (document.querySelector('.content').id == 'news') {

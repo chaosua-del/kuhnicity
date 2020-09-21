@@ -1454,12 +1454,12 @@ strong {
   .feedback__container {
     padding-right: 0; }
   .feedback__swiper-wrapper {
-    width: 270px !important;
-    padding-bottom: 102px; }
+    width: 270px !important; }
   .feedback__swiper-slide {
     margin-right: 12px; }
   .feedback__swiper-button-prev, .feedback__swiper-button-next {
-    top: 640px; }
+    bottom: 0px !important;
+    top: auto !important; }
   .feedback__swiper-button-next {
     right: 25px; }
   .feedback__title {
@@ -1474,12 +1474,23 @@ strong {
     padding-top: 21px;
     padding-left: 20px;
     padding-right: 19px;
-    padding-bottom: 33px; }
+    padding-bottom: 33px;
+    position: relative; }
     .feedback__card-text {
       line-height: 143%;
       width: 211px;
-      height: 160px;
       overflow: hidden; }
+    .feedback__card-block {
+      margin-bottom: 30px; }
+      .feedback__card-block:nth-last-child(1) {
+        margin-bottom: 100px; }
+    .feedback__card-title {
+      font-size: 16px;
+      line-height: 120.3%;
+      /* identical to box height, or 22px */
+      letter-spacing: 0.105em;
+      text-transform: uppercase;
+      margin-bottom: 9px; }
     .feedback__card-img {
       width: 231px;
       height: 231px;
@@ -1506,6 +1517,11 @@ strong {
     .feedback__card-arrow {
       width: 21px;
       height: 21px; }
+    .feedback__card-bottom {
+      position: absolute;
+      bottom: 37px;
+      display: flex;
+      flex-direction: column; }
     .feedback__card-date {
       font-size: 12px;
       line-height: 118.49%;
@@ -2662,20 +2678,23 @@ strong {
         bottom: 8px; }
       .feedback__card-arrow {
         width: 15px; }
+      .feedback__card-bottom {
+        flex-direction: row;
+        align-items: center;
+        right: 62px; }
       .feedback__card-date {
         font-size: 14px;
         line-height: 118.49%;
         /* identical to box height, or 17px */
         letter-spacing: 0.035em;
-        margin-top: 28px;
-        margin-right: 45px; }
+        margin: 0; }
       .feedback__card-button {
+        margin-left: 43px;
         font-size: 16px;
         width: 186px;
         display: inline-block; }
       .feedback__card-text {
-        width: 372px;
-        height: 110px; }
+        width: 372px; }
     .feedback__swiper-slide {
       width: 672px; }
     .feedback__user {
@@ -4137,9 +4156,8 @@ strong {
         height: 239px; }
       .feedback__card-text {
         width: 446px; }
-      .feedback__card-date {
-        margin-top: 37px;
-        margin-right: 83px; }
+      .feedback__card-title {
+        font-size: 18px; }
       .feedback__card-link {
         width: 39px;
         height: 39px;
@@ -4151,7 +4169,8 @@ strong {
         line-height: 120.3%;
         /* identical to box height, or 22px */
         letter-spacing: 0.105em;
-        width: 208px; }
+        width: 208px;
+        margin-left: 79px; }
         .feedback__card-button::after {
           width: 25.5px;
           height: 10px;
