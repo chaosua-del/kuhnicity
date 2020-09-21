@@ -99,5 +99,9 @@
 .main-social {
     .social__block-img {
         transform: scale(0.5);
+
+        path {
+            fill: #656565;
+        }
     }
 }

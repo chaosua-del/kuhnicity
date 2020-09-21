@@ -139,6 +139,8 @@
     }
 
     .social__block-link {
+        transition: border-color 0.2s ease-in-out;
+
         &:hover {
             .social__block-img {
                 path {
@@ -159,6 +161,21 @@
                     margin-left: 20px;
                 }
             }
+        }
+    }
+
+    .location__social {
+        .social__block-link {
+            &:hover {
+                border-color: $color-red;
+
+                path {
+                    fill: $color-red
+                }
+            }
+
+
+
         }
     }
 

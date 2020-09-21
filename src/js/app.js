@@ -90,7 +90,6 @@ let app = {
             // forms();
             if (document.querySelector('.content').id == 'main') {
                 expand();
-                // console.log('main');
                 sliders();
                 filters();
                 customCursor();
@@ -104,6 +103,7 @@ let app = {
             } else if (document.querySelector('.content').id == 'catalog') {
                 expand();
                 catalog();
+                cardHeight();
 
             } else if (document.querySelector('.content').id == 'product') {
                 product();
@@ -144,7 +144,6 @@ let app = {
             //     expand();
             // }
             location.reload();
-            // console.log('rezising');
         });
 
     },
@@ -214,7 +213,6 @@ let app = {
             if (app.window.outerWidth() >= app.breakpoints[key]) {
                 app.media = app.breakpoints[key];
             }
-            //            console.log(app.media);
         }
         if (app.media != current) {
             app.document.trigger(app.resizeEventName, {

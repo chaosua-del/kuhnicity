@@ -21,7 +21,9 @@ html(lang="ru", class="no-js")
 
                 block location
                     include _includes/blocks/contacts/location
-               
+
+                block benefits2
+                    include _includes/blocks/product/benefits2
               
 
         
@@ -38,11 +40,59 @@ html(lang="ru", class="no-js")
         block scripts-config
             script.
                 /* изменяемые настройки скриптов, указаны значения по умолчанию */
-                var appConfig = {
-                    /*
-                    scrollToOffset: 150, // оффсет при скролле до элемента
-                    scrollToSpeed: 500, // скорость скролла 
-                    */
+                var map = {
+                   central: {
+                    //- точка относительно которой центрируеться мапа
+                        id: 'centralMap',
+                        centerX: 55.729645,
+                        centerY: 37.587495,
+                    //- 1-15 зум
+                        zoom: 15, 
+                    //- точка маркера
+                        markerX: 55.729645,
+                        markerY: 37.587495,
+                        adress: 'Москва, Комсомольский пр-т, д. 17.',
+                        phone: '8 (495) 135 43 78',
+                    //- формат для a(href="")
+                        phoneLink: '+84951354378',
+                        email: 'info@kuhnicity.ru.', 
+                        label: 'фрузенская'
+
+                   },
+                   krasnodar: {
+                         //- точка относительно которой центрируеться мапа
+                        id: 'krasnodarMap',
+                        centerX: 55.729645,
+                        centerY: 37.587495,
+                    //- 1-15 зум
+                        zoom: 15, 
+                    //- точка маркера
+                        markerX: 55.729645,
+                        markerY: 37.587495,
+                        adress: 'Москва, Комсомольский пр-т, д. 17.',
+                        phone: '8 (495) 135 43 78',
+                    //- формат для a(href="")
+                        phoneLink: '+84951354378',
+                        email: 'info@kuhnicity.ru.', 
+                        label: 'фрузенская'
+                   },
+                    kazan: {
+                         //- точка относительно которой центрируеться мапа
+                        id: 'kazanMap',
+                        centerX: 55.729645,
+                        centerY: 37.587495,
+                    //- 1-15 зум
+                        zoom: 15, 
+                    //- точка маркера
+                        markerX: 55.729645,
+                        markerY: 37.587495,
+                        adress: 'Москва, Комсомольский пр-т, д. 17.',
+                        phone: '8 (495) 135 43 78',
+                    //- формат для a(href="")
+                        phoneLink: '+84951354378',
+                        email: 'info@kuhnicity.ru.', 
+                        label: 'фрузенская'
+                   }
                 }
         block scripts
             script(src='assets/js/vendors~main.bundle.js')

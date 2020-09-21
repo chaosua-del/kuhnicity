@@ -1034,7 +1034,7 @@ strong {
   .benefits__card {
     background-color: #FFFFFF;
     width: 270px;
-    height: 141px;
+    height: 160px;
     padding-top: 27px;
     padding-left: 36px;
     margin-right: 10px;
@@ -2157,6 +2157,8 @@ strong {
 
 .main-social .social__block-img {
   transform: scale(0.5); }
+  .main-social .social__block-img path {
+    fill: #656565; }
 
 .contactUs {
   background: #F2F2F2;
@@ -2332,6 +2334,9 @@ strong {
       .modal .mainForm__input-group {
         margin-bottom: 28px; }
 
+.fancybox-content {
+  padding: 0 !important; }
+
 @media (min-width: 1280px) {
   .expand__listItem {
     transition: color 0.2s ease-in-out; }
@@ -2383,12 +2388,18 @@ strong {
       color: #FF3D00; }
   .type__item:hover {
     color: #323232; }
-  .social__block-link:hover .social__block-img path {
-    transition: fill 0.2s ease-in-out;
-    fill: #FF3D00; }
+  .social__block-link {
+    transition: border-color 0.2s ease-in-out; }
+    .social__block-link:hover .social__block-img path {
+      transition: fill 0.2s ease-in-out;
+      fill: #FF3D00; }
   .models__button:hover .models__button-text::after {
     transform: scaleX(1.5);
-    margin-left: 20px; } }
+    margin-left: 20px; }
+  .location__social .social__block-link:hover {
+    border-color: #FF3D00; }
+    .location__social .social__block-link:hover path {
+      fill: #FF3D00; } }
 
 @media (min-width: 1920px) {
   .contactUs__button:hover {
@@ -3999,6 +4010,23 @@ strong {
     .swiper-button-next:after, .swiper-button-prev:after {
       width: 18px !important;
       height: 18px !important; }
+  .salon__swiper-button-next, .salon__swiper-button-prev {
+    width: 25px !important;
+    height: 25px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    top: 58%; }
+    .salon__swiper-button-next::after, .salon__swiper-button-prev::after {
+      width: 8px !important;
+      height: 8px !important;
+      margin-right: 4px;
+      border-color: #FFFFFF !important; }
+  .salon__swiper-button-prev {
+    left: -14px !important;
+    background-color: #FF3D00 !important; }
+  .salon__swiper-button-next {
+    right: -14px !important; }
   .header__navigation {
     padding: 9px 0; }
   .header__block {

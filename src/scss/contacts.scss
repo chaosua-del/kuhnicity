@@ -18,6 +18,7 @@
 @import "components/content";
 @import "components/header";
 @import "components/contacts/contacts-hero.scss";
+@import "components/benefits";
 @import "components/product/product-benefits";
 @import "components/contacts/region.scss";
 @import "components/contacts/location.scss";
@@ -29,8 +30,8 @@
 
 @import "components/hovers";
 
-@import "components/media";
 @import "components/product/product-media";
+@import "components/media";
 @import "components/contacts/contacts-media.scss";
 
 #contacts {

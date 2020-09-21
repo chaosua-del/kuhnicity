@@ -56,6 +56,92 @@
             margin-left: 16px;
         }
     }
+
+    .location {
+        &__container {
+            display: flex;
+            max-width: 1170px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__info {
+
+
+            &-title {
+                max-width: 248px;
+            }
+
+            &-block {
+                margin-top: 16px;
+            }
+
+            &-subtitle {
+                margin-top: 7px;
+                font-size: 14px;
+            }
+
+            &-label {
+                &::before {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+
+
+
+    .map {
+        width: 50%;
+    }
+
+    .salon {
+        width: 50%;
+        padding-top: 67px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        padding-bottom: 0;
+
+        &__description {
+            font-size: 16px;
+            max-width: 266px;
+        }
+
+        &__name {
+            display: block;
+            font-size: 25px;
+            line-height: 31px;
+            /* identical to box height */
+            color: #323232;
+            width: 120%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+            margin-top: auto;
+            margin-right: -25px;
+            margin-left: -25px;
+
+        }
+
+        &__title {
+            font-size: 25px;
+            margin-bottom: 76px;
+        }
+
+        &__subtitle {
+            margin-bottom: 19px;
+            font-size: 14px;
+        }
+
+        .social__subtitle {
+            font-size: 16px;
+        }
+    }
 }
 
 @media(min-width:1280px) {
@@ -111,6 +197,70 @@
 
 
     }
+
+    .leaflet-popup {
+        width: 408px !important;
+    }
+
+    .location {
+        &__container {
+            max-width: 1620px;
+            padding-left: 50px;
+            padding-right: 0px;
+        }
+
+        &__info {
+            padding-top: 30px;
+            width: 408px;
+            position: relative;
+            // padding-bottom: 89px;
+            margin-bottom: 50px;
+
+            &-logo {
+                margin-bottom: 30px;
+            }
+
+            &-title {
+                max-width: 280px;
+            }
+
+            &-subtitle {
+                font-size: 12px;
+            }
+
+            &-label {
+                margin-bottom: 0;
+            }
+
+        }
+
+        &__social {
+            position: absolute;
+            right: 30px;
+            bottom: -30px;
+            top: auto;
+        }
+    }
+
+    .salon {
+        max-width: 569px;
+
+        &__description {
+            max-width: 341px;
+        }
+
+        &__name {
+            justify-content: flex-start;
+            padding-left: 110px;
+            margin-left: -100px;
+            width: 150%;
+        }
+    }
+
+    .map {
+        width: 70%;
+        height: 525px;
+    }
 }
 
 @media(min-width:1920px) {
@@ -132,6 +282,71 @@
             &-link {
                 margin-right: 52px;
             }
+        }
+    }
+
+    .leaflet-popup {
+        width: 475px !important;
+    }
+
+    .location {
+        &__container {
+            max-width: 1920px;
+            padding-left: 140px;
+        }
+
+        &__info {
+            width: 475px;
+
+            &-title {
+                font-size: 16px;
+                max-width: 373px;
+                margin-bottom: 26px;
+            }
+
+            &-subtitle {
+                font-size: 14px;
+                line-height: 250%;
+                margin-top: 11px !important;
+            }
+
+            &-label {
+                margin-bottom: 80px;
+            }
+        }
+
+        &__social {
+            bottom: -60px;
+        }
+    }
+
+    .salon {
+        max-width: 640px;
+        padding-right: 100px;
+
+        &__description {
+            font-size: 20px;
+            max-width: 487px;
+            margin-bottom: 74px;
+        }
+
+        &__name {
+            margin-left: -167px;
+            padding-left: 168px;
+            width: 155%;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        .social__subtitle {
+            font-size: 20px;
+            width: 351px;
         }
     }
 }

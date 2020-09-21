@@ -2855,6 +2855,40 @@
         }
     }
 
+    .salon {
+        &__swiper {
+            &-button {
+
+                &-next,
+                &-prev {
+                    width: 25px !important;
+                    height: 25px !important;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    top: 58%;
+
+                    &::after {
+                        width: 8px !important;
+                        height: 8px !important;
+                        margin-right: 4px;
+                        border-color: #FFFFFF !important;
+                    }
+                }
+
+                &-prev {
+                    left: -14px !important;
+                    background-color: $color-red !important;
+
+                }
+
+                &-next {
+                    right: -14px !important;
+                }
+            }
+        }
+    }
+
     // header-1920
     .header {
         &__navigation {
