@@ -1448,7 +1448,7 @@ strong {
     .leader__info-sign {
       width: 82px;
       height: 49px;
-      background: #F2F2F2 url("../img/leader/leader-sign.svg") no-repeat center/cover; }
+      background: #F2F2F2 url("../img/leader/leader-sign.png") no-repeat center/cover; }
   .leader__text {
     color: #666666; }
     .leader__text-expand {
@@ -5347,8 +5347,8 @@ strong {
   .chars-image__swiper-slide {
     width: 808px !important;
     height: 73px; }
-  .chars-description__swiper-button-next, .chars-description__swiper-button-prev {
-    display: block !important; }
+  .chars-description .swiper-button-next, .chars-description .swiper-button-prev {
+    display: flex !important; }
   .chars-description .chars__info-description {
     max-width: 1011px;
     margin-bottom: 58px;

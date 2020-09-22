@@ -1077,13 +1077,16 @@
     }
 
     .chars-description {
-        &__swiper-button {
+
+        .swiper-button {
 
             &-next,
             &-prev {
-                display: block !important;
+                display: flex !important;
             }
         }
+
+
 
         .chars__info-description {
             max-width: 1011px;
