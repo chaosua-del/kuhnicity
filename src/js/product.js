@@ -49,10 +49,24 @@ export default function product() {
         const charsCalculator = new Swiper('.chars-calculator__swiper-container', {
             updateOnWindowResize: false,
             freeMode: true,
-            slidesOffsetAfter: 150,
+            slidesOffsetAfter: 500,
             scrollbar: {
                 el: '.chars-calculator__swiper-scrollbar',
                 draggable: false,
+            },
+            breakpoints: {
+                420: {
+                    slidesOffsetAfter: 400,
+                },
+                520: {
+                    slidesOffsetAfter: 300,
+                },
+                620: {
+                    slidesOffsetAfter: 200,
+                },
+                720: {
+                    slidesOffsetAfter: 100,
+                },
             }
         });
     } else {
@@ -166,35 +180,61 @@ export default function product() {
     const input = document.querySelector('.chars-calculator__input');
     const plus = document.querySelector('.chars-calculator__plus');
     const minus = document.querySelector('.chars-calculator__minus');
-    const calcTabs = document.querySelectorAll('.chars__coll-tab');
+    const calcTabs = document.querySelectorAll('.chars__table-tab');
+
+
+    let multipliers = [];
 
 
 
-    calc();
+    calcTabs.forEach(elem => {
+        multipliers.push(parseInt(elem.textContent.replace(/\s+/g, ''), 10));
+    });
+
 
     plus.addEventListener('click', event => {
         input.value = (parseInt(input.value) + 1);
-        calc();
+        calc(multipliers);
     });
 
     minus.addEventListener('click', event => {
-        input.value = (parseInt(input.value) - 1);
-        calc();
+        if (input.value <= 1) {
+            input.value = 1;
+            calc(multipliers);
+            return;
+        } else {
+            input.value = (parseInt(input.value) - 1);
+            calc(multipliers);
+        }
     });
+
+    input.oninput = input.onpaste = input.onchange = function () {
+        if (input.value <= 1 || input.value == NaN) {
+            input.value = 1;
+            calc(multipliers);
+            return;
+        } else {
+
+            calc(multipliers);
+        }
+    }
+
 
     function prettify(num) {
         var n = num.toString();
         return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ');
     }
 
-    function calc() {
-        calcTabs.forEach(elem => {
+
+    function calc(array) {
+        calcTabs.forEach((elem, i) => {
             let tabValue = parseInt(elem.textContent.replace(/\s+/g, ''), 10);
-            let sum = input.value * 100;
+            let sum = input.value * array[i];
             elem.textContent = prettify(sum);
             // console.log(parseInt(elem.textContent.replace(/\s+/g, ''), 10));
         });
     }
+
 
 
 }

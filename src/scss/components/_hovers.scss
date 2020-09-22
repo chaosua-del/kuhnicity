@@ -29,7 +29,7 @@
     }
 
     .button {
-        transition: background-color 0.2s ease-in-out;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
     }
 
     .button--primary {
@@ -41,6 +41,14 @@
     .button--dark {
         &:hover {
             background-color: $color-red;
+        }
+    }
+
+    .button--bordered {
+        &:hover {
+            background-color: $color-red;
+            border-color: $color-red;
+            color: #FFFFFF;
         }
     }
 

@@ -2116,11 +2116,15 @@ strong {
     .header__block-button:hover {
       color: #FF3D00; }
   .button {
-    transition: background-color 0.2s ease-in-out; }
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; }
   .button--primary:hover {
     background-color: #232323; }
   .button--dark:hover {
     background-color: #FF3D00; }
+  .button--bordered:hover {
+    background-color: #FF3D00;
+    border-color: #FF3D00;
+    color: #FFFFFF; }
   .production__card-list {
     transition: opacity 0.5s ease-in-out; }
     .production__card-list a:hover {

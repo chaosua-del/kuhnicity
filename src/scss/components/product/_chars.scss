@@ -255,11 +255,23 @@
 }
 
 .chars {
-    &__coll {
-        display: flex;
-        flex-direction: column;
+    &__table {
         margin-right: 42px;
         margin-bottom: 30px;
+
+        tr {
+            height: 50px;
+            border-bottom: 1px solid #f0f0f0;
+
+            &:nth-last-child(1) {
+                border: none;
+            }
+
+            &:nth-last-child(1) {
+                border: none;
+            }
+        }
+
 
         &-title {
             font-size: 12px;
@@ -272,7 +284,7 @@
             color: #323232;
         }
 
-        &-option {
+        &-item {
             font-size: 12px;
             line-height: 140%;
             /* or 17px */
@@ -280,14 +292,24 @@
             letter-spacing: 0.035em;
             height: 34px;
             color: #323232;
-            max-width: 146px;
-            display: flex;
-            align-items: center;
+            max-width: 246px;
+            padding-right: 101px;
+            // display: flex;
+            // align-items: center;
+        }
+
+        &-option {
+            width: 131px;
+            // padding-right: 60px;
+            // padding: 45px;
+            padding-right: 40px;
         }
 
         &-tab {
             padding: 6px 7px;
             width: fit-content;
+            font-size: 11px !important;
+            line-height: 120.3%;
 
             &::after {
                 content: '₽';
@@ -308,9 +330,10 @@
     }
 
     &__swiper-slide {
-        width: 800px !important;
-        display: flex;
+        width: 1000px !important;
+        // display: flex;
     }
+
 
     &__number {
         font-size: 20px;
@@ -332,8 +355,9 @@
         width: 56px;
         display: flex;
         justify-content: center;
-        padding-left: 16px;
-        padding-right: 16px;
+        // padding-left: 10px;
+        // padding-right: 10px;
+        text-align: center;
     }
 
 

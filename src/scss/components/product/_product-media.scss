@@ -215,6 +215,30 @@
         }
     }
 
+
+
+    // chars-calc-768
+
+    .chars-calculator {
+
+        &__title {
+            display: inline-block;
+        }
+
+
+
+        .chars__info-description {
+            font-size: 14px;
+            max-width: 544px;
+        }
+
+        &__number {
+            display: inline-flex;
+            margin-left: 81px;
+            // align-items: center;
+        }
+    }
+
     // projects-768
     .projects {
         background-color: #fff;
@@ -559,6 +583,10 @@
 
         &__expand {
             margin-right: 0;
+
+            &-button {
+                font-size: 48px;
+            }
         }
 
         &__container {
@@ -622,6 +650,45 @@
                 }
             }
         }
+    }
+
+    .chars__table {
+        margin-bottom: 100px;
+
+        &-title,
+        &-item,
+        &-option {
+            font-size: 14px;
+        }
+
+        &-item {
+            max-width: none;
+            width: 500px;
+        }
+
+        &-option {
+            width: 175px;
+        }
+
+        &-tab {
+            font-size: 12px !important;
+        }
+    }
+
+    .chars-calculator {
+        &__swiper-slide {
+            width: 108% !important;
+            display: flex;
+            justify-content: center;
+        }
+
+        .chars__info-description {
+            max-width: 778px;
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+
+
     }
 
     // benefits2-1280
@@ -1108,6 +1175,54 @@
             &__rating {
                 display: inline-block;
             }
+        }
+    }
+
+    // chars-calc-1920
+    .chars-calculator {
+        .chars__info-description {
+            font-size: 16px;
+            margin-top: 50px;
+            max-width: 882px;
+            margin-bottom: 78px;
+        }
+
+        &__swiper-slide {
+            justify-content: flex-start;
+        }
+
+        &__number {
+            font-size: 28px;
+            margin-left: 282px;
+            margin-bottom: 79px;
+        }
+
+        &__input {
+            width: 78px;
+        }
+    }
+
+    .chars__table {
+        &-title {
+            font-size: 20px;
+        }
+
+        &-item,
+        &-option {
+            font-size: 16px;
+        }
+
+        &-item {
+            width: 730px;
+        }
+
+        &-option {
+            width: 245px;
+        }
+
+        &-tab {
+            font-size: 20px !important;
+            padding: 13px 21px;
         }
     }
 

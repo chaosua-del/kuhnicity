@@ -105,61 +105,70 @@ section.chars
                         .benefits__card-description Фасады и корпус кухни проходят антибактериальную обработку природным антибиотиком. Он уничтожает вредные химические примеси, аллергенную пыль и бактерии после производственных работ. 
         .chars__line
         
-        .chars__expand-button.title Калькулятор 
+        .chars__expand-button.title Калькулятор модели
         .chars__expand.chars-calculator
             p.chars__info-description Конфигуратор кухни позволяет оценить примерную стоимость модели в зависимости от дополнительных характеристик и элементов. Представленная цена является ориентировочной. Точную стоимость вам сообщит дизайнер КухниСити после замера и подготовки дизайн-проекта. 
-            h4.chars__coll-title Укажите метраж вашей кухни
+            h4.chars__table-title.chars-calculator__title Укажите метраж вашей кухни
             .chars-calculator__number
                 button.chars-calculator__minus -
-                input(value="12", maxLength="2").chars-calculator__input
+                input(value="1", maxLength="3", type="tel").chars-calculator__input
                 button.chars-calculator__plus +
             .swiper-container.chars-calculator__swiper-container
                     .swiper-wrapper.chars-calculator__swiper-wrapper
                         .swiper-slide.chars-calculator__swiper-slide
-                            .chars__coll
-                                h4.chars__coll-title Опция
-                                span.chars__coll-option Большое кол-во распашных элементов
-                                span.chars__coll-option Большое кол-во распашных элементов
-                                span.chars__coll-option Большое кол-во распашных элементов
-                                span.chars__coll-option Большое кол-во распашных элементов
-                                span.chars__coll-option Большое кол-во распашных элементов
-                                span.chars__coll-option Большое кол-во распашных элементов
-                            .chars__coll
-                                h4.chars__coll-title Эконом
-                                span.chars__coll-option +
-                                span.chars__coll-option +
-                                span.chars__coll-option +
-                                span.chars__coll-option +
-                                span.chars__coll-option +
-                                span.chars__coll-option +
-                                button.button.button--bordered.chars__coll-tab 132 120
-                            .chars__coll
-                                h4.chars__coll-title Оптимальная 
-                                span.chars__coll-option -
-                                span.chars__coll-option -
-                                span.chars__coll-option -
-                                span.chars__coll-option -
-                                span.chars__coll-option -
-                                span.chars__coll-option -
-                                button.button.button--bordered.chars__coll-tab 242 120
-                            .chars__coll
-                                h4.chars__coll-title Престиж
-                                span.chars__coll-option +
-                                span.chars__coll-option +
-                                span.chars__coll-option +
-                                span.chars__coll-option +
-                                span.chars__coll-option +
-                                span.chars__coll-option +
-                                button.button.button--bordered.chars__coll-tab 352 120
-                            .chars__coll
-                                h4.chars__coll-title Люкс
-                                span.chars__coll-option -
-                                span.chars__coll-option -
-                                span.chars__coll-option -
-                                span.chars__coll-option -
-                                span.chars__coll-option -
-                                span.chars__coll-option -
-                                button.button.button--bordered.chars__coll-tab 332 120
+                            table.chars__table
+                                tr(style="border: none")
+                                    td.chars__table-title Опция 
+                                    td.chars__table-title Эконом
+                                    td.chars__table-title Оптимальная 
+                                    td.chars__table-title Престиж
+                                    td.chars__table-title Люкс
+                                tr
+                                    td.chars__table-item  Большое кол-во распашных элементов
+                                    td.chars__table-option  +
+                                    td.chars__table-option  -
+                                    td.chars__table-option  +
+                                    td.chars__table-option  -
+                                tr
+                                    td.chars__table-item  Большое кол-во распашных элементов
+                                    td.chars__table-option  +
+                                    td.chars__table-option  -
+                                    td.chars__table-option  +
+                                    td.chars__table-option  -
+                                tr
+                                    td.chars__table-item  Большое кол-во распашных элементов
+                                    td.chars__table-option  +
+                                    td.chars__table-option  -
+                                    td.chars__table-option  +
+                                    td.chars__table-option  -
+                                tr
+                                    td.chars__table-item  Большое кол-во распашных элементов
+                                    td.chars__table-option  +
+                                    td.chars__table-option  -
+                                    td.chars__table-option  +
+                                    td.chars__table-option  -
+                                tr
+                                    td.chars__table-item  Большое кол-во распашных элементов
+                                    td.chars__table-option  +
+                                    td.chars__table-option  -
+                                    td.chars__table-option  +
+                                    td.chars__table-option  -
+                                tr
+                                    td.chars__table-item  Большое кол-во распашных элементов
+                                    td.chars__table-option  +
+                                    td.chars__table-option  -
+                                    td.chars__table-option  +
+                                    td.chars__table-option  -
+                                tr(style="border:none") 
+                                    td
+                                    td
+                                        button.button.button--bordered.chars__table-tab 100
+                                    td
+                                        button.button.button--bordered.chars__table-tab 150
+                                    td
+                                        button.button.button--bordered.chars__table-tab 200
+                                    td
+                                        button.button.button--bordered.chars__table-tab 250
                     .swiper-scrollbar.chars-calculator__swiper-scrollbar
         .chars__line
 

@@ -1227,12 +1227,17 @@ strong {
     margin-top: 39px;
     font-size: 14px; }
 
-.chars__coll {
-  display: flex;
-  flex-direction: column;
+.chars__table {
   margin-right: 42px;
   margin-bottom: 30px; }
-  .chars__coll-title {
+  .chars__table tr {
+    height: 50px;
+    border-bottom: 1px solid #f0f0f0; }
+    .chars__table tr:nth-last-child(1) {
+      border: none; }
+    .chars__table tr:nth-last-child(1) {
+      border: none; }
+  .chars__table-title {
     font-size: 12px;
     line-height: 120.3%;
     /* identical to box height, or 14px */
@@ -1240,7 +1245,7 @@ strong {
     text-transform: uppercase;
     margin-bottom: 28px;
     color: #323232; }
-  .chars__coll-option {
+  .chars__table-item {
     font-size: 12px;
     line-height: 140%;
     /* or 17px */
@@ -1248,13 +1253,17 @@ strong {
     letter-spacing: 0.035em;
     height: 34px;
     color: #323232;
-    max-width: 146px;
-    display: flex;
-    align-items: center; }
-  .chars__coll-tab {
+    max-width: 246px;
+    padding-right: 101px; }
+  .chars__table-option {
+    width: 131px;
+    padding-right: 40px; }
+  .chars__table-tab {
     padding: 6px 7px;
-    width: fit-content; }
-    .chars__coll-tab::after {
+    width: fit-content;
+    font-size: 11px !important;
+    line-height: 120.3%; }
+    .chars__table-tab::after {
       content: '₽';
       display: inline-block;
       margin-left: 5px; }
@@ -1266,8 +1275,7 @@ strong {
   margin-bottom: 50px; }
 
 .chars-calculator__swiper-slide {
-  width: 800px !important;
-  display: flex; }
+  width: 1000px !important; }
 
 .chars-calculator__number {
   font-size: 20px;
@@ -1286,8 +1294,7 @@ strong {
   width: 56px;
   display: flex;
   justify-content: center;
-  padding-left: 16px;
-  padding-right: 16px; }
+  text-align: center; }
 
 .rating-mini {
   display: inline-block;
@@ -2417,11 +2424,15 @@ strong {
     .header__block-button:hover {
       color: #FF3D00; }
   .button {
-    transition: background-color 0.2s ease-in-out; }
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; }
   .button--primary:hover {
     background-color: #232323; }
   .button--dark:hover {
     background-color: #FF3D00; }
+  .button--bordered:hover {
+    background-color: #FF3D00;
+    border-color: #FF3D00;
+    color: #FFFFFF; }
   .production__card-list {
     transition: opacity 0.5s ease-in-out; }
     .production__card-list a:hover {
@@ -4796,6 +4807,14 @@ strong {
     display: block;
     padding: 15px 51px;
     font-size: 16px; }
+  .chars-calculator__title {
+    display: inline-block; }
+  .chars-calculator .chars__info-description {
+    font-size: 14px;
+    max-width: 544px; }
+  .chars-calculator__number {
+    display: inline-flex;
+    margin-left: 81px; }
   .projects {
     background-color: #fff; }
     .projects .bonuses__card {
@@ -4976,6 +4995,8 @@ strong {
     margin-right: 0; }
   .chars__expand {
     margin-right: 0; }
+    .chars__expand-button {
+      font-size: 48px; }
   .chars__container {
     max-width: 1170px; }
   .chars__swiper-scrollbar {
@@ -5004,6 +5025,25 @@ strong {
     .chars-feedback .banner__card-rate::after {
       width: 29.55px;
       height: 28.07px; }
+  .chars__table {
+    margin-bottom: 100px; }
+    .chars__table-title, .chars__table-item, .chars__table-option {
+      font-size: 14px; }
+    .chars__table-item {
+      max-width: none;
+      width: 500px; }
+    .chars__table-option {
+      width: 175px; }
+    .chars__table-tab {
+      font-size: 12px !important; }
+  .chars-calculator__swiper-slide {
+    width: 108% !important;
+    display: flex;
+    justify-content: center; }
+  .chars-calculator .chars__info-description {
+    max-width: 778px;
+    margin-bottom: 40px;
+    margin-top: 20px; }
   .benefits2 .benefits__swiper-slide {
     width: 100% !important;
     flex-wrap: nowrap; }
@@ -5245,6 +5285,30 @@ strong {
     margin-bottom: 37px; }
   .chars-feedback .feedback__rating {
     display: inline-block; }
+  .chars-calculator .chars__info-description {
+    font-size: 16px;
+    margin-top: 50px;
+    max-width: 882px;
+    margin-bottom: 78px; }
+  .chars-calculator__swiper-slide {
+    justify-content: flex-start; }
+  .chars-calculator__number {
+    font-size: 28px;
+    margin-left: 282px;
+    margin-bottom: 79px; }
+  .chars-calculator__input {
+    width: 78px; }
+  .chars__table-title {
+    font-size: 20px; }
+  .chars__table-item, .chars__table-option {
+    font-size: 16px; }
+  .chars__table-item {
+    width: 730px; }
+  .chars__table-option {
+    width: 245px; }
+  .chars__table-tab {
+    font-size: 20px !important;
+    padding: 13px 21px; }
   .projects .bonuses__swiper-slide {
     width: 1597px !important;
     height: 914px !important;
