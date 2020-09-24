@@ -32,6 +32,7 @@ import news from 'news';
 import content from 'content';
 import notFound from 'notFound';
 import contacts from 'contacts';
+import services from 'services';
 // import forms from 'forms'
 
 // import fancybox from '@fancyapps/fancybox';
@@ -124,7 +125,10 @@ let app = {
                 contacts();
             } else if (document.querySelector('.content').id == 'questions') {
                 vacancies();
+            } else if (document.querySelector('.content').id == 'services') {
+                services();
             }
+
             svgReplace();
 
         });

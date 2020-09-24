@@ -1,0 +1,37 @@
+// Commons
+@import "variables";
+@import "custom-reset";
+
+// External
+//@import "vendor/jquery.fancybox.css";
+//@import "node_modules/swiper/swiper.scss";
+
+// Base
+@import "grid";
+@import "mixins";
+@import "base";
+// @import "generated/sprites";
+// @import "generated/svgsprites";
+@import "fonts";
+
+// Components
+@import "components/content";
+@import "components/header";
+@import "components/services/services-leader";
+@import "components/services/services-cards";
+@import "components/product/questions";
+@import "components/product/getProject";
+@import "components/benefits";
+@import "components/product/product-benefits";
+@import "components/social";
+@import "components/contactUs";
+@import "components/footer";
+
+
+@import "components/modal";
+
+@import "components/hovers";
+
+@import "components/media";
+@import "components/product/product-media";
+@import "components/services/services-media";

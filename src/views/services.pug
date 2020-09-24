@@ -11,31 +11,23 @@ html(lang="ru", class="no-js")
         block header
             include _includes/blocks/header
 
-        .content#catalog
-          block content
-            block filter
-                include _includes/blocks/filter
-            
-            block models 
-                include _includes/blocks/catalogModels
+        .content#services
+            block content
+                block leader
+                    include _includes/blocks/services/servicesLeader
 
-            block leader
-                include _includes/blocks/catalogLeader
+                block servicesCards
+                    include _includes/blocks/services/servicesCards
 
-            block models2
-                include _includes/blocks/catalogModels2
+                block questions
+                    include _includes/blocks/product/questions
 
-            block stages
-                include _includes/blocks/stages
-
-            block feedback
-                include _includes/blocks/catalogFeedback
-
-            block benefits
-                include _includes/blocks/benefits
-
-            block leader
-                include _includes/blocks/leader
+                block getProject
+                    include _includes/blocks/product/getProject
+                
+                block benefits2
+                    include _includes/blocks/product/benefits2
+               
                
                
         
@@ -47,8 +39,7 @@ html(lang="ru", class="no-js")
             include _includes/blocks/modal
 
         block styles
-          link(rel='stylesheet', href='assets/css/catalog.css?v=' + PACKAGE.version)
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+          link(rel='stylesheet', href='assets/css/services.css?v=' + PACKAGE.version)
         block scripts-config
             script.
                 /* изменяемые настройки скриптов, указаны значения по умолчанию */
